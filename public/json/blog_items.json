@@ -1,0 +1,128 @@
+{
+	"items": [
+		{	
+			"post_format": "image",
+			"thumb_src": "images/entry_image_05.jpg",
+			"post_title": "Why a Visual Really is Worth 1,000 Words",
+			"post_date": "January 27 2016",
+			"post_date_formatted": "2016-01-27",
+			"post_permalink": "portfolio_single.html",
+			"post_comments": "9 comments",
+			"post_comments_link": "#",
+			"categories": [
+				{
+					"name": "Motion Design",
+					"link": "#"
+				}
+			],
+			"show_categories": true
+		},
+		{
+			"post_format": "slideshow",
+			"images": [
+				{
+					"src":"images/entry_image_03.jpg",
+					"alt": "image_02"
+				},
+				{
+					"src":"images/entry_image_05.jpg",
+					"alt": "image_01"
+				},
+				{
+					"src":"images/entry_image_06.jpg",
+					"alt": "image_03"
+				}
+			],
+			"post_title": "7 Smart Ideas for Managing the Support Queue",
+			"post_date": "January 27 2016",
+			"post_date_formatted": "2016-01-27",
+			"post_permalink": "portfolio_single.html",
+			"post_comments": "9 comments",
+			"post_comments_link": "#",
+			"categories": [
+				{
+					"name": "Photography",
+					"link": "#"
+				}
+			],
+			"show_categories": true
+		},
+		{
+			"post_format": "video",
+			"video_src": "https://player.vimeo.com/video/42829407?title=0&byline=0&portrait=0",
+			"post_title": "Supercharge Your Support With Data-Driven Smarts",
+			"post_date": "January 27 2016",
+			"post_date_formatted": "2016-01-27",
+			"post_permalink": "portfolio_single.html",
+			"post_comments": "9 comments",
+			"post_comments_link": "#",
+			"categories": [
+				{
+					"name": "Modeling",
+					"link": "#"
+				},
+				{
+					"name": "Graphic Design",
+					"link": "#"
+				}
+			],
+			"show_categories": true
+		},
+		{
+			"post_format": "link",
+			"link": "#",
+			"link_text": "Link Post Example",
+			"link_area_icon": "link",
+			"link_area_bg": "images/entry_image_05.jpg",
+			"post_date": "January 27 2016",
+			"post_date_formatted": "2016-01-27",
+			"post_title": "Link Post Example",
+			"post_permalink": "portfolio_single.html",
+			"post_comments": "9 comments",
+			"post_comments_link": "#",
+			"categories": [
+				{
+					"name": "Graphic Design",
+					"link": "#"
+				}
+			],
+			"show_categories": true
+		},
+		{
+			"post_format": "audio",
+			"path_to_audio_file": "audio/audio.mp3",
+			"post_title": "Repetition Photo Series by Alain Cornu",
+			"post_date": "January 27 2016",
+			"post_date_formatted": "2016-01-27",
+			"post_permalink": "portfolio_single.html",
+			"post_comments": "9 comments",
+			"post_comments_link": "#",
+			"categories": [
+				{
+					"name": "Photography",
+					"link": "#"
+				}
+			],
+			"show_categories": true
+		},
+		{
+			"post_format": "quote",
+			"blockquote_area_bg": "images/entry_image_06.jpg",
+			"quote": "A good film is when the price of the dinner, the theatre admission and the babysitter were worth it.",
+			"author": "Alfred Hitchcock",
+			"post_title": "Quote Post Example",
+			"post_date": "January 27 2016",
+			"post_date_formatted": "2016-01-27",
+			"post_permalink": "portfolio_single.html",
+			"post_comments": "9 comments",
+			"post_comments_link": "#",
+			"categories": [
+				{
+					"name": "Photography",
+					"link": "#"
+				}
+			],
+			"show_categories": true
+		}
+	]
+}

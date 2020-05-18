@@ -1,0 +1,2047 @@
+/* ------------------------------------------------------
+	
+	1. Global
+	
+------------------------------------------------------ */
+
+	body{
+		direction: rtl;
+		unicode-bidi: embed;
+	}
+
+/* ------------------------------------------------------
+	
+	2. General classes
+	
+------------------------------------------------------ */
+
+	.align-right{
+        text-align: left;
+    }
+
+    .align-left{
+        text-align: right;
+    }
+
+    .alignleft{
+        float: right;
+    }
+
+    .alignright{
+        float: left;
+    }
+
+    img.alignleft{
+        margin-right: 0px;
+        margin-left: 30px;
+    }
+
+    img.alignright{
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+
+    .owl-carousel .gt-col{
+    	padding: 1px;
+    }
+
+/* ------------------------------------------------------
+	
+	3. Typography
+	
+------------------------------------------------------ */
+
+    .gt-title-underline.align-left{
+    	text-align: right;
+    }
+
+    .gt-title-underline.align-left::after{
+    	left: auto;
+    	right: 0;
+    }
+
+    .gt-title-underline.align-right{
+    	text-align: left;
+    }
+
+    .gt-title-underline.align-right::after{
+    	left: 0;
+    	right: auto;
+    }
+
+/* ------------------------------------------------------
+	
+	4. Header
+	
+------------------------------------------------------ */
+
+	.gt-dropdown{
+		text-align: right;
+	}
+
+	.gt-header .gt-compressed .gt-lineform-btn{
+		right: auto;
+		left: 16px;
+	}
+
+	.gt-contact-info > li > span{
+        margin-right: 0;
+        margin-left: 5px;
+    }
+
+	/* ------------------------------------------------------
+        
+            4.2. Dropdown
+        
+    ------------------------------------------------------ */
+
+    	.gt-dropdown,
+    	.gt-options-list{
+    		left: auto;
+    		right: 0;
+    	}
+
+	/* ------------------------------------------------------
+        
+            4.3. Navigation
+        
+    ------------------------------------------------------ */
+
+    	.gt-navigation{
+    		text-align: right;
+    	}
+
+    	/* ------------------------------------------------------
+        
+               	4.3.1. Sub navigation
+            
+        ------------------------------------------------------ */
+
+	    	.gt-has-submenu > a::after,
+	    	.gt-has-megamenu > a::after{
+	    		margin-left: 0px;
+	    		margin-right: 10px;
+	    	}
+
+	    	.gt-navigation .gt-dropdown{
+	    		left: auto;
+	    		right: -30px;
+	    	}
+
+	    	.gt-has-submenu .gt-has-submenu > a,
+            .gt-has-megamenu .gt-has-submenu > a{
+            	padding-left: 40px;
+            	padding-right: 30px;
+            }
+
+            .gt-has-submenu .gt-has-submenu > a::after,
+            .gt-has-megamenu .gt-has-submenu > a::after{
+            	content: "\e875";
+            	right: auto;
+            	left: 15px;
+            }
+
+            .gt-navigation .gt-dropdown.gt-reverse{
+            	left: 0;
+            	right: auto;
+            }
+
+            .gt-navigation .gt-dropdown .gt-dropdown{
+                left: auto;
+                right: 100%;
+                margin-left: 0;
+                margin-right: 5px;
+            }
+
+            .gt-navigation .gt-dropdown .gt-dropdown::before{
+            	right: auto;
+                left: 100%;
+            }
+
+            .gt-navigation .gt-dropdown .gt-dropdown.gt-reverse{
+                right: auto;
+                margin-left: 5px;
+                margin-right: 0px;
+                left: 100%;
+            }
+
+            .gt-navigation .gt-dropdown .gt-dropdown.gt-reverse::before{
+                left: auto;
+                right: 100%;
+            }
+
+        /* ------------------------------------------------------
+        
+                4.3.2. Mega menu
+            
+        ------------------------------------------------------ */
+
+            .gt-has-megamenu > .gt-dropdown{
+            	right: auto;
+            	left: -15px;
+            }
+
+            .gt-has-megamenu > .gt-dropdown > .gt-submenu:not(:first-child) > li > a{
+                padding-left: 30px;
+                padding-right: 20px;
+            }
+
+            .gt-has-megamenu > .gt-dropdown > .gt-submenu:not(:last-child) > li:not([class*="has-"]) > a{
+                padding-right: 30px;
+                padding-left: 20px;
+            }
+
+/* ------------------------------------------------------
+    
+    5. Content Elements
+    
+------------------------------------------------------ */
+
+	.gt-moved-image{
+		left: auto;
+		right: -12px;
+		box-shadow: -12px -12px 0 0 #28abe3;
+	}
+
+	.gt-signature{
+		text-align: left;
+	}
+
+	.gt-more-info .gt-dropdown-invoker{
+		padding-right: 0;
+		padding-left: 35px;
+	}
+
+	.gt-more-info .gt-dropdown-invoker::after{
+		right: 100%;
+		margin-right: 10px;
+	}
+
+	.gt-media-holder .gt-left-edge{
+        text-align: right;
+    }
+
+    .gt-media-holder .gt-right-edge{
+        text-align: left;
+    }
+
+    .gt-fullscreen-layout-type .gt-right-part{
+        padding-left: 0;
+        padding-right: 200px;
+    }
+
+    .gt-fullscreen-layout-type .gt-left-part{
+        padding-left: 200px;
+        padding-right: 0px;
+    }
+
+    .gt-lineform.gt-type-2{
+        padding-right: 0px;
+        padding-left: 45px;
+    }
+
+    .gt-lineform.gt-type-2 .gt-lineform-btn{
+    	right: auto;
+    	left: 0;
+    }
+
+    .gt-label{
+        left: auto;
+        right: 0;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .gt-pricing-tables-holder .gt-label{
+        right: auto;
+        border-radius: 0 15px 15px 0;
+    }
+
+/* ------------------------------------------------------
+    
+    6. UI Elements
+    
+------------------------------------------------------ */
+
+	/* ------------------------------------------------------
+    
+        6.1. Buttons
+    
+    ------------------------------------------------------ */
+
+    	.gt-back-to-top{
+    		right: auto;
+    		left: 60px;
+    	}
+
+	/* ------------------------------------------------------
+
+	    6.2. Forms
+
+	------------------------------------------------------ */
+
+		/* ------------------------------------------------------
+    
+            6.2.2. Label & Legend
+            
+        ------------------------------------------------------ */
+
+        	.gt-required::after{
+        		margin-left: 0px;
+        		margin-right: 2px;
+        	}
+
+        	.gt-left-aligned-labels label{
+        		float: right;
+        	}
+
+        	form:not(.gt-left-aligned-labels) .gt-inline-label{
+        		margin-right: 0px;
+        		margin-left: 10px;
+        	}
+
+		/* ------------------------------------------------------
+    
+            6.2.3. Checkbox & Radio
+            
+        ------------------------------------------------------ */
+
+        	input[type="radio"] + label::before,
+            input[type="checkbox"] + label::before{
+            	left: auto;
+            	right: 0;
+            }
+
+            input[type="radio"] + label,
+            input[type="checkbox"] + label{
+            	padding-left: 0px;
+            	padding-right: 47px;
+            }
+
+            input[type="checkbox"] + label{
+                padding-right: 42px;
+            }
+
+            input[type="radio"] + label:not(:last-child),
+            input[type="checkbox"] + label:not(:last-child){
+            	margin-right: 0px;
+            	margin-left: 25px;
+            }
+
+            input[type="radio"] + label::after{
+            	right: 9px;
+            }
+
+            input[type="checkbox"] + label::after{
+            	right: 1px;
+            }
+
+            .gt-widget input[type="radio"] + label,
+            .gt-widget input[type="checkbox"] + label,
+            input[type="radio"].gt-type-2 + label,
+            input[type="checkbox"].gt-type-2 + label{
+                padding-left: 0px;
+                padding-right: 25px;
+            }
+
+            .gt-widget input[type="radio"] + label,
+            .gt-widget input[type="checkbox"] + label{
+            	margin-left: 0px;
+            }
+
+            .gt-widget input[type="radio"] + label::after,
+            .gt-widget input[type="checkbox"] + label::after,
+            input[type="radio"].gt-type-2 + label::after,
+            input[type="checkbox"].gt-type-2 + label::after{
+            	right: -6px;
+            }
+
+            .gt-mark-field .gt-mark-fill-state,
+            .gt-mark-field .gt-mark-empty-state{
+            	left: auto;
+            	right: 0;
+            }
+
+            .gt-mark-field input[type="radio"] + label{
+            	float: right;
+            }
+
+            .gt-mark-field input[type="radio"] + label{
+            	margin: 0;
+            }
+
+		/* ------------------------------------------------------
+	    
+	        6.2.4. Select
+	        
+	    ------------------------------------------------------ */
+
+	    	.gt-selected-option{
+	    		padding-right: 25px;
+	    		padding-left: 50px;
+	    	}
+
+	    	.gt-selected-option::after{
+	    		right: auto;
+	    		left: 22px;
+	    	}
+
+	   	/* ------------------------------------------------------
+    
+            6.2.6. Range Sliders
+            
+        ------------------------------------------------------ */
+
+            .gt-form-slider-holder .gt-slider-min{
+                text-align: left;
+            }
+
+        /* ------------------------------------------------------
+    
+            6.2.7. Number Inputs
+            
+        ------------------------------------------------------ */
+
+            .gt-qty input:not([type="submit"]){
+                padding-left: 30px;
+                padding-right: 20px;
+            }
+
+            .gt-qty [class*="gt-qty-btn-"]{
+                left: 17px;
+                right: auto;
+            }
+
+            .gt-qty.gt-type-2 .gt-qty-btn-up{
+                right: auto;
+                left: 0;
+            }
+
+            .gt-qty.gt-type-2 .gt-qty-btn-down{
+                left: auto;
+                right: 0;
+            }
+
+		/* ------------------------------------------------------
+	    
+	        6.2.8. Form variations
+	        
+	    ------------------------------------------------------ */
+
+	    	.gt-lineform input{
+	    		padding-left: 60px;
+	    		padding-right: 25px;
+	    	}
+
+	    	.gt-lineform .gt-lineform-btn{
+	            right: auto;
+	            left: 23px;
+	        }
+
+	        .gt-compressed-wrap.gt-over .gt-compressed,
+            .gt-touchevents .gt-compressed-wrap .gt-compressed{
+                right: auto;
+                left: 0;
+            }
+
+            .gt-lineform.gt-small .gt-lineform-btn{
+                right: auto;
+                left: 20px;
+            }
+
+	/* ------------------------------------------------------
+    
+        6.3. Tables
+        
+    ------------------------------------------------------ */
+
+    	th{
+    		text-align: right;
+    	}
+
+    	.gt-table-holder.gt-horizontal td[data-title]::before{
+    		float: right;
+    	}
+
+	/* ------------------------------------------------------
+    
+        6.4. Lists
+    
+    ------------------------------------------------------ */
+
+    	.gt-list > li{
+            padding-left: 0px;
+            padding-right: 38px;
+        }
+
+        .gt-list.gt-type-1 > li::before,
+        .gt-list.gt-type-2 > li::before{
+        	left: auto;
+        	right: 16px;
+        }
+
+        .gt-list.gt-type-3 > li::before,
+        .gt-list.gt-type-4 > li::before,
+        .gt-list.gt-type-5 > li::before{
+        	left: auto;
+        	right: 5px;
+        }
+
+        .gt-list.gt-type-3 > li::after{
+        	left: auto;
+        	right: 3px;
+        }
+
+        .gt-list.gt-type-6 > li::before{
+        	left: auto;
+        	right: 14px;
+        }
+
+        .gt-hr-list a > .fa,
+	    .gt-hr-list a > .lnr{
+	    	margin-right: 0px;
+	    	margin-left: 5px;
+	    }
+
+	    .gt-slash-hr-list > li:not(:first-child)::before{
+	    	content: '\\';
+            margin-right: 1px;
+            margin-left: 5px;
+        }
+
+    /* ------------------------------------------------------
+    
+        6.5. Blockquotes
+    
+    ------------------------------------------------------ */
+
+    	blockquote{
+    		border-width: 0 7px 0 0;
+    	}
+
+/* ------------------------------------------------------
+    
+    7. Widgets & Shortcodes
+    
+------------------------------------------------------ */
+
+	/* ------------------------------------------------------
+    
+		7.2. Instagram Feed
+    
+    ------------------------------------------------------ */
+
+    	.gt-instagram-feed .gt-instafeed-item{
+    		float: right;
+    	}
+
+    /* ------------------------------------------------------
+    
+        7.3. LightBox
+    
+    ------------------------------------------------------ */
+
+    	.gt-custom-lightbox .fancybox-close{
+    		right: auto;
+    		left: -45px;
+    	}
+
+    /* ------------------------------------------------------
+    
+        7.5. Accordions & Toggles
+    
+    ------------------------------------------------------ */
+
+    	/* ------------------------------------------------------
+    
+            7.5.1. Style 1
+        
+        ------------------------------------------------------ */
+
+        	.gt-accordion.gt-type-1 .gt-accordion-title,
+            .gt-toggle.gt-type-1 .gt-toggle-title{
+            	padding-right: 26px;
+            	padding-left: 60px;
+            }
+
+        	.gt-accordion.gt-type-1 .gt-accordion-title::after,
+            .gt-toggle.gt-type-1 .gt-toggle-title::after{
+            	right: auto;
+            	left: 26px;
+            }
+
+            .gt-accordion.gt-type-1 .gt-accordion-title::after,
+            .gt-toggle.gt-type-1 .gt-toggle-title::after{
+                border-left: none;
+            	border-right: 10px solid #28abe3;
+            }
+
+            .gt-csstransforms3d .gt-accordion.gt-type-1 .gt-accordion-title::after,
+            .gt-csstransforms3d .gt-toggle.gt-type-1 .gt-toggle-title::after{
+                border-left: none;
+            	border-right: 10px solid #28abe3;
+            }
+
+            .gt-csstransforms3d .gt-accordion.gt-type-1 .gt-accordion-title.gt-active::after,
+            .gt-csstransforms3d .gt-toggle.gt-type-1 .gt-toggle-title.gt-active::after{
+            	border-right-color: #fff;
+            	-webkit-transform: rotate3d(0, 0, 1, -90deg);
+                    -ms-transform: rotate3d(0, 0, 1, -90deg);
+                        transform: rotate3d(0, 0, 1, -90deg);
+            }
+
+        /* ------------------------------------------------------
+    
+            7.5.2. Style 2
+        
+        ------------------------------------------------------ */
+
+            .gt-accordion.gt-type-2 .gt-accordion-title,
+            .gt-toggle.gt-type-2 .gt-toggle-title{
+                padding-left: 0px;
+                padding-right: 77px;
+            }
+
+            .gt-accordion.gt-type-2 .gt-accordion-title::before,
+            .gt-toggle.gt-type-2 .gt-toggle-title::before{
+            	left: auto;
+            	right: 0;
+            }
+
+    /* ------------------------------------------------------
+    
+        7.6. Alert boxes
+    
+    ------------------------------------------------------ */
+
+    	.gt-alert-box{
+    		text-align: right;
+    	}
+
+    	.gt-alert-box-inner{
+            padding-right: 115px;
+            padding-left: 100px;
+        }
+
+        .gt-alert-box .gt-close{
+        	right: auto;
+        	left: 40px;
+        }
+
+        /* ------------------------------------------------------
+    
+            7.6.1. Style 1
+        
+        ------------------------------------------------------ */
+
+        	.gt-alert-box.gt-type-1 .gt-icon{
+        		left: auto;
+        		right: 38px;
+        	}
+
+       	/* ------------------------------------------------------
+    
+            7.6.2. Style 2
+        
+        ------------------------------------------------------ */
+
+        	.gt-alert-box.gt-type-2 .gt-alert-box-inner{
+                padding-left: 100px;
+                padding-right: 140px;
+            }
+
+            [class*="col-"][class*="-2"] .gt-alert-box.gt-type-2 .gt-alert-box-inner,
+            [class*="col-"][class*="-3"] .gt-alert-box.gt-type-2 .gt-alert-box-inner,
+            [class*="col-"][class*="-4"] .gt-alert-box.gt-type-2 .gt-alert-box-inner{
+                padding-left: 20px;
+                padding-right: 60px;
+            }
+
+            .gt-alert-box.gt-type-2 .gt-icon{
+            	left: auto;
+            	right: 0;
+            }
+
+    /* ------------------------------------------------------
+    
+        7.8. Pagination
+    
+    ------------------------------------------------------ */
+
+    	.gt-prev-page{
+            left: auto;
+            right: 0;
+        }
+
+        .gt-next-page{
+            right: auto;
+            left: 0;
+        }
+
+        .gt-prev-page::before{
+            content: '\e876';
+        }
+
+        .gt-next-page::before{
+            content: '\e875';
+        }
+
+    /* ------------------------------------------------------
+    
+        7.9. Dropcaps
+    
+    ------------------------------------------------------ */
+
+        .gt-dropcap:not(.gt-type-3)::first-letter,
+        .gt-dropcap.gt-type-3 > canvas{
+            float: right;
+            margin-right: 0px;
+            margin-left: 10px;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.10. Icon Boxes
+    
+    ------------------------------------------------------ */
+
+    	/* ------------------------------------------------------
+    
+            7.10.4. Style 4
+        
+        ------------------------------------------------------ */
+
+            .gt-icon-box.gt-type-4{
+                text-align: right;
+            }
+
+    /* ------------------------------------------------------
+    
+        7.11. Testimonials
+    
+    ------------------------------------------------------ */
+
+    	.gt-authors-holder .gt-avatar{
+            padding-right: 0;
+            padding-left: 20px;
+        }
+
+        .gt-testimonial blockquote{
+        	border-right-width: 0px;
+        }
+
+        /* ------------------------------------------------------
+    
+            7.11.3. Style 3
+        
+        ------------------------------------------------------ */
+
+        	.gt-testimonials-holder.gt-type-3 .gt-avatar{
+        		padding-right: 0px;
+        		padding-left: 20px;
+        	}
+
+        	.gt-testimonials-holder.gt-type-3 .gt-author-box{
+        		margin-left: 0px;
+        		margin-right: -90px;
+        	}
+
+        	.gt-testimonials-holder.gt-type-3 .gt-testimonial{
+        		padding-left: 30px;
+        		padding-right: 120px;
+        	}
+
+    /* ------------------------------------------------------
+    
+        7.12. Carousel Sliders
+    
+    ------------------------------------------------------ */
+
+    	.owl-prev{
+            left: auto;
+            right: 20px;
+        }
+
+        .owl-next{
+            right: auto;
+            left: 20px;
+        }
+
+        .owl-carousel.owl-large-nav .owl-prev{
+            left: auto;
+            right: -60px;
+        }
+
+        .owl-carousel.owl-large-nav .owl-next{
+            right: auto;
+            left: -60px;
+        }
+
+        .gt-boxed-layout-type .owl-carousel.owl-large-nav .owl-prev{
+            left: auto;
+            right: 10px;
+        }
+
+        .gt-boxed-layout-type .owl-carousel.owl-large-nav .owl-next{
+            right: auto;
+            left: 10px;
+        }
+
+        .owl-prev::before{
+            content: '\e876';
+        }
+
+        .owl-next::before{
+            content: '\e875';
+        }
+
+    /* ------------------------------------------------------
+    
+        7.13. Progress Bars
+    
+    ------------------------------------------------------ */
+
+    	.gt-pbar-inner{
+    		left: auto;
+    		right: 0;
+    	}
+
+    	/* ------------------------------------------------------
+    
+            7.13.1. Style 1, 2
+        
+        ------------------------------------------------------ */
+
+        	.gt-progress-bars-holder.type-1 .gt-pbar::after,
+            .gt-progress-bars-holder.type-2 .gt-pbar::after{
+            	right: auto;
+            	left: 0;
+            }
+
+        /* ------------------------------------------------------
+    
+            7.13.3. Style 4
+        
+        ------------------------------------------------------ */
+
+        	.gt-progress-bars-holder.type-4 .gt-pbar-title{
+        		left: auto;
+        		right: 0;
+        	}
+
+        	.gt-progress-bars-holder.type-4 .gt-pbar-inner::after{
+        		right: auto;
+        		left: 15px;
+        	}
+
+    /* ------------------------------------------------------
+    
+        7.14. Pricing Tables
+    
+    ------------------------------------------------------ */
+
+    	.gt-no-flexbox .gt-pricing-tables-holder .gt-pricing-table{
+    		float: right;
+    	}
+
+    	.gt-no-flexbox .gt-pricing-tables-holder.gt-cols-2 .gt-pricing-table:nth-child(2n+1),
+        .gt-no-flexbox .gt-pricing-tables-holder.gt-cols-3 .gt-pricing-table:nth-child(3n+1),
+        .gt-no-flexbox .gt-pricing-tables-holder.gt-cols-4 .gt-pricing-table:nth-child(4n+1){
+            clear: right;
+        }
+
+    /* ------------------------------------------------------
+    
+        7.15. Counters
+        
+    ------------------------------------------------------ */
+
+    	.gt-counter{
+    		border-right-width: 0px;
+    		border-left-width: 15px;
+    	}
+
+    	.gt-no-flexbox .gt-counters-holder .gt-counter{
+    		float: right;
+    	}
+
+    	.gt-no-flexbox .gt-counters-holder.gt-cols-2 .gt-counter:nth-child(3n),
+        .gt-no-flexbox .gt-counters-holder.gt-cols-3 .gt-counter:nth-child(4n),
+        .gt-no-flexbox .gt-counters-holder.gt-cols-4 .gt-counter:nth-child(5n){
+        	clear: right;
+        }
+
+        /* ------------------------------------------------------
+    
+                7.15.2. Style 2
+            
+        ------------------------------------------------------ */
+
+            .gt-counters-holder.gt-type-2 .gt-counter{
+                padding-left: 10px;
+                padding-right: 85px;
+            }
+
+            .gt-no-sidebar .gt-counters-holder.gt-type-2 .gt-counter{
+                padding-left: 10px;
+                padding-right: 100px;
+            }
+
+            .gt-counters-holder.gt-type-2 .gt-counter .lnr{
+                left: auto;
+                right: 0;
+            }
+
+    /* ------------------------------------------------------
+
+        7.16. Tabs & Tour Sections
+        
+    ------------------------------------------------------ */
+
+    	/* ------------------------------------------------------
+    
+                7.16.1. Tabs Style 1
+            
+        ------------------------------------------------------ */
+
+        	.gt-tabs-holder.gt-type-1 .gt-tabs-container{
+        		text-align: right;
+        	}
+
+        /* ------------------------------------------------------
+    
+                7.16.2. Tabs Style 2
+            
+        ------------------------------------------------------ */
+
+        	.gt-tabs-holder.gt-type-2 .gt-tabs-nav > li{
+                float: right;
+            }
+
+        /* ------------------------------------------------------
+    
+                7.16.3. Tabs Style 3
+            
+        ------------------------------------------------------ */
+
+        	.gt-tabs-holder.gt-type-3 .gt-tabs-nav .lnr{
+        		margin-right: 0px;
+        		margin-left: 11px;
+        	}
+
+       	/* ------------------------------------------------------
+    
+                7.16.6. Tour Sections Style 1
+            
+        ------------------------------------------------------ */
+
+        	.gt-tour-sections-holder.gt-type-1 .gt-tabs-nav > li > a{
+        		padding-left: 0px;
+        		padding-right: 65px;
+        	}
+
+        	.gt-tour-sections-holder.gt-type-1 .gt-tabs-nav .lnr{
+        		left: auto;
+        		right: 0;
+        	}
+
+       	/* ------------------------------------------------------
+    
+                7.16.7. Tour Sections Style 2, 3
+            
+        ------------------------------------------------------ */
+
+        	.gt-tour-sections-holder.gt-type-2 .gt-tabs-nav-wrap,
+            .gt-tour-sections-holder.gt-type-3 .gt-tabs-nav-wrap{
+            	float: right;
+            	margin-right: auto;
+            	margin-left: 30px;
+            }
+
+    /* ------------------------------------------------------
+
+        7.18. Team Members
+        
+    ------------------------------------------------------ */
+
+    	/* ------------------------------------------------------
+
+            7.18.4. Single
+            
+        ------------------------------------------------------ */
+
+        	.gt-team-member.gt-single .gt-member-photo{
+                float: right;
+                margin-right: 0px;
+                margin-left: 30px;
+            }
+
+    /* ------------------------------------------------------
+
+        7.20. Services
+        
+    ------------------------------------------------------ */
+
+    	.gt-services-holder .gt-service .gt-service-image{
+            float: right;
+            margin-right: 0px;
+            margin-left: 30px;
+        }
+
+        .gt-services-holder .gt-service:nth-child(2n) .gt-service-image{
+            float: left;
+            margin-left: 0px;
+            margin-right: 30px;
+        }
+
+     /* ------------------------------------------------------
+
+        7.22. Audio Player
+        
+    ------------------------------------------------------ */
+
+    	.wt_indicator{
+    		left: auto;
+    		right: 0;
+    	}
+
+    	.wt_play_pause::before{
+    		border-left-width: 0px;
+    		border-right: 11px solid #fff;
+    	}
+
+    /* ------------------------------------------------------
+
+        7.24. Revolution Slider
+        
+    ------------------------------------------------------ */
+
+        .rev_slider{
+            direction: ltr;
+            text-align: right;
+        }
+
+        .rev_slider .gt-hr-btns-set{
+            direction: rtl;
+        }
+
+/* ------------------------------------------------------
+
+    9. Blog
+    
+------------------------------------------------------ */
+
+	.gt-entries-holder.gt-small-thumbs .gt-entry-attachment{
+		float: right;
+		margin-right: auto;
+		margin-left: 30px;
+	}
+
+	.gt-link-attachment .lnr{
+		margin-right: 0px;
+		margin-left: 8px;
+	}
+
+	/* ------------------------------------------------------
+
+        9.1. Entries
+        
+    ------------------------------------------------------ */
+
+    	.gt-entries-holder.owl-carousel.owl-large-nav .owl-prev{
+            left: auto;
+            right: -90px;
+        }
+
+        .gt-boxed-layout-type .gt-entries-holder.owl-carousel.owl-large-nav .owl-prev{
+            left: auto;
+            right: 10px;
+        }
+
+        .gt-entries-holder.owl-carousel.owl-large-nav .owl-next{
+            right: auto;
+            left: -90px;
+        }
+
+        .gt-boxed-layout-type .gt-entries-holder.owl-carousel.owl-large-nav .owl-next{
+            right: auto;
+            left: 10px;
+        }
+
+        /* ------------------------------------------------------
+
+            9.1.2. Style 1, 2
+            
+        ------------------------------------------------------ */
+
+	        .gt-entries-holder.gt-type-2 .gt-entry-body{
+	        	padding-left: 22px;
+                padding-right: 28px;
+	        }
+
+	        .gt-entries-holder.gt-type-2 .gt-link-attachment{
+	        	text-align: right;
+	        }
+
+		/* ------------------------------------------------------
+
+	        9.1.3. Style 3, 4
+	        
+	    ------------------------------------------------------ */
+
+	    	.gt-entries-holder.gt-type-3 .gt-entry-comments-link::before,
+	        .gt-entries-holder.gt-type-4 .gt-entry-comments-link::before,
+	        .gt-entries-holder.gt-type-4 .gt-entry-comments-link::before,
+	        .gt-entries-holder.gt-type-3 .gt-entry-likes::before,
+	        .gt-entries-holder.gt-type-4 .gt-entry-likes::before,
+	        .gt-entries-holder.gt-type-4 .gt-entry-date::before{
+	        	margin-right: 0px;
+	        	margin-left: 6px;
+	        }
+
+	        .gt-entries-holder.gt-type-4 .gt-entry-byline{
+                text-align: right;
+                float: right;
+            }
+
+            .gt-entries-holder.gt-type-4 .gt-entry-meta{
+            	text-align: left;
+            }
+
+		/* ------------------------------------------------------
+
+	        9.1.4. Small Thumbnails
+	        
+	    ------------------------------------------------------ */
+
+			.gt-entries-holder.gt-small-thumbs .gt-entry-attachment .gt-entry-date{
+		        right: auto;
+		        left: 0;
+		    }
+
+		    .gt-entries-holder.gt-small-thumbs .gt-entry-meta{
+		    	text-align: inherit;
+		    }
+
+		    .gt-breadcrumbs-wrap .gt-entry-comments-link::before,
+            .gt-breadcrumbs-wrap .gt-entry-likes::before,
+            .gt-breadcrumbs-wrap .gt-entry-date::before{
+            	margin-right: 0px;
+            	margin-left: 6px;
+            }
+
+		/* ------------------------------------------------------
+
+            9.1.2. Single Entry
+            
+        ------------------------------------------------------ */
+
+        	.gt-share .gt-title,
+            .gt-entry-meta-item .gt-title{
+            	margin-right: 0px;
+            	margin-left: 12px;
+            }
+
+            /* ------------------------------------------------------
+
+                9.1.2.1. Entries Navigation
+                
+            ------------------------------------------------------ */
+
+
+                .gt-previous-entry{
+                    padding-left: 0;
+                    padding-right: 40px;
+                }
+
+                .gt-next-entry{
+                    padding-right: 0;
+                    padding-left: 40px;
+                }
+
+                .gt-previous-entry::after{
+                    content: "\e876";
+                    left: auto;
+                    right: 0;
+                }
+
+                .gt-next-entry::after{
+                	content: "\e875";
+                    right: auto;
+                    left: 0;
+                }
+
+            /* ------------------------------------------------------
+
+                9.1.2.2. Entry Author
+                
+            ------------------------------------------------------ */
+
+                .gt-entry-author .gt-avatar{
+                    float: right;
+                    margin: 0 0 0 30px;
+                }
+
+            /* ------------------------------------------------------
+
+                9.1.2.2. Comments
+                
+            ------------------------------------------------------ */
+
+                .gt-comments-list .gt-children .gt-comment{
+                    padding-right: 40px;
+                    padding-left: 0;
+                }
+
+                .gt-comment > article::after{
+                    right: -100%;
+                    left: 40%;
+                }
+
+                .gt-gravatar{
+                    float: right;
+                    margin-right: 0;
+                    margin-left: 30px;
+                }
+
+                .gt-comment-reply-link::before{
+                    margin-left: 5px;
+                    margin-right: 0px;
+                }
+
+
+                .gt-comment-date::before{
+                    margin-left: 5px;
+                    margin-right: 0px;
+                }
+
+/* ------------------------------------------------------
+
+    10. Portfolio
+    
+------------------------------------------------------ */
+
+	/* ------------------------------------------------------
+
+        10.3. Single Item
+        
+    ------------------------------------------------------ */
+
+    	.gt-project-date > .lnr{
+    		margin-right: 0px;
+    		margin-left: 10px;
+    	}
+
+/* ------------------------------------------------------
+
+    11. Shop
+    
+------------------------------------------------------ */
+
+
+    .gt-settings-view-products .gt-sort-criteria{
+        float: right;
+    }
+
+    .gt-settings-view-products .gt-view-type{
+        float: left;
+    }
+
+    .gt-settings-view-products .gt-sort-item .gt-title{
+        margin-right: 0;
+        margin-left: 8px;
+    }
+
+    .gt-settings-view-products .gt-selected-option{
+        padding-right: 20px;
+        padding-left: 43px;
+    }
+
+    .gt-settings-view-products .gt-selected-option::after{
+        right: auto;
+        left: 15px;
+    }
+
+	/* ------------------------------------------------------
+
+        11.1. Product Box
+        
+    ------------------------------------------------------ */
+
+    	.gt-rating .gt-empty-state,
+    	.gt-rating .gt-fill-state{
+    		background-position: right center;
+    	}
+
+    	.gt-rating .gt-fill-state{
+    		left: auto;
+    		right: 0;
+    	}
+
+    	/* ------------------------------------------------------
+
+            11.1.1. List View
+            
+        ------------------------------------------------------ */
+
+        	.gt-products-holder.gt-view-list .gt-product-image{
+                float: right;
+                margin: 0 0 0 30px;
+            }
+
+        /* ------------------------------------------------------
+
+            11.1.2. Grid View
+            
+        ------------------------------------------------------ */
+
+        	.gt-no-flexbox .gt-products-holder.gt-view-grid .gt-col{
+                float: right;
+            }
+
+            .gt-products-holder.gt-view-grid.gt-offers.gt-cols-4 .gt-product{
+                text-align: right;
+            }
+
+            .gt-page-content-wrap:not(.gt-no-sidebar) .gt-products-holder.gt-view-grid.gt-cols-4 .gt-product{
+            	text-align: right;
+            }
+
+            .gt-no-flexbox .gt-products-holder.gt-view-grid.gt-cols-2 .gt-col:nth-child(2n+1),
+            .gt-no-flexbox .gt-products-holder.gt-view-grid.gt-cols-3 .gt-col:nth-child(3n+1),
+            .gt-no-flexbox .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(4n+1){
+                clear: right;
+            }
+
+        /* ------------------------------------------------------
+
+	        11.3. Single Product
+	        
+	    ------------------------------------------------------ */
+
+	    	.gt-product.gt-single .gt-product-price s{
+	            right: auto;
+	            left: -5px;
+	        }
+
+	        .gt-open-modal{
+	        	right: auto;
+	        	left: 10px;
+	        }
+
+	        .gt-product-thumbs{
+	        	border-right-width: 0px;
+	        	border-left: 115px solid transparent;
+	        }
+
+	/* ------------------------------------------------------
+	        
+	    11.2. Shopping cart
+	    
+	------------------------------------------------------ */
+
+		.gt-sc-widget .gt-dropdown{
+			right: auto;
+			left: -20px;
+		}
+
+		.gt-shopping-cart .gt-products-holder .gt-product-image{
+			float: right;
+			margin-right: 0px;
+			margin-left: 20px;
+		}
+
+		.gt-shopping-cart .gt-products-holder .gt-product{
+            padding-right: 0px;
+            padding-left: 45px;
+        }
+
+        .gt-shopping-cart .gt-product .gt-close{
+        	right: auto;
+        	left: 15px;
+        }
+
+        .gt-sc-invoker > span:not(.gt-price)::after{
+        	right: auto;
+        	left: -7px;
+        }
+
+        .gt-shopping-cart-full .gt-product-image{
+            float: right;
+            margin: 0 0 0 30px;
+        }
+
+        .gt-sc-invoker .gt-price{
+            margin-left: 0px;
+            margin-right: 18px;
+        }
+
+/* ------------------------------------------------------
+
+    12. Sidebar
+    
+------------------------------------------------------ */
+
+	/* ------------------------------------------------------
+
+        12.2. Categories Widget
+        
+    ------------------------------------------------------ */
+
+    	.gt-widget-categories a{
+    		padding-right: 0px;
+    		padding-left: 35px;
+    	}
+
+    	.gt-widget-categories .gt-entries-amount,
+        .gt-widget-products-categories .gt-entries-amount{
+        	right: auto;
+        	left: 0px;
+        }
+
+        .gt-widget-products-categories ul > li{
+            padding-right: 0px;
+            padding-left: 30px;
+        }
+
+    /* ------------------------------------------------------
+
+        12.4. Tags Widget
+        
+    ------------------------------------------------------ */
+
+    	.gt-widget .tagcloud a{
+    		float: right;
+    	}
+
+   	/* ------------------------------------------------------
+
+        12.6. Products Widget
+        
+    ------------------------------------------------------ */
+
+    .gt-widget .gt-products-holder .gt-product-image{
+        float: right;
+        margin: 0 0 0 10px;
+    }
+
+/* ------------------------------------------------------
+       
+    15. Media Queries
+       
+------------------------------------------------------ */
+
+@media only screen and (min-width: 1200px){
+
+	
+
+}
+
+@media only screen and (min-width: 991px){
+
+	
+
+}
+
+@media only screen and (min-width: 768px){
+
+	.gt-t-row > [class*="col-"]:first-child{
+        padding-left: 15px;
+        padding-right: 0px;
+    }
+
+    .gt-t-row > [class*="col-"]:last-child{
+        padding-right: 15px;
+        padding-left: 0px;
+    }
+
+}
+
+@media only screen and (min-width: 480px){
+
+	.gt-switch-view > .gt-left-element > *:only-child{
+        border-top-right-radius: inherit !important;
+        border-bottom-right-radius: inherit !important;
+        border-right-width: 3px;
+        border-left-width: 0px;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+
+    .gt-switch-view > .gt-right-element > *:only-child{
+        border-top-left-radius: inherit !important;
+        border-bottom-left-radius: inherit !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1356px){
+
+    
+
+}
+
+@media only screen and (max-width: 1280px){
+
+    .gt-navigation .gt-dropdown{
+        left: -30px;
+        right: auto;
+    }
+
+    .gt-navigation .gt-dropdown.gt-reverse{
+        left: auto;
+        right: -30px;
+    }
+
+    .gt-navigation .gt-dropdown .gt-dropdown{
+        right: auto;
+        left: 100%;
+        margin-left: 5px;
+        margin-right: 0px;
+    }
+
+    .gt-navigation .gt-dropdown .gt-dropdown::before{
+        right: 100%;
+        left: auto;
+    }
+
+    .gt-navigation .gt-dropdown .gt-dropdown.gt-reverse{
+        right: 100%;
+        left: auto;
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+
+    .gt-navigation .gt-dropdown .gt-dropdown.gt-reverse::before{
+        right: auto;
+        left: 100%;
+    }
+
+    .gt-sc-widget .gt-dropdown{
+        left: 0px;
+        right: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+
+	.owl-carousel.owl-large-nav .owl-prev,
+    .gt-entries-holder.owl-carousel.owl-large-nav .owl-prev{
+        left: auto;
+        right: 10px;
+    }
+
+    .owl-carousel.owl-large-nav .owl-next,
+    .gt-entries-holder.owl-carousel.owl-large-nav .owl-next{
+        right: auto;
+        left: 10px;
+    }
+
+    .owl-carousel.owl-large-nav.gt-product-thumbs .owl-prev{
+        left: auto;
+        right: 0px;
+    }
+
+    .owl-carousel.owl-large-nav.gt-product-thumbs .owl-next{
+        right: auto;
+        left: 0px;
+    }
+
+    .gt-fullscreen-layout-type .gt-right-part{
+        padding-right: 80px;
+    }
+
+    .gt-fullscreen-layout-type .gt-left-part{
+        padding-left: 80px;
+    }
+
+    .gt-no-flexbox .gt-counters-holder.gt-cols-4 .gt-counter:nth-child(4n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-pricing-tables-holder.gt-cols-4 .gt-pricing-table:nth-child(4n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-pricing-tables-holder.gt-cols-3 .gt-pricing-table:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-portfolio-holder.gt-cols-4:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(4n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-portfolio-holder.gt-cols-5:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(5n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-testimonials-holder:not(.owl-carousel).gt-cols-3 .gt-testimonial:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-entries-holder.gt-cols-3:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-testimonials-holder.gt-type-3.gt-cols-3 .gt-testimonial:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-team-holder.gt-cols-3:not(.owl-carousel) .gt-team-member:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-team-holder.gt-cols-4:not(.owl-carousel) .gt-team-member:nth-child(4n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-team-holder.gt-cols-4:not(.owl-carousel) .gt-team-member:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-portfolio-holder.gt-cols-3:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-portfolio-holder.gt-cols-4:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-products-holder.gt-view-grid.gt-cols-3 .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(4n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(4n+1){
+        clear: initial;
+    }
+
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-pricing-tables-holder.gt-cols-4 .gt-pricing-table:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-pricing-tables-holder.gt-cols-3 .gt-pricing-table:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-counters-holder.gt-cols-4 .gt-counter:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-counters-holder.gt-cols-4 .gt-counter:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-portfolio-holder.gt-cols-4:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-portfolio-holder.gt-cols-5:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-testimonials-holder:not(.owl-carousel).gt-cols-3 .gt-testimonial:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-entries-holder.gt-cols-3:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-testimonials-holder.gt-type-3.gt-cols-3 .gt-testimonial:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-team-holder.gt-cols-3:not(.owl-carousel) .gt-team-member:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-team-holder.gt-cols-4:not(.owl-carousel) .gt-team-member:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-team-holder.gt-cols-4:not(.owl-carousel) .gt-team-member:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-portfolio-holder.gt-cols-3:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-portfolio-holder.gt-cols-4:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-products-holder.gt-view-grid.gt-cols-3 .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(3n+1){
+        clear: right;
+    }
+
+}
+
+@media only screen and (max-width: 991px){
+
+	.gt-has-submenu > a::after,
+    .gt-has-megamenu > a::after{
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .gt-fullscreen-layout-type .gt-right-part{
+        padding-right: 50px;
+    }
+
+    .gt-fullscreen-layout-type .gt-left-part{
+        padding-left: 50px;
+    }
+
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-pricing-tables-holder.gt-cols-3 .gt-pricing-table:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-counters-holder.gt-type-2.gt-cols-3 .gt-counter:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-testimonials-holder:not(.owl-carousel).gt-cols-3 .gt-testimonial:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-entries-holder.gt-cols-3:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-team-holder.gt-cols-3:not(.owl-carousel) .gt-team-member:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-portfolio-holder.gt-cols-3:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-portfolio-holder.gt-cols-4:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-portfolio-holder.gt-cols-4:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-portfolio-holder.gt-cols-5:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-products-holder.gt-view-grid.gt-cols-3 .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(3n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(4n+1){
+        clear: initial;
+    }
+
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-pricing-tables-holder.gt-cols-4 .gt-pricing-table:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-pricing-tables-holder.gt-cols-3 .gt-pricing-table:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-counters-holder.gt-type-2.gt-cols-3 .gt-counter:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-testimonials-holder:not(.owl-carousel).gt-cols-3 .gt-testimonial:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-entries-holder.gt-cols-3:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-team-holder.gt-cols-3:not(.owl-carousel) .gt-team-member:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-portfolio-holder.gt-cols-3:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-portfolio-holder.gt-cols-4:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-portfolio-holder.gt-cols-4:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-portfolio-holder.gt-cols-5:not(.owl-carousel):not(.gt-isotope) .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-products-holder.gt-view-grid.gt-cols-3 .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap:not(.gt-no-sidebar) .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(2n+1),
+    .gt-no-flexbox .gt-page-content-wrap.gt-no-sidebar .gt-products-holder.gt-view-grid.gt-cols-4 .gt-col:nth-child(2n+1){
+        clear: right;
+    }
+
+    .gt-settings-view-products .gt-sort-criteria,
+    .gt-settings-view-products .gt-view-type{
+        float: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+
+	.gt-has-submenu > a::after,
+	.gt-has-megamenu > a::after{
+		right: auto;
+		left: 0px;
+	}
+
+	.gt-navigation > [class*="gt-has-"] > a{
+		padding-right: 0px;
+		padding-left: 40px;
+	}
+
+	.gt-navigation .gt-dropdown .gt-dropdown{
+		margin-right: 0px;
+	}
+
+	.gt-submenu > li > a{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .gt-submenu .gt-submenu > li > a{
+        padding-left: 25px !important;
+        padding-right: 50px !important;
+    }
+
+    .gt-submenu .gt-submenu .gt-submenu > li > a{
+        padding-left: 25px !important;
+        padding-right: 75px !important;
+    }
+
+    .gt-back-to-top{
+    	left: 10px;
+    }
+
+    .gt-team-member.gt-single .gt-member-photo,
+    .gt-entries-holder.gt-small-thumbs .gt-entry-attachment{
+    	float: none;
+    	margin-left: 0px;
+    }
+
+    .gt-services-holder .gt-service .gt-service-image,
+    .gt-services-holder .gt-service:nth-child(2n) .gt-service-image{
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .gt-fullscreen-layout-type .gt-right-part,
+    .gt-fullscreen-layout-type .gt-left-part{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .gt-alert-box-inner{
+        padding-right: 85px;
+        padding-left: 70px;
+    }
+
+    .gt-alert-box .gt-close{
+        left: 25px;
+    }
+
+    .gt-alert-box.gt-type-1 .gt-icon{
+        right: 23px;
+    }
+
+    .gt-alert-box.gt-type-2 .gt-alert-box-inner{
+        padding-right: 90px;
+    }
+
+    .gt-tour-sections-holder[class*="gt-type-"] .gt-tabs-nav-wrap{
+        width: auto;
+        float: none;
+        margin: 0 0 30px;
+    }
+
+    .gt-entries-holder.gt-type-4 .gt-entry-byline{
+    	float: none;
+    }
+
+    .gt-entries-holder.gt-type-4 .gt-entry-meta{
+    	text-align: inherit;
+    }
+
+    .gt-products-holder.gt-view-list .gt-product-image{
+        float: none;
+        margin: 0;
+    }
+
+    .gt-shopping-cart-full .gt-product-image{
+        float: none;
+        margin: 0 0 15px 0;
+    }
+
+    .gt-shopping-cart-full.gt-horizontal td[data-title]::before{
+    	padding-right: 15px;
+    }
+
+    .gt-product-thumbs{
+    	border-left-width: 0px;
+    }
+
+    .gt-sc-widget .gt-dropdown{
+        left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
+	img[class*="align"]{
+		margin-right: 0px;
+	}
+
+	.gt-entry-author .gt-avatar{
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .gt-gravatar{
+        margin-left: 20px;
+    }
+
+    .gt-comments-list .gt-children .gt-comment{
+        padding-right: 20px;
+    }
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 0){
+
+    .gt-switch-view > .gt-right-element{
+
+        -webkit-transform: translate3d(1px, 0, 0);
+                transform: translate3d(1px, 0, 0);
+
+    }
+
+}
+
+/* ------------------------------------------------
+
+	Bootstrap RTL layout
+
+------------------------------------------------ */
+
+@media only screen and (min-width: 768px){
+
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: right;
+	}
+
+	.col-sm-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-sm-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-sm-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-sm-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-sm-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-sm-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-sm-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-sm-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-sm-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-sm-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-sm-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-sm-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-sm-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
+
+@media only screen and (min-width: 992px){
+
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
+		float: right;
+	}
+
+	.col-md-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-md-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-md-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-md-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-md-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-md-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-md-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-md-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-md-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-md-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-md-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-md-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-md-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
+
+@media only screen and (min-width: 1200px){
+
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{
+		float: right;
+	}
+
+	.col-lg-offset-12{
+		margin-left: 0px;
+		margin-right: 100%;
+	}
+
+	.col-lg-offset-11{
+		margin-left: 0px;
+		margin-right:91.66666667%;
+	}
+
+	.col-lg-offset-10{
+		margin-left: 0px;
+		margin-right:83.33333333%;
+	}
+
+	.col-lg-offset-9{
+		margin-left: 0px;
+		margin-right:75%;
+	}
+
+	.col-lg-offset-8{
+		margin-left: 0px;
+		margin-right:66.66666667%;
+	}
+
+	.col-lg-offset-7{
+		margin-left: 0px;
+		margin-right:58.33333333%;
+	}
+
+	.col-lg-offset-6{
+		margin-left: 0px;
+		margin-right:50%;
+	}
+
+	.col-lg-offset-5{
+		margin-left: 0px;
+		margin-right:41.66666667%;
+	}
+
+	.col-lg-offset-4{
+		margin-left: 0px;
+		margin-right:33.33333333%;
+	}
+
+	.col-lg-offset-3{
+		margin-left: 0px;
+		margin-right:25%;
+	}
+
+	.col-lg-offset-2{
+		margin-left: 0px;
+		margin-right:16.66666667%;
+	}
+
+	.col-lg-offset-1{
+		margin-left: 0px;
+		margin-right:8.33333333%;
+	}
+
+	.col-lg-offset-0{
+		margin-left: 0px;
+		margin-right:0;
+	}
+
+}
+
+/* ------------------------------------------------
+
+		StyleSwitcher
+		(can be removed in production version)
+
+------------------------------------------------ */
+
+.styleswitcher{
+	left: auto;
+	right: 5px;
+}
+
+.styleswitcher .sw-invoker{
+	left: auto;
+	right: 0;
+	margin-left: auto;
+	margin-right: 5px;
+}
+
+.styleswitcher.opened .sw-invoker{
+	right: 100%;
+}
+
+.bg-sw-list > li{
+	float: right;
+}

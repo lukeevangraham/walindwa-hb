@@ -1,0 +1,47 @@
+{
+	"items": [
+		{
+			"thumb_src": "images/portfolio_img_42.jpg",
+			"full_image_src": "images/portfolio_img_42.jpg",
+			"project_title": "Well-Preserved",
+			"project_link": "portfolio_single.html",
+			"actions_in_description_area": true,
+			"categories": [
+				{
+					"name": "Modeling",
+					"link": "#"
+				},
+				{
+					"name": "Photography",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"thumb_src": "images/portfolio_img_43.jpg",
+			"full_image_src": "images/portfolio_img_43.jpg",
+			"project_title": "Unicorn",
+			"project_link": "portfolio_single.html",
+			"actions_in_description_area": true,
+			"categories": [
+				{
+					"name": "Photography",
+					"link": "#"
+				}
+			]
+		},
+		{
+			"thumb_src": "images/portfolio_img_44.jpg",
+			"full_image_src": "images/portfolio_img_44.jpg",
+			"project_title": "Yonder Clothing",
+			"project_link": "portfolio_single.html",
+			"actions_in_description_area": true,
+			"categories": [
+				{
+					"name": "Graphic Design",
+					"link": "#"
+				}
+			]
+		}
+	]
+}
