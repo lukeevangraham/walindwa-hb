@@ -1,6 +1,7 @@
 let express = require("express");
 let PORT = process.env.PORT || 6543;
 let app = express();
+let dotenv = require("dotenv").config()
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
