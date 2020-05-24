@@ -1,0 +1,86 @@
+<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+
+<div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_3.jpg">
+
+    <h1 class="gt-page-title">About</h1>
+
+    <ul class="gt-breadcrumbs">
+
+        <li><a href="/">Home</a></li>
+        <li>Corporate Information</li>
+
+    </ul>
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Breadcrumbs - - - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
+
+<div class="gt-page-content-wrap gt-no-sidebar">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <section class="gt-content-element">
+
+                    <h2>Financial and Corporate Information</h2>
+                    <h4>Tax Exempt Status</h4>
+
+                    <p>Walindwa is a tax exempt non-profit organization, Section 501(c)(3) of the Internal Revenue Code.
+                        All donations are tax deductible to the extent allowed by law. Please consult your tax
+                        professional for guidance on treating your contribution as tax-deductible for federal income tax
+                        purposes.</p>
+
+                </section>
+
+            </div>
+
+                <div class="col-md-6 gt-text-content-element">
+                    <h4>Corporate Documents</h4>
+                    <ul class="gt-list gt-type-1">
+                        {{#each docs}}
+                        {{#unless isTax}}
+                            <li><a href="http://admin.moreleft.com{{PDF.url}}" target="_blank" rel="noopener noreferrer">{{Name}}</a></li>
+                        {{!-- </a> --}}
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+                </div>
+                <div class="col-md-6 gt-text-content-element">
+                    <h4>Tax Documents</h4>
+                    <p>Form 990 is the Internal Revenue Service (IRS)’s designation for the tax return that most
+                        public
+                        charities are required by law to submit annually. This form is used by the IRS to assess the
+                        non-profit organization for its compliance with tax. Information contained in the form
+                        includes
+                        a summary of the organization’s activities, assets, receipts, expenditures, and compensation
+                        of
+                        directors, officers, and certain employees.</p>
+                    <ul class="gt-list gt-type-1">
+                        {{#each docs}}
+                        {{#if isTax}}
+                        <li><a href="http://admin.moreleft.com{{PDF.url}}" target="_blank" rel="noopener noreferrer">{{Name}}</a></li>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </div>
+
+
+
+
+
+            <!--/ .col -->
+
+        </div>
+        <!--/ .row -->
+
+    </div>
+    <!--/ .container -->
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->
