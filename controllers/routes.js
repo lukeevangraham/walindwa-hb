@@ -78,4 +78,11 @@ router.get("/kenya", (req, res) => {
   res.render("./sections/kenya/kenya", hbsObject);
 })
 
+router.get("/projects", (req, res) => {
+  let hbsObject = {
+    title: "Projects"
+  }
+  res.render("./sections/kenya/projects", hbsObject)
+})
+
 module.exports = router;
