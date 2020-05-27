@@ -151,6 +151,10 @@
         background: #fff url("../images/Marty.gif") center no-repeat;
     }
 
+    #projectTop{
+        margin-bottom: 25px;
+    }
+
     /* ------------------------------------------------------
     
         1.1. Layouts
