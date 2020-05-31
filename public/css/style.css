@@ -69,6 +69,12 @@
 	
 ------------------------------------------------------ */
 
+#studentImage{
+    display: flex !important;
+    align-items: center !important;
+}
+
+
     ::-webkit-scrollbar{
         width: 10px;
         background: #f2f2f2;
@@ -6605,7 +6611,7 @@
         }
 
         .gt-services-holder .gt-service .gt-service-title::before{
-            content: counter(service-number);
+            content: counter(serviace-number);
             font-family: 'Raleway', sans-serif;
             color: #28abe3;
             font-size: 58px;
@@ -6632,7 +6638,7 @@
         }
 
         .gt-services-holder .gt-service-image{
-            max-width: 50%;
+            /* max-width: 50%; */
             min-width: 0px;
         }
 
