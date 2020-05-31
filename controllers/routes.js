@@ -110,4 +110,18 @@ router.get("/project:id", (req, res) => {
   })
 })
 
+router.get("/students", (req, res) => {
+  let hbsObject = {
+    title: "Student Sponsorship"
+  }
+  res.render("./sections/sponsorship/students", hbsObject)
+})
+
+router.get("/post-high-school", (req, res) => {
+  let hbsObject = {
+    title: "Post-High School Sponsorship"
+  }
+  res.render("./sections/sponsorship/post-high-school", hbsObject)
+})
+
 module.exports = router;
