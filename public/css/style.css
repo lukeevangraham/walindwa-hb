@@ -74,6 +74,10 @@
     align-items: center !important;
 }
 
+#blogOwl{
+    margin-bottom: 3rem;
+}
+
 
     ::-webkit-scrollbar{
         width: 10px;

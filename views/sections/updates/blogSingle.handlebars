@@ -1,350 +1,368 @@
+{{log this.nextEntry}}
+<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-			<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+<div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_5.jpg">
 
-			<div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_5.jpg">
+    <!-- - - - - - - - - - - - - - Entry Categories - - - - - - - - - - - - - - - - -->
 
-				<!-- - - - - - - - - - - - - - Entry Categories - - - - - - - - - - - - - - - - -->
-
-				{{!-- <ul class="gt-entry-cats">
+    {{!-- <ul class="gt-entry-cats">
 					<li><a href="#">Marketing</a></li>
 				</ul> --}}
 
-				<!-- - - - - - - - - - - - - - End of Entry Categories - - - - - - - - - - - - - - - - -->
+    <!-- - - - - - - - - - - - - - End of Entry Categories - - - - - - - - - - - - - - - - -->
 
-				<!-- - - - - - - - - - - - - - Entry Title - - - - - - - - - - - - - - - - -->
+    <!-- - - - - - - - - - - - - - Entry Title - - - - - - - - - - - - - - - - -->
 
-				<h1 class="gt-page-title">{{blogEntry.Title}}</h1>
+    <h1 class="gt-page-title">{{blogEntry.Title}}</h1>
 
-				<!-- - - - - - - - - - - - - - End of Entry Title - - - - - - - - - - - - - - - - -->
+    <!-- - - - - - - - - - - - - - End of Entry Title - - - - - - - - - - - - - - - - -->
 
-				<!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
 
-				<div class="gt-entry-meta">
+    <div class="gt-entry-meta">
 
-					<time class="gt-entry-date" datetime="2016-01-27">January 27, 2016 4:23</time>
-					{{!-- <a href="#" class="gt-entry-likes">53</a> --}}
-					{{!-- <a href="#" class="gt-entry-comments-link">9</a> --}}
+        <time class="gt-entry-date" datetime="2016-01-27">{{getBlogSingleDate blogEntry.datePosted}}</time>
+        {{!-- <a href="#" class="gt-entry-likes">53</a> --}}
+        {{!-- <a href="#" class="gt-entry-comments-link">9</a> --}}
 
-				</div>
+    </div>
 
-				<!-- - - - - - - - - - - - - - End of Entry Meta - - - - - - - - - - - - - - - - -->
+    <!-- - - - - - - - - - - - - - End of Entry Meta - - - - - - - - - - - - - - - - -->
 
-			</div>
+</div>
 
-			<!-- - - - - - - - - - - - - - End of Breadcrumbs - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - End of Breadcrumbs - - - - - - - - - - - - - - - - -->
 
-			<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
-			<div class="gt-page-content-wrap gt-no-sidebar">
+<div class="gt-page-content-wrap gt-no-sidebar">
 
-				<div class="container">
+    <div class="container">
 
-					<div class="row">
+        <div class="row">
 
-						<div class="col-xs-12">
+            <div class="col-xs-12">
 
-							<div class="gt-single-entry-holder">
+                <div class="gt-single-entry-holder">
 
-								<div class="gt-content-element">
+                    <div class="gt-content-element">
 
-									<!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->																						
-									<article class="gt-entry gt-single">
+                        <!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
+                        <article class="gt-entry gt-single">
 
-										<!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+                            <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
 
-										<div class="gt-entry-body">
+                            <div class="gt-entry-body">
 
-											<!-- - - - - - - - - - - - - - Blockquote - - - - - - - - - - - - - - - - -->
+                                <!-- - - - - - - - - - - - - - Blockquote - - - - - - - - - - - - - - - - -->
+                                {{#if blogEntry.quote}}
+                                <blockquote class="gt-blockquote gt-type-3">
 
-											<blockquote class="gt-blockquote gt-type-3">
-													
-												<p>One of the golden rules of writing is: Respect the reader’s intelligence. This rule gets magnified by a factor of 10 when it comes to composing unsolicited emails.</p>
+                                    {{blogEntry.quote}}
 
-											</blockquote>
+                                </blockquote>
+                                {{/if}}
 
-											<!-- - - - - - - - - - - - - - End of Blockquote - - - - - - - - - - - - - - - - -->
+                                <!-- - - - - - - - - - - - - - End of Blockquote - - - - - - - - - - - - - - - - -->
 
-											<p>Carrot cake gingerbread sugar plum jujubes. Chocolate bar gummi bears topping lemon drops soufflé biscuit gummi bears pie. Gummi bears brownie lollipop cheesecake. Liquorice sweet roll caramels brownie pastry bonbon sesame snaps. Candy jelly-o tootsie roll carrot cake. Carrot cake apple pie candy canes chupa chups chocolate cake chocolate chupa chups carrot cake.</p>
+                                {{!-- <p></p> --}}
+                                {{{markdown blogEntry.Body}}}
 
-											<p>Toffee cake dessert wafer chocolate bar apple pie cookie ice cream. Lemon drops apple pie caramels sugar plum tiramisu. Croissant gummies sweet roll tootsie roll donut. Biscuit donut biscuit wafer chocolate cake jelly. Cookie donut bear claw. Tart lollipop cupcake wafer oat cake chocolate bar ice cream. Fruitcake oat cake toffee chocolate croissant. Pudding chocolate bar marzipan chocolate bar caramels marshmallow sugar plum ice cream.</p>
 
-											<h4>Write an intriguing subject line</h4>
+                                <!-- - - - - - - - - - - - - - Carousel Style 3 - - - - - - - - - - - - - - - - -->
 
-											<p>Carrot cake gingerbread sugar plum jujubes. Chocolate bar gummi bears topping lemon drops soufflé biscuit gummi bears pie. Gummi bears brownie lollipop cheesecake. Liquorice sweet roll caramels brownie pastry bonbon sesame snaps. Candy jelly-o tootsie roll carrot cake. Carrot cake apple pie candy canes chupa chups chocolate cake chocolate chupa chups carrot cake.</p>
 
-											<p>Toffee cake dessert wafer chocolate bar apple pie cookie ice cream. Lemon drops apple pie caramels sugar plum tiramisu. Croissant gummies sweet roll tootsie roll donut. Biscuit donut biscuit wafer chocolate cake jelly. Cookie donut bear claw. Tart lollipop cupcake wafer oat cake chocolate bar ice cream. Fruitcake oat cake toffee chocolate croissant. Pudding chocolate bar marzipan chocolate bar caramels marshmallow sugar plum ice cream.</p>
+                                <div id="blogOwl" class="owl-carousel gt-simple-carousel mb-5">
 
-											<!-- - - - - - - - - - - - - - Carousel Style 3 - - - - - - - - - - - - - - - - -->
+                                    {{#each blogEntry.Images}}
+                                    <img src="http://admin.moreleft.com{{url}}" alt="">
+                                    {{/each}}
 
-											<div class="owl-carousel gt-simple-carousel">
+                                </div>
 
-												<img src="images/entry_image_23.jpg" alt="">
-												<img src="images/entry_image_23.jpg" alt="">
-												<img src="images/entry_image_23.jpg" alt="">
 
-											</div>
+                                <!-- - - - - - - - - - - - - - End of Carousel Style 3 - - - - - - - - - - - - - - - - -->
 
-											<!-- - - - - - - - - - - - - - End of Carousel Style 3 - - - - - - - - - - - - - - - - -->
 
-											<h4>Write an intriguing subject line</h4>
+                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
 
-											<p>Pudding lollipop gummi bears gummies. Pie sweet sweet roll sweet brownie gummies. Macaroon topping dragée marshmallow apple pie sweet jujubes. Danish caramels marzipan toffee dragée ice cream dessert. Sugar plum candy canes oat cake gummi bears chupa chups. Chupa chups carrot cake carrot cake cotton candy tootsie roll lemon drops cheesecake candy canes. Cotton candy danish bonbon brownie cake. Donut cake candy oat cake. Danish jelly-o candy topping cookie cookie powder croissant liquorice. Halvah carrot cake biscuit jelly-o dessert danish. Cake cake chocolate bar lollipop sweet apple pie. Cookie wafer jelly beans cheesecake apple pie dragée chocolate cake.</p>
+                                <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
 
-											<p>Candy canes cake marshmallow brownie. Jujubes macaroon sesame snaps marshmallow fruitcake jelly beans sweet cupcake. Wafer cupcake oat cake cake chocolate cake jelly beans icing jelly beans. Sugar plum chupa chups bonbon cake gummies cotton candy sweet roll cupcake. Jujubes muffin gingerbread chocolate bar bear claw jelly-o. Gummi bears croissant macaroon icing bonbon cookie marshmallow lollipop. Topping powder oat cake jelly-o chocolate cake liquorice carrot cake powder. Muffin tiramisu sweet macaroon caramels. Cupcake sesame snaps tiramisu cake tiramisu. </p>
+                                {{!-- <div class="gt-entry-meta">
 
-										</div>
+                                    <div class="gt-entry-meta-item">
 
-										<!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+                                        <span class="gt-title">Tags:</span>
 
-										<!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+                                        <ul class="gt-entry-tags">
 
-										<div class="gt-entry-meta">
+                                            <li><a href="#">Graphic Design</a></li>
+                                            <li><a href="#">Marketing</a></li>
+                                            <li><a href="#">Photoshop</a></li>
 
-											<div class="gt-entry-meta-item">
+                                        </ul>
 
-												<span class="gt-title">Tags:</span>
+                                    </div>
+                                    <!--/ .gt-entry-meta-item -->
 
-												<ul class="gt-entry-tags">
+                                    <div class="gt-entry-meta-item">
 
-													<li><a href="#">Graphic Design</a></li>
-													<li><a href="#">Marketing</a></li>
-													<li><a href="#">Photoshop</a></li>
+                                        <span class="gt-title">Share:</span>
 
-												</ul>
+                                        <ul class="gt-social-icons">
 
-											</div><!--/ .gt-entry-meta-item -->
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-flickr"></i></a></li>
 
-											<div class="gt-entry-meta-item">
+                                        </ul>
 
-												<span class="gt-title">Share:</span>
+                                    </div> --}}
+                                <!--/ .gt-entry-meta-item -->
 
-												<ul class="gt-social-icons">
+                                {{!-- </div> --}}
 
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-													<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-													<li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                                <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
 
-												</ul>
+                        </article>
 
-											</div><!--/ .gt-entry-meta-item -->
+                        <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
 
-										</div>
+                        <!-- - - - - - - - - - - - - - Entries Navigation - - - - - - - - - - - - - - - - -->
 
-										<!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+                        <div class="gt-entries-nav">
 
-									</article>
+                            {{#if prevEntry}}
+                            <a href="./blog-{{prevEntry.id}}"
+                                class="alignleft gt-previous-entry">{{prevEntry.Title}}</a>
+                            {{/if}}
+                            {{#if nextEntry}}
+                            <a href="./blog-{{nextEntry.id}}" class="alignright gt-next-entry">{{nextEntry.Title}}</a>
+                            {{/if}}
 
-									<!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
+                        </div>
 
-									<!-- - - - - - - - - - - - - - Entries Navigation - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - End of Entries Navigation - - - - - - - - - - - - - - - - -->
 
-									<div class="gt-entries-nav">
+                        <!-- - - - - - - - - - - - - - Entry Author - - - - - - - - - - - - - - - - -->
 
-										<a href="blog_single_with_sidebar.html" class="alignleft gt-previous-entry">Post Without Sidebar</a>
-										<a href="blog_single_with_sidebar.html" class="alignright gt-next-entry">Gallery Post</a>
+                        <div class="gt-entry-author gt-author-box">
 
-									</div>
+                            <a href="#" class="gt-avatar">
+                                <img src="images/author_8.jpg" alt="">
+                            </a>
 
-									<!-- - - - - - - - - - - - - - End of Entries Navigation - - - - - - - - - - - - - - - - -->
+                            <div class="gt-author-info">
 
-									<!-- - - - - - - - - - - - - - Entry Author - - - - - - - - - - - - - - - - -->
+                                <div class="gt-author-name">Posted by <a href="#">{{blogEntry.Author}}</a></div>
 
-									<div class="gt-entry-author gt-author-box">
+                                <span class="gt-author-about">Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac
+                                    turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing
+                                    elit.</span>
 
-										<a href="#" class="gt-avatar">
-											<img src="images/author_8.jpg" alt="">
-										</a>
+                                <ul class="gt-social-icons">
 
-										<div class="gt-author-info">
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
 
-											<div class="gt-author-name">Posted by <a href="#">Anna Gatsby</a></div>
+                                </ul>
 
-											<span class="gt-author-about">Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</span>
+                            </div>
+                            <!--/ .gt-author-info -->
 
-											<ul class="gt-social-icons">
+                        </div>
+                        <!--/ .gt-author-entry.gt-author-box -->
 
-												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-												<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-												<li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-												
-											</ul>
+                        <!-- - - - - - - - - - - - - - End of Entry Author - - - - - - - - - - - - - - - - -->
 
-										</div><!--/ .gt-author-info -->
+                    </div>
+                    <!--/ .gt-content-element -->
 
-									</div><!--/ .gt-author-entry.gt-author-box -->
+                    {{!-- <div class="gt-content-element"> --}}
 
-									<!-- - - - - - - - - - - - - - End of Entry Author - - - - - - - - - - - - - - - - -->
+                    {{!-- <h3>Comments</h3> --}}
 
-								</div><!--/ .gt-content-element -->
+                    <!-- - - - - - - - - - - - - - Comments - - - - - - - - - - - - - - - - -->
 
-								<div class="gt-content-element">
+                    {{!-- <ol class="gt-comments-list">
 
-									<h3>Comments</h3>
+                            <li class="gt-comment">
 
-									<!-- - - - - - - - - - - - - - Comments - - - - - - - - - - - - - - - - -->
+                                <article>
 
-									<ol class="gt-comments-list">
-				
-										<li class="gt-comment">
+                                    <!-- - - - - - - - - - - - - - Avatar - - - - - - - - - - - - - - - - -->
 
-											<article>
+                                    <div class="gt-gravatar">
 
-												<!-- - - - - - - - - - - - - - Avatar - - - - - - - - - - - - - - - - -->
+                                        <a href="#"><img src="images/author_2.jpg" alt=""></a>
 
-												<div class="gt-gravatar">
-													
-													<a href="#"><img src="images/author_2.jpg" alt=""></a>
+                                    </div>
 
-												</div>
+                                    <!-- - - - - - - - - - - - - - End of avatar - - - - - - - - - - - - - - - - -->
 
-												<!-- - - - - - - - - - - - - - End of avatar - - - - - - - - - - - - - - - - -->
+                                    <!-- - - - - - - - - - - - - - Comment body - - - - - - - - - - - - - - - - -->
 
-												<!-- - - - - - - - - - - - - - Comment body - - - - - - - - - - - - - - - - -->
+                                    <div class="gt-comment-body">
 
-												<div class="gt-comment-body">
+                                        <header class="gt-comment-meta">
 
-													<header class="gt-comment-meta">
+                                            <h6 class="gt-comment-author"><a href="#">Mark Twain</a></h6>
+                                            <time datetime="2015-10-17 02:41" class="gt-comment-date">2 days ago</time>
+                                            <a href="#" class="gt-comment-reply-link">Reply</a>
 
-														<h6 class="gt-comment-author"><a href="#">Mark Twain</a></h6>
-														<time datetime="2015-10-17 02:41" class="gt-comment-date">2 days ago</time>
-														<a href="#" class="gt-comment-reply-link">Reply</a>
+                                        </header>
 
-													</header>
+                                        <p>Candy canes cake marshmallow brownie. Jujubes macaroon sesame snaps
+                                            marshmallow fruitcake jelly beans sweet cupcake. Wafer cupcake oat cake cake
+                                            chocolate cake jelly beans icing jelly beans.</p>
 
-													<p>Candy canes cake marshmallow brownie. Jujubes macaroon sesame snaps marshmallow fruitcake jelly beans sweet cupcake. Wafer cupcake oat cake cake chocolate cake jelly beans icing jelly beans.</p>
+                                    </div>
+                                    <!--/ .comment-body-->
 
-												</div><!--/ .comment-body-->
+                                    <!-- - - - - - - - - - - - - - End of comment body - - - - - - - - - - - - - - - - -->
 
-												<!-- - - - - - - - - - - - - - End of comment body - - - - - - - - - - - - - - - - -->
+                                </article>
 
-											</article>
+                                <ol class="gt-children">
 
-											<ol class="gt-children">
-				
-												<li class="gt-comment">
+                                    <li class="gt-comment">
 
-													<article>
+                                        <article>
 
-														<!-- - - - - - - - - - - - - - Avatar - - - - - - - - - - - - - - - - -->
+                                            <!-- - - - - - - - - - - - - - Avatar - - - - - - - - - - - - - - - - -->
 
-														<div class="gt-gravatar">
-															
-															<a href="#"><img src="images/author_7.jpg" alt=""></a>
+                                            <div class="gt-gravatar">
 
-														</div>
+                                                <a href="#"><img src="images/author_7.jpg" alt=""></a>
 
-														<!-- - - - - - - - - - - - - - End of avatar - - - - - - - - - - - - - - - - -->
+                                            </div>
 
-														<!-- - - - - - - - - - - - - - Comment body - - - - - - - - - - - - - - - - -->
+                                            <!-- - - - - - - - - - - - - - End of avatar - - - - - - - - - - - - - - - - -->
 
-														<div class="gt-comment-body">
+                                            <!-- - - - - - - - - - - - - - Comment body - - - - - - - - - - - - - - - - -->
 
-															<header class="gt-comment-meta">
+                                            <div class="gt-comment-body">
 
-																<h6 class="gt-comment-author"><a href="#">Ernest Hemingway</a></h6>
-																<time datetime="2015-10-17 02:41" class="gt-comment-date">2 days ago</time>
-																<a href="#" class="gt-comment-reply-link">Reply</a>
+                                                <header class="gt-comment-meta">
 
-															</header>
+                                                    <h6 class="gt-comment-author"><a href="#">Ernest Hemingway</a></h6>
+                                                    <time datetime="2015-10-17 02:41" class="gt-comment-date">2 days
+                                                        ago</time>
+                                                    <a href="#" class="gt-comment-reply-link">Reply</a>
 
-															<p>Candy canes cake marshmallow brownie. Jujubes macaroon sesame snaps marshmallow fruitcake jelly beans sweet cupcake. Wafer cupcake oat cake cake chocolate cake jelly beans icing jelly beans.</p>
+                                                </header>
 
-														</div><!--/ .comment-body-->
+                                                <p>Candy canes cake marshmallow brownie. Jujubes macaroon sesame snaps
+                                                    marshmallow fruitcake jelly beans sweet cupcake. Wafer cupcake oat
+                                                    cake cake chocolate cake jelly beans icing jelly beans.</p>
 
-														<!-- - - - - - - - - - - - - - End of comment body - - - - - - - - - - - - - - - - -->
+                                            </div>
+                                            <!--/ .comment-body-->
 
-													</article>
+                                            <!-- - - - - - - - - - - - - - End of comment body - - - - - - - - - - - - - - - - -->
 
-												</li>
-										
-											</ol>
+                                        </article>
 
-										</li>
-								
-									</ol>
+                                    </li>
 
-									<!-- - - - - - - - - - - - - - End of Comments - - - - - - - - - - - - - - - - -->
+                                </ol>
 
-									<h5>Leave a Reply</h5>
+                            </li>
 
-									<!-- - - - - - - - - - - - - - Leave a Reply Form - - - - - - - - - - - - - - - - -->
+                        </ol> --}}
 
-									<form class="gt-leave-reply-form" novalidate>
+                    <!-- - - - - - - - - - - - - - End of Comments - - - - - - - - - - - - - - - - -->
 
-										<ul>
+                    {{!-- <h5>Leave a Reply</h5> --}}
 
-											<li class="row">
+                    <!-- - - - - - - - - - - - - - Leave a Reply Form - - - - - - - - - - - - - - - - -->
 
-												<div class="col-sm-6">
-												
-													<label for="leave-reply-name" class="gt-required">Name</label>
+                    {{!-- <form class="gt-leave-reply-form" novalidate>
 
-													<div class="gt-input-wrapper">
+                            <ul>
 
-														<input type="text" required name="name" id="leave-reply-name">
+                                <li class="row">
 
-													</div><!--/ .gt-input-wrapper -->
+                                    <div class="col-sm-6">
 
-												</div>
+                                        <label for="leave-reply-name" class="gt-required">Name</label>
 
-												<div class="col-sm-6">
-												
-													<label for="leave-reply-email" class="gt-required">Email</label>
+                                        <div class="gt-input-wrapper">
 
-													<div class="gt-input-wrapper">
+                                            <input type="text" required name="name" id="leave-reply-name">
 
-														<input type="email" required name="email" id="leave-reply-email">
+                                        </div>
+                                        <!--/ .gt-input-wrapper -->
 
-													</div><!--/ .gt-input-wrapper -->
+                                    </div>
 
-												</div>
+                                    <div class="col-sm-6">
 
-											</li>
+                                        <label for="leave-reply-email" class="gt-required">Email</label>
 
-											<li class="row">
+                                        <div class="gt-input-wrapper">
 
-												<div class="col-xs-12">
+                                            <input type="email" required name="email" id="leave-reply-email">
 
-													<label for="leave-reply-comment">Comment</label>
+                                        </div>
+                                        <!--/ .gt-input-wrapper -->
 
-													<div class="gt-input-wrapper">
+                                    </div>
 
-														<textarea rows="4" id="leave-reply-comment" name="comment"></textarea>
+                                </li>
 
-													</div><!--/ .gt-input-wrapper -->
+                                <li class="row">
 
-												</div>
+                                    <div class="col-xs-12">
 
-											</li>
+                                        <label for="leave-reply-comment">Comment</label>
 
-											<li class="row">
-												
-												<div class="col-xs-12">
+                                        <div class="gt-input-wrapper">
 
-													<button class="gt-btn-3 gt-large gt-shadow">Submit Review</button>
+                                            <textarea rows="4" id="leave-reply-comment" name="comment"></textarea>
 
-												</div>
+                                        </div>
+                                        <!--/ .gt-input-wrapper -->
 
-											</li>
+                                    </div>
 
-										</ul>
+                                </li>
 
-									</form>
+                                <li class="row">
 
-									<!-- - - - - - - - - - - - - - End of Leave Reply Form - - - - - - - - - - - - - - - - -->
+                                    <div class="col-xs-12">
 
-								</div><!--/ .gt-content-element -->
+                                        <button class="gt-btn-3 gt-large gt-shadow">Submit Review</button>
 
-							</div><!--/ .gt-single-entry-holder -->
+                                    </div>
 
-						</div>
+                                </li>
 
-					</div><!--/ .row -->
+                            </ul>
 
-				</div><!--/ .container -->
+                        </form> --}}
 
-			</div>
+                    <!-- - - - - - - - - - - - - - End of Leave Reply Form - - - - - - - - - - - - - - - - -->
 
-			<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->
+                    {{!-- </div> --}}
+                    <!--/ .gt-content-element -->
+
+                </div>
+                <!--/ .gt-single-entry-holder -->
+
+            </div>
+
+        </div>
+        <!--/ .row -->
+
+    </div>
+    <!--/ .container -->
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->
+
+<script src="./js/blogAuthor.js" person={{blogEntry.Author}}></script>

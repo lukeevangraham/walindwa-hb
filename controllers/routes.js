@@ -137,14 +137,18 @@ router.get("/blog", (req, res) => {
 })
 
 router.get("/blog:id", (req, res) => {
+  console.log("LOOK HERE: ", (parseInt(req.params.id.substr(1)) + 1))
   Promise.all([
     axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + req.params.id.substr(1)),
-    axios.get("http://admin.moreleft.com/projects?Published_eq=true&id_ne=" + req.params.id.substr(1) + "&_sort=id:DESC&_limit=6")
+    axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) - 1)),
+    axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) + 1)),
   ]).then((resultArray) => {
+    console.log("RES ARRAY: ", resultArray[2].data)
     let hbsObject = {
       title: resultArray[0].data[0].name,
       blogEntry: resultArray[0].data[0],
-      otherBlogEntries: resultArray[1].data
+      prevEntry: resultArray[1].data[0],
+      nextEntry: resultArray[2].data[0]
     }
     res.render("./sections/updates/blogSingle", hbsObject)
   })
