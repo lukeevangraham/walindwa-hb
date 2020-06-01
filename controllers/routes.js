@@ -136,4 +136,18 @@ router.get("/blog", (req, res) => {
   })
 })
 
+router.get("/blog:id", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + req.params.id.substr(1)),
+    axios.get("http://admin.moreleft.com/projects?Published_eq=true&id_ne=" + req.params.id.substr(1) + "&_sort=id:DESC&_limit=6")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: resultArray[0].data[0].name,
+      blogEntry: resultArray[0].data[0],
+      otherBlogEntries: resultArray[1].data
+    }
+    res.render("./sections/updates/blogSingle", hbsObject)
+  })
+})
+
 module.exports = router;

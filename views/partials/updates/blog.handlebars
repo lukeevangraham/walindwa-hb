@@ -1,31 +1,44 @@
 {{ log this }}
-								<!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
 
-								<div class="gt-col">
+<div class="gt-col">
+	{{#if Images}}
+	<article class="gt-entry gt-image-entry-format">
+		{{/if}}
 
-									<article class="gt-entry gt-image-entry-format">
+		{{#unless Images}}
+		<article class="gt-entry gt-image-entry-format">
+			{{/unless}}
 
-										<!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+			<!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
 
-										<div class="gt-entry-attachment">
+			<div class="gt-entry-attachment">
+				{{#if Images}}
+				<a class="gt-thumbnail-attachment" href="./blog-{{id}}"><img
+						src="https://admin.moreleft.com{{Images.[0].url}}" alt=""></a>
+				{{/if}}
 
-											<a class="gt-thumbnail-attachment" href="blog_single_without_sidebar.html"><img src="https://admin.moreleft.com{{Images.[0].url}}" alt=""></a>
+				{{#unless Images}}
+				<a class="gt-link-attachment" href="./blog-{{id}}"
+					data-bg="https://admin.moreleft.com/uploads/genericKenya_d55d168b0f.jpeg"></a>
+				{{/unless}}
 
-											<time class="gt-entry-date" datetime="2016-01-27">{{getDay datePosted}} <span class="gt-entry-month">{{getMonth datePosted}}</span></time>
+				<time class="gt-entry-date" datetime="2016-01-27">{{getDay datePosted}} <span
+						class="gt-entry-month">{{getMonth datePosted}}</span></time>
 
-										</div>
+			</div>
 
-										<!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+			<!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
 
-										<!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+			<!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
 
-										<div class="gt-entry-body">
+			<div class="gt-entry-body">
 
-											<h6 class="gt-entry-title"><a href="blog_single_without_sidebar.html">{{Title}}</a></h6>
+				<h6 class="gt-entry-title"><a href="./blog-{{id}}">{{Title}}</a></h6>
 
-											<!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+				<!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
 
-											{{!-- <div class="gt-entry-meta">
+				{{!-- <div class="gt-entry-meta">
 												
 												<a href="#" class="gt-entry-likes">53</a>
 												<a href="#" class="gt-entry-comments-link">9</a>
@@ -40,26 +53,26 @@
 
 											</div> --}}
 
-											<!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+				<!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
 
-											<!-- - - - - - - - - - - - - - Entry Excerpt - - - - - - - - - - - - - - - - -->
+				<!-- - - - - - - - - - - - - - Entry Excerpt - - - - - - - - - - - - - - - - -->
 
-											<div class="gt-entry-excerpt">
+				<div class="gt-entry-excerpt">
 
-                                                <p>{{createExcerpt Body}}</p>
+					<p>{{createExcerpt Body}}</p>
 
-												<a class="gt-continue-reading-link" href="blog_single_without_sidebar.html">Read More</a>
+					<a class="gt-continue-reading-link" href="./blog-{{id}}">Read More</a>
 
-											</div>
+				</div>
 
-											<!-- - - - - - - - - - - - - - End of Entry Excerpt - - - - - - - - - - - - - - - - -->
+				<!-- - - - - - - - - - - - - - End of Entry Excerpt - - - - - - - - - - - - - - - - -->
 
-										</div>
+			</div>
 
-										<!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+			<!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
 
-									</article>
+		</article>
 
-								</div>
+</div>
 
-								<!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
