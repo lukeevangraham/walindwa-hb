@@ -124,4 +124,16 @@ router.get("/post-high-school", (req, res) => {
   res.render("./sections/sponsorship/post-high-school", hbsObject)
 })
 
+router.get("/blog", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=6")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      blogEntries: resultArray[0].data,
+      title: "Trip Blog"
+    }
+    res.render("./sections/updates/blog", hbsObject)
+  })
+})
+
 module.exports = router;

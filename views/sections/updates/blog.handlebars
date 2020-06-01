@@ -1,0 +1,49 @@
+<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+
+<div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_4.jpg">
+
+    <h1 class="gt-page-title">Trip Blog</h1>
+
+    <ul class="gt-breadcrumbs">
+
+        <li><a href="index.html">Home</a></li>
+        <li>Trip Blog</li>
+
+    </ul>
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Breadcrumbs - - - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
+
+<div class="gt-page-content-wrap gt-no-sidebar">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <!-- - - - - - - - - - - - - - Entries Holder - - - - - - - - - - - - - - - - -->
+
+                <div class="gt-entries-holder gt-cols-1 gt-type-4 gt-small-thumbs">
+
+                    {{#each blogEntries}}
+                    {{> updates/blog}}
+                    {{/each}}
+                </div>
+
+                <!-- - - - - - - - - - - - - - End of Entries Holder - - - - - - - - - - - - - - - - -->
+
+            </div>
+
+        </div>
+        <!--/ .row -->
+
+    </div>
+    <!--/ .container -->
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->
