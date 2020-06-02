@@ -1,4 +1,3 @@
-{{log this.nextEntry}}
 <!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
 
 <div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_5.jpg">
@@ -148,33 +147,36 @@
 
                         <!-- - - - - - - - - - - - - - Entry Author - - - - - - - - - - - - - - - - -->
 
+                        {{#if authorInfo}}
+
                         <div class="gt-entry-author gt-author-box">
 
-                            <a href="#" class="gt-avatar">
-                                <img src="images/author_8.jpg" alt="">
+                            <a href="./board:{{authorInfo.id}}" class="gt-avatar">
+                                <img src="https://admin.moreleft.com{{authorInfo.photo.url}}" alt="">
                             </a>
 
                             <div class="gt-author-info">
 
-                                <div class="gt-author-name">Posted by <a href="#">{{blogEntry.Author}}</a></div>
+                                <div class="gt-author-name">Posted by <a
+                                        href="./board:{{authorInfo.id}}">{{blogEntry.Author}}</a></div>
 
-                                <span class="gt-author-about">Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac
-                                    turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing
-                                    elit.</span>
+                                <span class="gt-author-about">{{createExcerpt authorInfo.Biography 1}}</span>
 
-                                <ul class="gt-social-icons">
+                                {{!-- <ul class="gt-social-icons">
 
                                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                     <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
                                     <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
 
-                                </ul>
+                                </ul> --}}
 
                             </div>
                             <!--/ .gt-author-info -->
 
                         </div>
                         <!--/ .gt-author-entry.gt-author-box -->
+
+                        {{/if}}
 
                         <!-- - - - - - - - - - - - - - End of Entry Author - - - - - - - - - - - - - - - - -->
 
@@ -365,4 +367,4 @@
 
 <!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->
 
-<script src="./js/blogAuthor.js" person={{blogEntry.Author}}></script>
+{{!-- <script src="./js/blogAuthor.js" person={{blogEntry.Author}}></script> --}}
