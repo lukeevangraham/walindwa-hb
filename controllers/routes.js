@@ -137,14 +137,12 @@ router.get("/blog", (req, res) => {
 })
 
 router.get("/blog:id", (req, res) => {
-  let firstRecord
   Promise.all([
     axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + req.params.id.substr(1)),
     axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) - 1)),
     axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) + 1)),
   ]).then((resultArray) => {
-    firstRecord = resultArray
-    let unparsedFirstName = firstRecord[0].data[0].Author.split(` `)
+    let unparsedFirstName = resultArray[0].data[0].Author.split(` `)
     Promise.all([
       axios.get("http://admin.moreleft.com/board-members?firstName_contains=" + unparsedFirstName[0] + "&firstName_contains=" + unparsedFirstName[1] + "&lastName_contains=" + unparsedFirstName[0] + "&lastName_contains=" + unparsedFirstName[1])
     ]).then((secondArray) => {
@@ -157,6 +155,18 @@ router.get("/blog:id", (req, res) => {
       }
       res.render("./sections/updates/blogSingle", hbsObject)
     })
+  })
+})
+
+router.get("/newsletters", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/newsletters?_sort=id:DESC")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Newsletters",
+      newsletters: resultArray[0].data
+    }
+    res.render("./sections/updates/newsletters", hbsObject)
   })
 })
 
