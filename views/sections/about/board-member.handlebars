@@ -1,22 +1,4 @@
-
-			<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
-
-			<div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_3.jpg">
-
-				<h1 class="gt-page-title">{{boardMember.data.firstName}} {{boardMember.data.lastName}}</h1>
-
-				<ul class="gt-breadcrumbs">
-
-					<li><a href="/">Home</a></li>
-					<li><a href="/board">Board Members</a></li>
-					<li>{{boardMember.data.firstName}} {{boardMember.data.lastName}}</li>
-
-				</ul>
-
-			</div>
-
-			<!-- - - - - - - - - - - - - - End of Breadcrumbs - - - - - - - - - - - - - - - - -->
-
+{{> main/breadcrumb breadcrumbTitle="Board Member"}}
 			<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
 			<div class="gt-page-content-wrap gt-no-sidebar gt-no-top-offset gt-no-bottom-offset">

@@ -1,36 +1,4 @@
-<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
-
-<div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_5.jpg">
-
-    <!-- - - - - - - - - - - - - - Entry Categories - - - - - - - - - - - - - - - - -->
-
-    {{!-- <ul class="gt-entry-cats">
-					<li><a href="#">Marketing</a></li>
-				</ul> --}}
-
-    <!-- - - - - - - - - - - - - - End of Entry Categories - - - - - - - - - - - - - - - - -->
-
-    <!-- - - - - - - - - - - - - - Entry Title - - - - - - - - - - - - - - - - -->
-
-    <h1 class="gt-page-title">{{blogEntry.Title}}</h1>
-
-    <!-- - - - - - - - - - - - - - End of Entry Title - - - - - - - - - - - - - - - - -->
-
-    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
-
-    <div class="gt-entry-meta">
-
-        <time class="gt-entry-date" datetime="2016-01-27">{{getBlogSingleDate blogEntry.datePosted}}</time>
-        {{!-- <a href="#" class="gt-entry-likes">53</a> --}}
-        {{!-- <a href="#" class="gt-entry-comments-link">9</a> --}}
-
-    </div>
-
-    <!-- - - - - - - - - - - - - - End of Entry Meta - - - - - - - - - - - - - - - - -->
-
-</div>
-
-<!-- - - - - - - - - - - - - - End of Breadcrumbs - - - - - - - - - - - - - - - - -->
+{{> main/breadcrumb breadcrumbTitle=blogEntry.Title breadcrumbDate=blogEntry.datePosted}}
 
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
@@ -135,10 +103,10 @@
 
                             {{#if prevEntry}}
                             <a href="./blog-{{prevEntry.id}}"
-                                class="alignleft gt-previous-entry">{{prevEntry.Title}}</a>
+                                class="alignleft gt-previous-entry navA">{{prevEntry.Title}}</a>
                             {{/if}}
                             {{#if nextEntry}}
-                            <a href="./blog-{{nextEntry.id}}" class="alignright gt-next-entry">{{nextEntry.Title}}</a>
+                            <a href="./blog-{{nextEntry.id}}" class="alignright gt-next-entry navA">{{nextEntry.Title}}</a>
                             {{/if}}
 
                         </div>
@@ -157,7 +125,7 @@
 
                             <div class="gt-author-info">
 
-                                <div class="gt-author-name">Posted by <a
+                                <div class="gt-author-name">Posted by <a class="navA"
                                         href="./board:{{authorInfo.id}}">{{blogEntry.Author}}</a></div>
 
                                 <span class="gt-author-about">{{createExcerpt authorInfo.Biography 1}}</span>

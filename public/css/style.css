@@ -557,6 +557,11 @@
 
     a{
         color: #2c3035;
+        text-decoration: underline !important;
+    }
+    
+    .navA{
+        color: #2c3035;
         text-decoration: none !important;
     }
 

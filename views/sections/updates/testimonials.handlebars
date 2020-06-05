@@ -1,19 +1,4 @@
-<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
-
-<div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_4.jpg">
-
-    <h1 class="gt-page-title">Testimonials</h1>
-
-    <ul class="gt-breadcrumbs">
-
-        <li><a href="index.html">Home</a></li>
-        <li>Testimonials</li>
-
-    </ul>
-
-</div>
-
-<!-- - - - - - - - - - - - - - End of Breadcrumbs - - - - - - - - - - - - - - - - -->
+{{> main/breadcrumb breadcrumbTitle=this.title}}
 
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
@@ -86,7 +71,7 @@
 
                                 <div class="gt-entry-body">
 
-                                    <h6 class="gt-entry-title"><a href="/testimonials:{{id}}">{{author}}</a>
+                                    <h6 class="gt-entry-title"><a class="navA" href="/testimonials:{{id}}">{{author}}</a>
                                     </h6>
 
                                     <!-- - - - - - - - - - - - - - Entry Excerpt - - - - - - - - - - - - - - - - -->
@@ -95,7 +80,7 @@
 
                                         <p>{{{createTestimonyExcerpt body }}}</p>
 
-                                        <a class="gt-continue-reading-link" href="/testimonials:{{id}}">Read More</a>
+                                        <a class="gt-continue-reading-link navA" href="/testimonials:{{id}}">Read More</a>
 
 
 
@@ -157,7 +142,7 @@
 
                                 <div class="gt-entry-body">
 
-                                    <h6 class="gt-entry-title"><a href="blog_single_without_sidebar.html">{{author}}</a>
+                                    <h6 class="gt-entry-title"><a class="navA" href="blog_single_without_sidebar.html">{{author}}</a>
                                     </h6>
 
                                     <!-- - - - - - - - - - - - - - Entry Excerpt - - - - - - - - - - - - - - - - -->
@@ -216,7 +201,7 @@
 
                                 <div class="gt-entry-body">
 
-                                    <h6 class="gt-entry-title"><a
+                                    <h6 class="gt-entry-title"><a class="navA"
                                             href="http://admin.moreleft.com{{attachment.url}}">{{author}}</a>
                                     </h6>
 
@@ -271,7 +256,7 @@
 
                 <div class="aligncenter">
 
-                    <a href="#" class="gt-btn-3 gt-large gt-shadow gt-load-more" id="blog-load-more">Show Me More</a>
+                    <a href="#" class="gt-btn-3 gt-large gt-shadow gt-load-more navA" id="blog-load-more">Show Me More</a>
 
                 </div>
 
