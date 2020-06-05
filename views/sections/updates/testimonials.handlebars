@@ -61,6 +61,8 @@
                         {{#each testimonials}}
                         {{#if body}}
                         {{#unless attachment}}
+                        {{#unless videoEmbedLink}}
+                        
 
 
                         <!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
@@ -95,7 +97,7 @@
 
                                         <a class="gt-continue-reading-link" href="/testimonials:{{id}}">Read More</a>
 
-                                        
+
 
                                     </div>
 
@@ -122,6 +124,7 @@
 
                         <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
                         {{/unless}}
+                        {{/unless}}
                         {{/if}}
 
 
@@ -140,7 +143,8 @@
                                     <div class="gt-responsive-iframe">
 
                                         <iframe
-                                            src="https://player.vimeo.com/video/42829407?title=0&amp;byline=0&amp;portrait=0"></iframe>
+                                            {{!-- src="https://player.vimeo.com/video/42829407?title=0&amp;byline=0&amp;portrait=0"></iframe> --}}
+                                            src="https://www.youtube.com/embed/E9m1c4WLbuA"></iframe>
 
                                     </div>
                                     <!--/ .gt-responsive-iframe -->
@@ -160,8 +164,7 @@
 
                                     <div class="gt-entry-excerpt">
 
-                                        <p>Croissant tootsie roll muffin apple pie sesame snaps biscuit. Macaroon
-                                            macaroon jelly beans pudding icing tart.</p>
+                                        <p>{{{body}}}</p>
 
                                     </div>
 
@@ -171,8 +174,7 @@
 
                                     <div class="gt-entry-meta">
 
-                                        <time class="gt-entry-date" datetime="2016-01-08">8 January 2016</time>
-                                        <a href="#" class="gt-entry-comments-link">9</a>
+                                        <time class="gt-entry-date" datetime="2016-01-08">{{month}} {{year}}</time>
 
                                     </div>
 
@@ -202,7 +204,8 @@
 
                                 <div class="gt-entry-attachment">
 
-                                    <a class="gt-thumbnail-attachment" href="http://admin.moreleft.com{{attachment.url}}"><img
+                                    <a class="gt-thumbnail-attachment"
+                                        href="http://admin.moreleft.com{{attachment.url}}"><img
                                             src="http://admin.moreleft.com{{image.url}}" alt=""></a>
 
                                 </div>
@@ -213,7 +216,8 @@
 
                                 <div class="gt-entry-body">
 
-                                    <h6 class="gt-entry-title"><a href="http://admin.moreleft.com{{attachment.url}}">{{author}}</a>
+                                    <h6 class="gt-entry-title"><a
+                                            href="http://admin.moreleft.com{{attachment.url}}">{{author}}</a>
                                     </h6>
 
                                     <!-- - - - - - - - - - - - - - Entry Excerpt - - - - - - - - - - - - - - - - -->
