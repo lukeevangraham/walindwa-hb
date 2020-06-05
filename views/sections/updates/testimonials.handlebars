@@ -1,0 +1,285 @@
+<!-- - - - - - - - - - - - - - Breadcrumbs - - - - - - - - - - - - - - - - -->
+
+<div class="gt-breadcrumbs-wrap" data-bg="images/breadcrumbs_img_4.jpg">
+
+    <h1 class="gt-page-title">Testimonials</h1>
+
+    <ul class="gt-breadcrumbs">
+
+        <li><a href="index.html">Home</a></li>
+        <li>Testimonials</li>
+
+    </ul>
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Breadcrumbs - - - - - - - - - - - - - - - - -->
+
+<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
+
+<div class="gt-page-content-wrap gt-no-sidebar">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <!-- - - - - - - - - - - - - - Filter - - - - - - - - - - - - - - - - -->
+
+                {{!-- <nav class="gt-filter gt-type-3" id="blog-filter">
+
+								<ul>
+
+									<li><a href="#" class="gt-active" data-filter="*">All</a></li>
+									<li><a href="#" data-filter=".motion-design">Motion Design</a></li>
+									<li><a href="#" data-filter=".photography">Photography</a></li>
+									<li><a href="#" data-filter=".modeling">Modeling</a></li>
+									<li><a href="#" data-filter=".graphic-design">Graphic Design</a></li>
+
+								</ul>
+
+							</nav> --}}
+
+                <!-- - - - - - - - - - - - - - End of Filter - - - - - - - - - - - - - - - - -->
+
+                <!-- - - - - - - - - - - - - - Entries Holder - - - - - - - - - - - - - - - - -->
+
+                <div class="gt-entries-holder gt-isotope gt-type-3">
+
+                    <!-- - - - - - - - - - - - - - Isotope - - - - - - - - - - - - - - - - -->
+
+                    <div class="gt-isotope-container gt-cols-3" data-max-items="20"
+                        data-ajax-handler="json/blog_items_type_2.json" data-masonry="true"
+                        data-load-more-btn="#blog-load-more" data-filter-el="#blog-filter" data-holder-type="blog">
+
+                        <!-- - - - - - - - - - - - - - Grid Sizer For Masonry Layout - - - - - - - - - - - - - - - - -->
+
+                        <div class="gt-grid-sizer"></div>
+
+                        <!-- - - - - - - - - - - - - - End of Grid Sizer For Masonry Layout - - - - - - - - - - - - - - - - -->
+                        {{#each testimonials}}
+                        {{#if body}}
+                        {{#unless attachment}}
+
+
+                        <!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
+
+                        <div class="gt-col photography">
+
+                            <article class="gt-entry gt-image-entry-format">
+
+                                <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-attachment">
+
+                                    <a class="gt-thumbnail-attachment" href="/testimonials:{{id}}"><img
+                                            src="http://admin.moreleft.com{{image.url}}" alt=""></a>
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+
+                                <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-body">
+
+                                    <h6 class="gt-entry-title"><a href="/testimonials:{{id}}">{{author}}</a>
+                                    </h6>
+
+                                    <!-- - - - - - - - - - - - - - Entry Excerpt - - - - - - - - - - - - - - - - -->
+
+                                    <div class="gt-entry-excerpt">
+
+                                        <p>{{{createTestimonyExcerpt body }}}</p>
+
+                                        <a class="gt-continue-reading-link" href="/testimonials:{{id}}">Read More</a>
+
+                                        
+
+                                    </div>
+
+                                    <!-- - - - - - - - - - - - - - End of Entry Excerpt - - - - - - - - - - - - - - - - -->
+
+                                    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+
+                                    <div class="gt-entry-meta">
+
+                                        <time class="gt-entry-date" datetime="2016-01-12">{{month}} {{year}}</time>
+                                        {{!-- <a href="#" class="gt-entry-comments-link">9</a> --}}
+
+                                    </div>
+
+                                    <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                            </article>
+
+                        </div>
+
+                        <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
+                        {{/unless}}
+                        {{/if}}
+
+
+                        {{#if videoEmbedLink}}
+
+                        <!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
+
+                        <div class="gt-col graphic-design">
+
+                            <article class="gt-entry gt-video-entry-format">
+
+                                <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-attachment">
+
+                                    <div class="gt-responsive-iframe">
+
+                                        <iframe
+                                            src="https://player.vimeo.com/video/42829407?title=0&amp;byline=0&amp;portrait=0"></iframe>
+
+                                    </div>
+                                    <!--/ .gt-responsive-iframe -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+
+                                <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-body">
+
+                                    <h6 class="gt-entry-title"><a href="blog_single_without_sidebar.html">{{author}}</a>
+                                    </h6>
+
+                                    <!-- - - - - - - - - - - - - - Entry Excerpt - - - - - - - - - - - - - - - - -->
+
+                                    <div class="gt-entry-excerpt">
+
+                                        <p>Croissant tootsie roll muffin apple pie sesame snaps biscuit. Macaroon
+                                            macaroon jelly beans pudding icing tart.</p>
+
+                                    </div>
+
+                                    <!-- - - - - - - - - - - - - - End of Entry Excerpt - - - - - - - - - - - - - - - - -->
+
+                                    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+
+                                    <div class="gt-entry-meta">
+
+                                        <time class="gt-entry-date" datetime="2016-01-08">8 January 2016</time>
+                                        <a href="#" class="gt-entry-comments-link">9</a>
+
+                                    </div>
+
+                                    <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                            </article>
+
+                        </div>
+
+                        <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
+                        {{/if}}
+
+
+                        {{#if attachment}}
+
+                        <!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
+
+                        <div class="gt-col photography">
+
+                            <article class="gt-entry gt-image-entry-format">
+
+                                <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-attachment">
+
+                                    <a class="gt-thumbnail-attachment" href="http://admin.moreleft.com{{attachment.url}}"><img
+                                            src="http://admin.moreleft.com{{image.url}}" alt=""></a>
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+
+                                <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-body">
+
+                                    <h6 class="gt-entry-title"><a href="http://admin.moreleft.com{{attachment.url}}">{{author}}</a>
+                                    </h6>
+
+                                    <!-- - - - - - - - - - - - - - Entry Excerpt - - - - - - - - - - - - - - - - -->
+
+                                    {{!-- <div class="gt-entry-excerpt">
+
+                                        <p>Biscuit donut biscuit wafer chocolate cake jelly. Cookie donut bear claw.
+                                            Tart lollipop cupcake wafer oat cake chocolate bar ice cream. </p>
+
+                                    </div> --}}
+
+                                    <!-- - - - - - - - - - - - - - End of Entry Excerpt - - - - - - - - - - - - - - - - -->
+
+                                    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+
+                                    <div class="gt-entry-meta">
+
+                                        <time class="gt-entry-date" datetime="2016-01-12">{{month}} {{year}}</time>
+
+                                    </div>
+
+                                    <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                            </article>
+
+                        </div>
+
+                        <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
+
+                        {{/if}}
+
+
+
+
+
+
+
+                        {{/each}}
+
+                    </div>
+
+                    <!-- - - - - - - - - - - - - - End of Isotope - - - - - - - - - - - - - - - - -->
+
+                </div>
+
+                <!-- - - - - - - - - - - - - - End of Entries Holder - - - - - - - - - - - - - - - - -->
+
+                <div class="aligncenter">
+
+                    <a href="#" class="gt-btn-3 gt-large gt-shadow gt-load-more" id="blog-load-more">Show Me More</a>
+
+                </div>
+
+            </div>
+            <!--/ .col -->
+
+        </div>
+        <!--/ .row -->
+
+    </div>
+    <!--/ .container -->
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->

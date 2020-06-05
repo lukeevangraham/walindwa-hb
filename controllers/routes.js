@@ -170,4 +170,28 @@ router.get("/newsletters", (req, res) => {
   })
 })
 
+router.get("/testimonials", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/testimonials")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Testimonials",
+      testimonials: resultArray[0].data
+    }
+    res.render("./sections/updates/testimonials", hbsObject)
+  })
+})
+
+router.get("/testimonials:id", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/testimonials/" + req.params.id.substr(1))
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Testimonial: " + resultArray[0].data.author,
+      testimony: resultArray[0].data
+    }
+    res.render("./sections/updates/testimonial", hbsObject)
+  })
+})
+
 module.exports = router;

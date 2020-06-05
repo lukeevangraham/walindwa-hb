@@ -7,6 +7,9 @@ module.exports = {
         // console.log("First P: ", firstPSentences)
         // return body
     },
+    createTestimonyExcerpt: function(body) {
+      return body.split(".")[0] + '. '
+    },
     fiveWords: function(p) {
         return p.split(" ").splice(0,5).join(" ");
     },
