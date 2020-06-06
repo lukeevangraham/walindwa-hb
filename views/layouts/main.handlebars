@@ -36,9 +36,12 @@
     <!-- CSS theme files
 		============================================ -->
     <link rel="stylesheet" href="css/animate.css">
+    {{#unless headlink}}
     <link rel="stylesheet" href="css/style.css">
+    {{/unless}}
 
     {{#if headLink}}
+    <link rel="stylesheet" href="css/styleKenya.css">
     {{{headLink}}}
     {{/if}}
 

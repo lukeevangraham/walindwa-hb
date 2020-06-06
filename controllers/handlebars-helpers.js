@@ -22,5 +22,9 @@ module.exports = {
     getMonth: function(date) {
         return moment(date).format('MMM');
     },
-    markdown: markdown
+    markdown: markdown,
+    markdownFancyUL: function(body) {
+        return markdown(body).replace("<ul>", `<ul class="gt-list gt-type-2">`)
+
+    }
 }

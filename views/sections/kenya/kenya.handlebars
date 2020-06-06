@@ -1,5 +1,7 @@
 {{> main/breadcrumb breadcrumbTitle=this.title}}
 
+{{ log this.kenyaSingleType}}
+
 
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
@@ -26,11 +28,10 @@
                             <ul class="gt-tabs-nav">
 
                                 <li><a class="navA" href="#tour-section-1"><span class="lnr lnr-earth"></span>Map</a></li>
-                                <li><a class="navA" href="#tour-section-2"><span class="lnr lnr-eye"></span>Facts</a></li>
-                                <li><a class="navA" href="#tour-section-3"><span class="lnr lnr-heart"></span>Walindwa's Role</a>
+                                <li><a class="navA" href="#tour-section-2"><span class="lnr lnr-eye"></span>{{kenyaSingleType.FirstSectionLabel}}</a></li>
+                                <li><a class="navA" href="#tour-section-3"><span class="lnr lnr-heart"></span>{{kenyaSingleType.SecondSectionLabel}}</a>
                                 </li>
-                                <li><a class="navA" href="#tour-section-4"><span class="lnr lnr-users"></span>Elma Barnett Children's
-                                        Centre Kamonong</a></li>
+                                <li><a class="navA" href="#tour-section-4"><span class="lnr lnr-users"></span>{{kenyaSingleType.ThirdSectionLabel}}</a></li>
 
                             </ul>
 
@@ -40,7 +41,7 @@
 
                         <!-- - - - - - - - - - - - - - Tour Sections Container - - - - - - - - - - - - - - - - -->
 
-                        <div class="gt-tabs-container">
+                        <div id="one" class="gt-tabs-container">
 
                             <!-- - - - - - - - - - - - - - Tour Section - - - - - - - - - - - - - - - - -->
 
@@ -58,14 +59,16 @@
 
                             <div id="tour-section-2" class="gt-tab">
 
-                                <ul class="gt-list gt-type-2">
+                                {{!-- <ul class="gt-list gt-type-2">
                                     <li>Malaria is the number one killer of children and women in Kenya.</li>
                                     <li>75% of Kenya’s population are under 30 years of age.</li>
                                     <li>The inability to pay school fees is the main reason why Kenyan children leave
                                         school early.</li>
                                     <li>The four public and ten private universities in Kenya can only accommodate less
                                         than half of those seeking post-secondary education.</li>
-                                </ul>
+                                </ul> --}}
+
+                                {{{markdownFancyUL kenyaSingleType.KenyaFacts}}}
 
                             </div>
 
@@ -75,13 +78,15 @@
 
                             <div id="tour-section-3" class="gt-tab">
 
-                                <p>Walindwa is committed to helping qualified African mission organizations or
+                                {{!-- <p>Walindwa is committed to helping qualified African mission organizations or
                                     non-governmental organizations that further our purpose of benefiting the children
                                     in the Rift Valley Province.</p>
                                 <p>Walindwa Charitable Corporation was incorporated in the State of California in
                                     February 2012 and is a tax exempt non-profit organization, Section 501(c)(3) of the
                                     Internal Revenue Code. All donations are tax deductible to the extent allowed by
-                                    law. </p>
+                                    law. </p> --}}
+
+                                    {{{markdown kenyaSingleType.KenyaWalindwasRole}}}
 
                             </div>
 
@@ -91,7 +96,7 @@
 
                             <div id="tour-section-4" class="gt-tab">
 
-                                <p>Past support has focused on <a class="gt-paypal-link" href="http://elmabarnettchildrenscentre.org/"
+                                {{!-- <p>Past support has focused on <a class="gt-paypal-link" href="http://elmabarnettchildrenscentre.org/"
                                         target="_blank" rel="noopener noreferrer">Elma Barnett Children’s Centre
                                         Kamonong (EBCCK)</a>, which is home to 60 children and youth who come from
                                     non-functioning or deceased parents. It is located on 9.3 acres in the Rift Valley
@@ -99,7 +104,9 @@
                                     board members. Walindwa’s program development model will be to provide support for
                                     programs at EBCCK and measure the success of each one carefully in this contained
                                     environment. If the program is successful then we will consider the feasibility of
-                                    expanding the program to larger communities.</p>
+                                    expanding the program to larger communities.</p> --}}
+
+                                    {{{markdown kenyaSingleType.KenyaEBCCK}}}
 
                             </div>
 
