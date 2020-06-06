@@ -1,5 +1,7 @@
 {{> main/breadcrumb breadcrumbTitle=this.title}}
 
+{{log this.aboutSingleType}}
+
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
 <div class="gt-page-content-wrap gt-no-sidebar">
@@ -12,13 +14,10 @@
 
                 <section class="gt-content-element">
 
-                    <h2>Financial and Corporate Information</h2>
-                    <h4>Tax Exempt Status</h4>
+                    <h2>{{aboutSingleType.CorporateInfoHeading}}</h2>
+                    <h4>{{aboutSingleType.CorporateInfoSubHeading}}</h4>
 
-                    <p>Walindwa is a tax exempt non-profit organization, Section 501(c)(3) of the Internal Revenue Code.
-                        All donations are tax deductible to the extent allowed by law. Please consult your tax
-                        professional for guidance on treating your contribution as tax-deductible for federal income tax
-                        purposes.</p>
+                    <p>{{{markdown aboutSingleType.CorporateInfoBody}}}</p>
 
                 </section>
 
@@ -26,6 +25,7 @@
 
                 <div class="col-md-6 gt-text-content-element">
                     <h4>Corporate Documents</h4>
+                    <p>{{aboutSingleType.CorporateInfoLeftColumnBody}}</p>
                     <ul class="gt-list gt-type-1">
                         {{#each docs}}
                         {{#unless isTax}}
@@ -37,14 +37,7 @@
                 </div>
                 <div class="col-md-6 gt-text-content-element">
                     <h4>Tax Documents</h4>
-                    <p>Form 990 is the Internal Revenue Service (IRS)’s designation for the tax return that most
-                        public
-                        charities are required by law to submit annually. This form is used by the IRS to assess the
-                        non-profit organization for its compliance with tax. Information contained in the form
-                        includes
-                        a summary of the organization’s activities, assets, receipts, expenditures, and compensation
-                        of
-                        directors, officers, and certain employees.</p>
+                    <p>{{aboutSingleType.CorporateInfoRightColumnBody}}</p>
                     <ul class="gt-list gt-type-1">
                         {{#each docs}}
                         {{#if isTax}}

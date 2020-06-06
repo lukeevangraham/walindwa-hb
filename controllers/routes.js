@@ -41,15 +41,21 @@ router.get("/board:id", function (req, res) {
 });
 
 router.get("/overview", function (req, res) {
-  let hbsObject = {
-    title: "Overview",
-  };
-  res.render("./sections/about/overview", hbsObject);
+  Promise.all([
+    axios.get("http://admin.moreleft.com/about")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Overview",
+      aboutSingleType: resultArray[0].data
+    };
+    res.render("./sections/about/overview", hbsObject);
+  })
 });
 
 router.get("/corporate-info", (req, res) => {
   Promise.all([
     axios.get("http://admin.moreleft.com/organization-documents/"),
+    axios.get("http://admin.moreleft.com/about")
   ]).then((resultArray) => {
     let docs = resultArray[0].data;
     docs.forEach((doc) => {
@@ -60,6 +66,7 @@ router.get("/corporate-info", (req, res) => {
     let hbsObject = {
       docs: docs,
       title: "Corporate Information",
+      aboutSingleType: resultArray[1].data
     };
     res.render("./sections/about/corporate-info", hbsObject);
   });

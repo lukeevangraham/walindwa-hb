@@ -1,4 +1,7 @@
 {{> main/breadcrumb breadcrumbTitle=this.title}}
+
+{{log this.aboutSingleType}}
+
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
 <div class="gt-page-content-wrap gt-no-sidebar gt-no-top-offset gt-no-bottom-offset">
@@ -27,13 +30,9 @@
 
 					<div class="gt-content-element">
 
-						<h2>Who We Are</h2>
+						<h2>{{aboutSingleType.OverviewHeading}}</h2>
 
-						<p>Walindwa is dedicated to improving the quality of life of, and bringing hope to, the children
-							of Kenya and their families by showing God’s abundant love and compassion through education,
-							shelter, healthy living, and spreading Christian values. Our activities are aimed at
-							empowering children and young adults to become self sufficient and responsible members of
-							Kenyan society. The name Walindwa in Swahili means to guard or protect.</p>
+						<p>{{{markdown aboutSingleType.OverviewBody}}}</p>
 
 					</div>
 					<!--/ .gt-content-element -->
@@ -50,8 +49,8 @@
 
 								<ul class="gt-tabs-nav">
 
-									<li><a href="#tab-1">Our Vision</a></li>
-									<li><a href="#tab-2">Our Mission</a></li>
+									<li><a class="navA" href="#tab-1">Our Vision</a></li>
+									<li><a class="navA" href="#tab-2">Our Mission</a></li>
 
 								</ul>
 
@@ -67,9 +66,7 @@
 
 								<div id="tab-1" class="gt-tab">
 
-									<p>Children of the Rift Valley Province in Kenya are raised to reach their full
-										potential in a supportive environment of love, health, and education anchored in
-										the teachings of Christ.</p>
+									<p>{{aboutSingleType.OverviewVision}}</p>
 
 								</div>
 
@@ -79,18 +76,7 @@
 
 								<div id="tab-2" class="gt-tab">
 
-									<p>The mission of Walindwa Charitable Corporation is to model God’s love and
-										compassion by working to improve the quality of life of the children of the Rift
-										Valley Province of Kenya, particularly those at Elma Barnett Children’s Centre
-										Kamonong. Walindwa raises funds, donates goods, and volunteers our services in
-										partnership with Kenyan organizations to effect improvements in the essentials
-										of daily life, in education, and in healthy living practices, thereby bringing
-										hope to these children and their families. Our actions empower children and
-										youth to become adults with integrity and Christian values; adults who are
-										self-sufficient, responsible members and leaders of Kenyan society.
-
-										In the Swahili language, “Walindwa” means “the ones who are guarded or
-										protected.”</p>
+									<p>{{aboutSingleType.OverviewMission}}</p>
 
 								</div>
 
