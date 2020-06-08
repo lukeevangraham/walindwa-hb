@@ -1,6 +1,7 @@
 let express = require("express");
 let router = express.Router();
 let axios = require("axios");
+let moment = require("moment");
 
 router.get("/", (req, res) => {
   Promise.all([axios.get("http://admin.moreleft.com/home")]).then(
@@ -84,7 +85,7 @@ router.get("/kenya", (req, res) => {
       <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>`,
-        kenyaSingleType: resultArray[0].data
+      kenyaSingleType: resultArray[0].data
     };
     res.render("./sections/kenya/kenya", hbsObject);
 
@@ -173,8 +174,32 @@ router.get("/blog:id", (req, res) => {
 
 router.get("/newsletters", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/newsletters?_sort=year:DESC")
+    axios.get("http://admin.moreleft.com/newsletters?")
   ]).then((resultArray) => {
+
+    function compareMonths(a, b) {
+      if (moment(a.month, 'MMMM').isBefore(moment(b.month, "MMMM"))) {
+        return 1;
+      }
+      if (moment(a.month, 'MMMM').isAfter(moment(b.month, "MMMM"))) {
+        return -1;
+      }
+      return 0;
+    }
+
+    function compareYears(a, b) {
+      if (a.year < b.year) {
+        return 1
+      }
+      if (a.year > b.year) {
+        return -1;
+      }
+      return 0;
+    }
+
+    resultArray[0].data.sort(compareMonths);
+    resultArray[0].data.sort(compareYears);
+
     let hbsObject = {
       title: "Newsletters",
       newsletters: resultArray[0].data
