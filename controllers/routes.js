@@ -125,10 +125,15 @@ router.get("/project:id", (req, res) => {
 })
 
 router.get("/students", (req, res) => {
-  let hbsObject = {
-    title: "Student Sponsorship"
-  }
-  res.render("./sections/sponsorship/students", hbsObject)
+  Promise.all([
+    axios.get("http://admin.moreleft.com/sponsorship")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Student Sponsorship",
+      sponsorshipSingleType: resultArray[0].data
+    }
+    res.render("./sections/sponsorship/students", hbsObject)
+  })
 })
 
 router.get("/post-high-school", (req, res) => {
