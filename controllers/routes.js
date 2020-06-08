@@ -173,7 +173,7 @@ router.get("/blog:id", (req, res) => {
 
 router.get("/newsletters", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/newsletters?_sort=id:DESC")
+    axios.get("http://admin.moreleft.com/newsletters?_sort=year:DESC")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Newsletters",

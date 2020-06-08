@@ -2293,8 +2293,8 @@
             .gt-custom-select.gt-opened .gt-selected-option,
             input:not([type="submit"]):focus,
             textarea:focus{
-                border-color: rgba(40, 171, 227, .5);
-                box-shadow: 0 0 10px 0 rgba(40, 171, 227, .2);
+                border-color: rgba(65, 46, 22, .5);
+                box-shadow: 0 0 10px 0 rgba(65, 46, 22, .2);
             }
 
             .gt-selected-option.gt-success,
@@ -3567,7 +3567,7 @@
             right: 0;
             bottom: 0;
             left: 0;
-            background-color: rgba(40, 171, 227, .7);
+            background-color: rgba(65, 46, 22, .7);
         }
 
         .gt-lightbox::before{
@@ -4922,7 +4922,7 @@
             position: relative;
             height: 30px;
             border-radius: 10px;
-            background-color: rgba(40, 171, 227, .5);
+            background-color: rgba(65, 46, 22, .5);
         }
 
         .gt-pbar-wrap:not(:last-child){
@@ -6481,7 +6481,7 @@
                 bottom: 0;
                 left: 0;
                 border-radius: inherit;
-                background: rgba(40, 171, 227, .7);
+                background: rgba(65, 46, 22, .7);
             }
 
             .gt-team-holder.gt-type-1 .gt-member-photo::before,
@@ -6892,7 +6892,7 @@
     ------------------------------------------------------ */
 
         .tp-dottedoverlay.twoxtwo{
-            background: rgba(40, 171, 227, 0.6) none;
+            background: rgba(65, 46, 22, 0.6) none;
         }
 
         [class*="gt-scaption"]{
@@ -7746,7 +7746,7 @@
 
             .gt-entries-holder.gt-type-4 .gt-entry-byline a,
             .gt-entries-holder.gt-type-4 .gt-entry-cats a{
-                color: rgba(40, 171, 227, .8);
+                color: rgba(65, 46, 22, .8);
             }
 
             .gt-entries-holder.gt-type-4 .gt-entry-byline a:hover,
@@ -8642,7 +8642,7 @@
             bottom: 0;
             left: 0;
             z-index: 2;
-            background: rgba(40, 171, 227, .7);
+            background: rgba(65, 46, 22, .7);
             opacity: 0;
             visibility: hidden;
 
