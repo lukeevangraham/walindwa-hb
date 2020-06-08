@@ -174,7 +174,7 @@ router.get("/blog:id", (req, res) => {
 
 router.get("/newsletters", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/newsletters?")
+    axios.get("http://admin.moreleft.com/newsletters")
   ]).then((resultArray) => {
 
     function compareMonths(a, b) {
