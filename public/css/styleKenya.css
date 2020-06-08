@@ -482,7 +482,7 @@
 
     h1, h2, h3, h4, h5, h6{
         color: #2c3035;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         font-weight: 700;
         line-height: 58px;
         margin-top: 0px;
@@ -673,7 +673,7 @@
 
     .gt-link-underline{
         display: inline-block;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         font-size: 16px;
         line-height: 24px;
         position: relative;
@@ -880,7 +880,7 @@
         padding: 7px 0;
         font-size: 14px;
         line-height: 28px;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
     }
 
     .gt-header.gt-type-2.gt-transparent .gt-top-bar{
@@ -921,7 +921,7 @@
     }
 
     .gt-header .gt-hr-list{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         font-size: 16px;
         font-weight: 500;
     }
@@ -959,7 +959,7 @@
         background-color: rgba(255, 255, 255, 0.8);
         border-bottom: 1px solid #e0e2e2;
         font-size: 14px;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
     }
 
     .gt-topbar-navigation{
@@ -1192,7 +1192,7 @@
     ------------------------------------------------------ */
 
         .gt-navigation{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 14px;
             line-height: 28px;
             display: inline-block;
@@ -1417,7 +1417,7 @@
             }
 
             .gt-submenu{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 15px;
                 line-height: 20px;
                 font-weight: 500;
@@ -1697,7 +1697,7 @@
     ------------------------------------------------------ */
 
         .gt-header.gt-type-7{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 500;
         }
 
@@ -1796,7 +1796,7 @@
         font-size: 16px;
         line-height: 26px;
         font-weight: 600;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         color: #fff;
         text-transform: uppercase;
         display: inline-block;
@@ -1889,7 +1889,7 @@
     }
 
     .gt-more-info .gt-dropdown-invoker{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         color: #fefefe;
         font-size: 18px;
         font-weight: 700;
@@ -2127,7 +2127,7 @@
             line-height: 22px;
             font-weight: 700;
             text-transform: uppercase;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             border: 3px solid #A67538;
             padding: 12px 45px 10px;
             border-radius: 8px;
@@ -2331,7 +2331,7 @@
             legend{
                 font-size: 14px;
                 font-weight: 600;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 color: #4f5362;
@@ -2528,7 +2528,7 @@
             input[type="radio"].gt-type-3 + label,
             input[type="checkbox"].gt-type-3 + label{
                 color: #515355;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 24px;
                 font-weight: 700;
             }
@@ -2799,7 +2799,7 @@
 
             .gt-qty.gt-type-2 input:not([type="submit"]){
                 font-size: 16px;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 color: #5f6366;
                 height: 45px;
                 border-radius: 10px;
@@ -2900,7 +2900,7 @@
             }
 
             .gt-lineform.gt-type-2 input:not([type="submit"]){
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 text-transform: uppercase;
                 font-size: 18px;
                 height: 58px;
@@ -3118,7 +3118,7 @@
             font-size: 16px;
             line-height: 1.4em;
             font-weight: 700;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             text-transform: uppercase;
             letter-spacing: 1.5px;
         }
@@ -3349,7 +3349,7 @@
         }
 
         .gt-sub-nav{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1.5px;
@@ -3373,7 +3373,7 @@
 
         .gt-info-list .gt-item-name{
             color: rgba(79, 83, 98, .7);
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 14px;
             font-weight: 600;
             line-height: 24px;
@@ -3406,7 +3406,7 @@
             line-height: 30px;
             text-transform: uppercase;
             font-weight: 700;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             color: #908d8d;
             text-align: right;
         }
@@ -3698,7 +3698,7 @@
         .gt-toggle-title{
             position: relative;
             cursor: pointer;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 16px;
             font-weight: 700;
             text-transform: uppercase;
@@ -3833,7 +3833,7 @@
         .gt-alert-box{
             font-size: 18px;
             font-weight: 700;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             text-transform: uppercase;
             color: #fff;
             padding-top: 15px;
@@ -4092,7 +4092,7 @@
             line-height: 22px;
             font-weight: 700;
             text-transform: uppercase;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             padding: 20px 45px 18px;
             border: 2px solid transparent;
             background-color: #fff;
@@ -4158,7 +4158,7 @@
             .gt-call-out.gt-type-3 h4,
             .gt-call-out.gt-type-3 h5,
             .gt-call-out.gt-type-3 h6{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-weight: 400;
             }
 
@@ -4207,7 +4207,7 @@
     ------------------------------------------------------ */
 
         .gt-pagination{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 500;
             line-height: 22px;
             text-align: center;
@@ -4288,7 +4288,7 @@
         }
 
         .gt-dropcap:not(.gt-type-3)::first-letter{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 60px;
         }
 
@@ -4465,7 +4465,7 @@
         }
 
         .gt-author-name{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 18px;
             line-height: 20px;
             font-weight: 700;
@@ -4490,7 +4490,7 @@
 
         .gt-author-company{
             display: block;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 14px;
             font-weight: 500;
             text-transform: uppercase;
@@ -4623,7 +4623,7 @@
 
             .gt-testimonials-holder.gt-type-1 blockquote,
             .gt-testimonials-holder.gt-type-1 .gt-about{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-weight: 700;
             }
 
@@ -4940,7 +4940,7 @@
         .gt-pbar::after,
         .gt-pbar-inner::after{
             content: attr(data-value)'%';
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 16px;
             line-height: 1em;
             font-weight: 700;
@@ -5149,7 +5149,7 @@
         }
 
         .gt-pt-header{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 700;
             color: #2c3035;
             padding: 26px 20px 18px;
@@ -5199,7 +5199,7 @@
         }
 
         .gt-label{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 13px;
             line-height: 1em;
             font-weight: 600;
@@ -5416,7 +5416,7 @@
         }
 
         .gt-counter{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 18px;
             font-weight: 700;
             line-height: 24px;
@@ -5603,7 +5603,7 @@
         .gt-tabs-holder .gt-tabs-nav a,
         .gt-tour-sections-holder.gt-type-2 .gt-tabs-nav a,
         .gt-tour-sections-holder.gt-type-3 .gt-tabs-nav a{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 16px;
             line-height: 24px;
             font-weight: 700;
@@ -6049,7 +6049,7 @@
     ------------------------------------------------------ */
 
         .gt-filter{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
             margin-top: -10px;
@@ -6343,7 +6343,7 @@
 
         .gt-member-position{
             color: #2c3035;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 14px;
             font-weight: 500;
             line-height: 22px;
@@ -6621,7 +6621,7 @@
 
         .gt-services-holder .gt-service .gt-service-title::before{
             content: counter(serviace-number);
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             color: #A67538;
             font-size: 58px;
             font-weight: 800;
@@ -6686,7 +6686,7 @@
         }
 
         .gt-countdown-holder.gt-type-1 .countdown-amount{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 800;
             font-size: 76px;
             line-height: 1em;
@@ -6704,7 +6704,7 @@
         }
 
         .gt-countdown-holder.gt-type-1 .countdown-period{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             color: #fff;
             font-size: 18px;
             font-weight: 700;
@@ -6736,7 +6736,7 @@
 
         .wt_current_time,
         .wt_full_time{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 12px;
             font-weight: 600;
         }
@@ -6915,7 +6915,7 @@
 
         [class*="gt-scaption"][class*="-large"],
         [class*="gt-scaption"][class*="-medium"]{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 800;
         }
 
@@ -7119,7 +7119,7 @@
     }
 
     .gt-link-attachment{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 24px;
@@ -7200,7 +7200,7 @@
         content: close-quote;
         font-size: 40px;
         font-weight: 800;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         display: block;
         position: absolute;
         left: 0;
@@ -7240,7 +7240,7 @@
 
     .gt-blockquote-attachment blockquote{
         color: #fff;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         font-size: 18px;
         font-weight: 500;
         line-height: 28px;
@@ -7264,7 +7264,7 @@
     }
 
     .gt-blockquote-attachment .gt-author{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 28px;
@@ -7495,7 +7495,7 @@
 
             .gt-entries-holder.gt-type-1 .gt-entry-title,
             .gt-entries-holder.gt-type-2 .gt-entry-title{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 700;
@@ -7556,7 +7556,7 @@
 
             .gt-entries-holder.gt-type-3 .gt-entry-cats,
             .gt-entries-holder.gt-type-4 .gt-entry-cats{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 16px;
                 line-height: 26px;
                 text-transform: uppercase;
@@ -7632,7 +7632,7 @@
 
             .gt-entries-holder.gt-type-3 .gt-entry-meta,
             .gt-entries-holder.gt-type-4 .gt-entry-meta{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 16px;
                 line-height: 26px;
                 text-transform: uppercase;
@@ -7731,7 +7731,7 @@
             }
 
             .gt-entries-holder.gt-type-4 .gt-entry-byline{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 26px;
@@ -7756,7 +7756,7 @@
 
             .gt-continue-reading-link{
                 color: #A67538;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 16px;
                 line-height: 26px;
                 font-weight: 700;
@@ -7843,7 +7843,7 @@
             }
 
             .gt-entries-holder.gt-small-thumbs .gt-entry-attachment .gt-entry-date{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 24px;
                 font-weight: 500;
                 line-height: 1em;
@@ -7899,7 +7899,7 @@
 
             .gt-breadcrumbs-wrap .gt-entry-meta{
                 color: #fff;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 16px;
                 line-height: 26px;
                 font-weight: 500;
@@ -7955,7 +7955,7 @@
             }
 
             .gt-breadcrumbs-wrap .gt-entry-cats > li > a{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 color: #fff;
                 font-size: 14px;
                 line-height: 24px;
@@ -8013,7 +8013,7 @@
 
             .gt-share .gt-title,
             .gt-entry-meta-item .gt-title{
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Cairo', sans-serif;
                 font-size: 14px;
                 line-height: 24px;
                 font-weight: 700;
@@ -8082,7 +8082,7 @@
 
                 .gt-previous-entry,
                 .gt-next-entry{
-                    font-family: 'Raleway', sans-serif;
+                    font-family: 'Cairo', sans-serif;
                     font-size: 14px;
                     font-weight: 500;
                     line-height: 24px;
@@ -8231,7 +8231,7 @@
                 }
 
                 .gt-comment-meta{
-                    font-family: 'Raleway', sans-serif;
+                    font-family: 'Cairo', sans-serif;
                     font-size: 14px;
                     line-height: 24px;
                     margin: -5px -10px 8px;
@@ -8767,7 +8767,7 @@
 
         .gt-project-date{
             display: inline-block;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 18px;
             font-weight: 500;
         }
@@ -8787,7 +8787,7 @@
         }
 
         .gt-project.gt-single .gt-project-cats{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 16px;
             line-height: 26px;
             font-weight: 700;
@@ -8880,7 +8880,7 @@
 
     .gt-settings-view-products .gt-selected-option{
         background: #fff;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         font-size: 14px;
         font-weight: 500;
         height: 35px;
@@ -8908,7 +8908,7 @@
     }
 
     .gt-account-action{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Cairo', sans-serif;
         font-size: 24px;
         line-height: 30px;
         font-weight: 700;
@@ -9363,7 +9363,7 @@
         }
 
         .gt-sc-invoker .gt-price{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 16px;
             font-weight: 600;
             display: inline-block;
@@ -9379,7 +9379,7 @@
 
         .gt-sc-invoker > span:not(.gt-price)::after{
             content: attr(data-amount);
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 11px;
             font-weight: 700;
             line-height: 16px;
@@ -9425,7 +9425,7 @@
             font-size: inherit;
             line-height: inherit;
             display: block;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 500;
             color: #5f6366 !important;
         }
@@ -9465,7 +9465,7 @@
 
         .gt-sc-footer{
             text-align: center;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 700;
             color: #2c3035;
             padding: 10px 35px 0px;
@@ -9638,7 +9638,7 @@
         }
 
         .gt-product.gt-single .gt-product-price{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 36px;
             line-height: 40px;
             font-weight: 800;
@@ -9688,7 +9688,7 @@
 
         .gt-product-characteristics .gt-selected-option{
             min-width: 200px;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 16px;
             font-weight: 500;
         }
@@ -9698,7 +9698,7 @@
         }
 
         .gt-product.gt-single .gt-product-characteristics .gt-name{
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 14px;
             font-weight: 500;
             line-height: 22px;
@@ -9950,7 +9950,7 @@
         .gt-widget .gt-entry-meta{
             font-size: 12px;
             line-height: 14px;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-weight: 500;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -9973,7 +9973,7 @@
 
         .gt-widget .tagcloud a{
             color: #5f6366;
-            font-family: 'Raleway', sans-serif;
+            font-family: 'Cairo', sans-serif;
             font-size: 12px;
             line-height: 16px;
             font-weight: 600;
@@ -10156,7 +10156,7 @@
     .gt-footer .gt-copyright{
         font-size: 14px;
         color: rgba(255, 255, 255, .8);
-        font-family: 'Raleway';
+        font-family: 'Cairo';
         font-weight: 500;
     }
 

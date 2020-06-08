@@ -2412,7 +2412,7 @@
 					},
 
 					config: {
-						font: 'Raleway',
+						font: 'Cairo',
 						fontSize: '60px',
 						lineHeight: '32px',
 						fontWeight: 800
