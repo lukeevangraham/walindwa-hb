@@ -1,5 +1,7 @@
 {{> main/breadcrumb breadcrumbTitle=this.title}}
 
+{{log this}}
+
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
 <div class="gt-page-content-wrap gt-no-sidebar">
@@ -15,7 +17,7 @@
                 <div class="gt-content-element">
 
                     <div class="aligncenter">
-                        <img src="images/content_image_2.jpg" alt="">
+                        <img src="http://admin.moreleft.com{{sponsorshipSingleType.PostHighTopImage.url}}" alt="">
                     </div>
 
                     <p>The Higher Education Sponsorship program benefits those members of the <a
@@ -37,14 +39,9 @@
 
                 <div class="gt-content-element">
 
-                    <img src="images/content_image_3.jpg" class="alignleft" alt="">
+                    <img src="http://admin.moreleft.com{{sponsorshipSingleType.PostHighLeftImage.url}}" class="alignleft" alt="">
 
-                    <p>Walindwa fills this gap with the Higher Education Sponsorship program. Students must have a
-                        proven record of good academic standing, strong ethics, and be well behaved in order to be
-                        included in the pool of candidates. The candidates are interviewed and approved by the EBCCK
-                        Board of Directors, before being presented to Walindwa for consideration of a scholarship. Costs
-                        range from $1250 to $3000 per year, depending upon the education program in which the student is
-                        enrolled.</p>
+                    {{{markdown sponsorshipSingleType.PostHighLowerText}}}
 
 
                 </div>
@@ -53,13 +50,13 @@
                 <!-- - - - - - - - - - - - - - End of Align by left - - - - - - - - - - - - - - - - -->
 
 
-<div class="gt-content-element">
+{{!-- <div class="gt-content-element">
 
                     <p><a href="http://elmabarnettchildrenscentre.org/category/higher-education-students/"
                             target="_blank" rel="noopener noreferrer">Click Here</a> to view a list of students who are
                         in need of sponsorship.</p>
 
-                </div>
+                </div> --}}
                 <!--/ .gt-content-element -->
 
                     
@@ -67,7 +64,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="aligncenter">
-                                <a href="https://admin.moreleft.com/uploads/WalindwaChildSponsorshipApplication-2016-02-26_677bb24547.pdf" class="gt-btn">Download a Sponsorship Application Form</a>
+                                <a href="{{sponsorshipSingleType.StudentsApplicationLink}}" class="gt-btn navA">Download a Sponsorship Application Form</a>
 
                             </div>
                         </div>
