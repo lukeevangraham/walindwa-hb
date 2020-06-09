@@ -242,4 +242,28 @@ router.get("/testimonials:id", (req, res) => {
   })
 })
 
+router.get("/ebcck", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/in-kenya")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "EBCCK",
+      kenyaSingleType: resultArray[0].data
+    }
+    res.render("./sections/kenya/ebcck", hbsObject)
+  })
+})
+
+router.get("/ekhs", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/in-kenya")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "EKHS",
+      kenyaSingleType: resultArray[0].data
+    }
+    res.render("./sections/kenya/ekhs", hbsObject)
+  })
+})
+
 module.exports = router;
