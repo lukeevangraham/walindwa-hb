@@ -8,42 +8,49 @@
 
         <div class="row">
 
-            <div class="col-xs-12">
+                <div id="newsletterTop" class="col-xs-12">
 
-                <section class="gt-content-element">
+                    <section class="gt-content-element">
 
-                    <h2>Newsletters</h2>
-                    <h4>Please view our latest newsletter</h4>
+                        <h2>Newsletters</h2>
+                        <h4>Please view our latest newsletter</h4>
 
-                    {{#each newsletters}} {{#if @first}} <ul class="gt-list gt-type-1"><li> {{#if link}} <a class="gt-paypal-link" href="{{link}}"> {{/if}} {{#unless link}} <a
-                            href="http://admin.moreleft.com{{file.url}}">{{/unless}} {{month}}  {{year}}</a> - {{name}}</li></ul> {{/if}} {{/each}}
+                        {{#each newsletters}} {{#if @first}} <ul class="gt-list gt-type-1">
+                            <li> {{#if link}} <a class="gt-paypal-link" href="{{link}}"> {{/if}} {{#unless link}} <a
+                                        href="http://admin.moreleft.com{{file.url}}">{{/unless}} {{month}} {{year}}</a>
+                                    -
+                                    {{name}}</li>
+                        </ul> {{/if}} {{/each}}
 
-                </section>
+                    </section>
 
+                </div>
+
+            <div class="col-md-6 col-md-push-6 gt-text-content-element">
+                <h4>Subscribe</h4>
+                <a href="https://walindwa.us7.list-manage.com/subscribe?u=11622771fa865ffca225b78de&id=24bb4c515f"
+                    class="gt-btn navA">Click here to subscribe to our newsletter</a>
             </div>
 
-            <div class="col-md-6 gt-text-content-element">
+
+            <div class="col-md-6 col-md-pull-6 gt-text-content-element">
                 <h4>Archive</h4>
                 <ul class="gt-list gt-type-1">
                     {{#each newsletters}}
                     {{#unless @first}}
                     {{#if link}}
                     <li><a class="gt-paypal-link" href="{{link}}">
-                    {{/if}}
-                    {{#if file}}
+                            {{/if}}
+                            {{#if file}}
                     <li><a class="gt-paypal-link" href="http://admin.moreleft.com{{file.url}}" target="_blank"
                             rel="noopener noreferrer">
-                    {{/if}}
-                    {{month}} {{year}}</a> - {{name}}</li>
+                            {{/if}}
+                            {{month}} {{year}}</a> - {{name}}</li>
                     {{/unless}}
                     {{/each}}
                 </ul>
             </div>
 
-            <div class="col-md-6 gt-text-content-element">
-                <h4>Subscribe</h4>
-                <a href="https://walindwa.us7.list-manage.com/subscribe?u=11622771fa865ffca225b78de&id=24bb4c515f" class="gt-btn navA">Click here to subscribe to our newsletter</a>
-            </div>
 
 
 

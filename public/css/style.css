@@ -74,6 +74,10 @@
     align-items: center !important;
 }
 
+#newsletterTop{
+    margin-bottom: 3rem !important;
+}
+
 #blogOwl{
     margin-bottom: 3rem;
 }
@@ -853,7 +857,7 @@
     }
 
     .gt-header .gt-sub-nav{
-        font-size: 14px;
+        font-size: 15px;
         margin-left: -13px;
         margin-right: -13px;
     }
@@ -1193,7 +1197,7 @@
 
         .gt-navigation{
             font-family: 'Cairo', sans-serif;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 28px;
             display: inline-block;
             position: relative;
@@ -2123,7 +2127,7 @@
             display: inline-block;
             letter-spacing: 1.5px;
             text-align: center;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 22px;
             font-weight: 700;
             text-transform: uppercase;
@@ -7957,7 +7961,7 @@
             .gt-breadcrumbs-wrap .gt-entry-cats > li > a{
                 font-family: 'Cairo', sans-serif;
                 color: #fff;
-                font-size: 14px;
+                font-size: 15px;
                 line-height: 24px;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -11495,7 +11499,7 @@
 
     .gt-breadcrumbs > li,
     .gt-breadcrumbs > li > a{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .gt-copyright,
