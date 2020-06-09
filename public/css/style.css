@@ -7906,7 +7906,7 @@
             }
 
             .gt-breadcrumbs-wrap .gt-entry-meta .gt-entry-date{
-                font-size: 18px;
+                font-size: 16px;
             }
  
             .gt-breadcrumbs-wrap .gt-entry-meta a{
@@ -7927,7 +7927,7 @@
             .gt-breadcrumbs-wrap .gt-entry-likes::before,
             .gt-breadcrumbs-wrap .gt-entry-date::before{
                 content: "\e83f";
-                font-size: 18px;
+                font-size: 16px;
                 font-family: 'Linearicons-Free';
                 display: inline-block;
                 margin-right: 6px;
