@@ -266,4 +266,16 @@ router.get("/ekhs", (req, res) => {
   })
 })
 
+router.get("/photos", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/photos-and-videos")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Photos and Videos",
+      photos: resultArray[0].data
+    }
+    res.render("./sections/updates/photos", hbsObject)
+  })
+})
+
 module.exports = router;

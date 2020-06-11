@@ -1,0 +1,283 @@
+{{> main/breadcrumb currentTitle=this.title}}
+
+
+
+
+<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
+
+<div class="gt-page-content-wrap gt-no-sidebar">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <!-- - - - - - - - - - - - - - Filter - - - - - - - - - - - - - - - - -->
+
+
+
+                <!-- - - - - - - - - - - - - - End of Filter - - - - - - - - - - - - - - - - -->
+
+                <!-- - - - - - - - - - - - - - Entries Holder - - - - - - - - - - - - - - - - -->
+
+                <div class="gt-entries-holder gt-isotope gt-type-1">
+
+                    <!-- - - - - - - - - - - - - - Isotope - - - - - - - - - - - - - - - - -->
+
+                    <div class="gt-isotope-container gt-cols-3" data-max-items="20"
+                        data-ajax-handler="json/blog_items.json" data-masonry="true"
+                        data-load-more-btn="#blog-load-more" data-filter-el="#blog-filter" data-holder-type="blog">
+
+                        <!-- - - - - - - - - - - - - - Grid Sizer For Masonry Layout - - - - - - - - - - - - - - - - -->
+
+                        <div class="gt-grid-sizer"></div>
+
+                        <!-- - - - - - - - - - - - - - End of Grid Sizer For Masonry Layout - - - - - - - - - - - - - - - - -->
+
+                        {{#each photos}}
+
+                        {{#if photos}}
+
+                        {{#if (isOne photos)}}
+
+                        <div class="gt-col motion-design photography">
+
+                            <article class="gt-entry gt-image-entry-format">
+
+                                <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-attachment">
+
+                                    <a class="gt-thumbnail-attachment" href="blog_single_without_sidebar.html"><img
+                                            src="http://admin.moreleft.com{{photos.[0].url}}" alt=""></a>
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+
+                                <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-body">
+
+                                    {{!-- <ul class="gt-entry-cats">
+                                        <li><a href="#">Motion Design</a></li>
+                                        <li><a href="#">Photography</a></li>
+                                    </ul> --}}
+
+
+            {{log this}}
+                                    <h6 class="gt-entry-title"><a class="navA" href="blog_single_without_sidebar.html">{{title}}</a></h6>
+
+                                    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+
+                                    {{!-- <div class="gt-entry-meta">
+
+                                        <time class="gt-entry-date" datetime="2016-01-27">{{getPhotoGalleryDate updated_at }}</time>
+
+                                    </div> --}}
+
+                                    <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                            </article>
+
+                        </div>
+
+
+
+
+                        {{else}}
+
+
+                        <div class="gt-col photography">
+
+                            <article class="gt-entry gt-slideshow-entry-format">
+
+                                <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-attachment">
+
+                                    <div class="owl-carousel gt-entry-carousel">
+
+                                        {{#each photos}}
+
+                                        <img src="http://admin.moreleft.com{{url}}" alt="">
+
+                                        {{/each}}
+
+                                    </div>
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+
+                                <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-body">
+
+                                    {{!-- <ul class="gt-entry-cats">
+                                        <li><a href="#">Photography</a></li>
+                                    </ul> --}}
+
+                                    <h6 class="gt-entry-title"><a class="navA" href="blog_single_without_sidebar.html">{{title}}</a></h6>
+
+                                    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+
+                                    {{!-- <div class="gt-entry-meta">
+
+                                        <time class="gt-entry-date" datetime="2016-01-27">January 27 2016</time>
+                                        <a class="gt-entry-comments-link" href="#">9 comments</a>
+
+                                    </div> --}}
+
+                                    <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                            </article>
+
+                        </div>
+
+                        {{/if}}
+
+                        {{/if}}
+
+                        {{#if embedCode}}
+
+                        <div class="gt-col modeling">
+
+                            <article class="gt-entry gt-video-entry-format">
+
+                                <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-attachment">
+
+                                    <div class="gt-responsive-iframe">
+
+                                        {{{embedCode}}}
+
+                                    </div>
+                                    <!--/ .gt-responsive-iframe -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+
+                                <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-body">
+
+                                    {{!-- <ul class="gt-entry-cats">
+                                        <li><a href="#">Modeling</a></li>
+                                    </ul> --}}
+
+                                    <h6 class="gt-entry-title"><a class="navA" href="blog_single_without_sidebar.html">{{title}}</a></h6>
+
+                                    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+
+                                    {{!-- <div class="gt-entry-meta">
+
+                                        <time class="gt-entry-date" datetime="2016-01-27">January 27 2016</time>
+                                        <a class="gt-entry-comments-link" href="#">9 comments</a>
+
+                                    </div> --}}
+
+                                    <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                            </article>
+
+                        </div>
+
+                        {{/if}}
+
+                        {{#if videos}}
+
+                        <div class="gt-col modeling">
+
+                            <article class="gt-entry gt-video-entry-format">
+
+                                <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-attachment">
+
+                                    <div class="gt-responsive-iframe embed-responsive embed-responsive-16by9">
+
+                                        {{!-- <iframe src="http://admin.moreleft.com{{videos.[0].url}}"></iframe> --}}
+                                        <video controls name="media" class="nativeVideo">
+                                            <source src="http://admin.moreleft.com{{videos.[0].url}}" type="video/mp4">
+                                        </video>
+
+                                    </div>
+                                    <!--/ .gt-responsive-iframe -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+
+                                <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-entry-body">
+
+                                    <h6 class="gt-entry-title"><a href="blog_single_without_sidebar.html">{{title}}</a></h6>
+
+                                    <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
+
+                                    {{!-- <div class="gt-entry-meta">
+
+                                        <time class="gt-entry-date" datetime="2016-01-27">January 27 2016</time>
+                                        <a class="gt-entry-comments-link" href="#">9 comments</a>
+
+                                    </div> --}}
+
+                                    <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+
+                                </div>
+
+                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                            </article>
+
+                        </div>
+
+
+                        {{/if}}
+
+                        {{/each }}
+
+
+                    </div>
+
+                    <!-- - - - - - - - - - - - - - End of Isotope - - - - - - - - - - - - - - - - -->
+
+                </div>
+
+                <!-- - - - - - - - - - - - - - End of Entries Holder - - - - - - - - - - - - - - - - -->
+
+                {{!-- <div class="aligncenter">
+
+                    <a href="#" class="gt-btn-3 gt-large gt-shadow gt-load-more" id="blog-load-more">Show Me More</a>
+
+                </div> --}}
+
+            </div>
+            <!--/ .col -->
+
+        </div>
+        <!--/ .row -->
+
+    </div>
+    <!--/ .container -->
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->
