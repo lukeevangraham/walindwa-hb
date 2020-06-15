@@ -69,6 +69,9 @@
 	
 ------------------------------------------------------ */
 
+strong {
+    vertical-align: middle;
+}
 
 .nativeVideo {
     position: absolute;

@@ -278,4 +278,28 @@ router.get("/photos", (req, res) => {
   })
 })
 
+router.get("/giving", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/giving")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Giving",
+      givingSingleType: resultArray[0].data
+    }
+    res.render("./giving", hbsObject)
+  })
+})
+
+router.get("/designate", (req, res) => {
+  Promise.all([
+    axios.get("http://admin.moreleft.com/giving")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Designate",
+      givingSingleType: resultArray[0].data
+    }
+    res.render("./designate", hbsObject)
+  })
+})
+
 module.exports = router;
