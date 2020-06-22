@@ -1,30 +1,78 @@
 {{> main/breadcrumb currentTitle=title}}
 
 
-			<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
+<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
-			<div class="gt-page-content-wrap gt-no-sidebar">
+<div class="gt-page-content-wrap gt-no-sidebar">
 
-				<div class="container">
+	<div class="container">
 
-					<div class="row">
+		<div class="row">
 
-						<div class="col-xs-12">
+			<div class="col-xs-12">
 
-							<section class="gt-content-element">
+				<section class="gt-content-element">
 
-								{{{markdown givingSingleType.topText}}}
+					{{!-- <div class="col-xs-12"> --}}
+					{{{markdown givingSingleType.topText}}}
+					<p></p>
+					{{!-- </div> --}}
 
-							</section>
 
-							<!-- - - - - - - - - - - - - - End of Blockquote Style - - - - - - - - - - - - - - - - -->
 
-						</div><!--/ .col -->
+						<div class="row">
 
-					</div><!--/ .row -->
+							<div class="col-xs-4">
+								<img src="images/content_image_3.jpg" alt="" class="img-fluid m-2">
+								<p></p>
+								<img src="images/content_image_3.jpg" alt="" class="img-fluid m-2">
+								<p></p>
+								<img src="images/content_image_3.jpg" alt="" class="img-fluid m-2">
+							</div>
+							<div class="col-xs-8">
+								{{{markdown givingSingleType.MainText}}}
 
-				</div><!--/ .container -->
+								<div id="CustomDonationsForm"></div>
+
+								<script>
+									var cdscript = document.createElement('script');
+									cdscript.onload = function () {
+										CustomDonations.BuildForm({
+											account: 'b76cdc74-b0e4-40ea-b5a7-3dde7aa58587',
+											form: 'a21c615b-b63e-4d80-ba55-b2081141b411',
+											allocation: null, /* optional. Use an allocation ID, like 'AH664' (w/ quotes) to be default selected on form load */
+											memberId: null, /* optional. If the current user is authenticated, you can insert their user ID, like '02943' (with quotes) */
+											apiVersion: 'v1',
+											useReCaptcha: 'false',
+											interval: null, /* if null, then user must select one time or recurring (if enabled). Optionally can set to 'once', 'monthly','quarterly', or 'yearly' */
+											loadingText: 'Loading Secure Form...',
+											paymentVersion: 2, /*  1: for modal payment window. 2: for inline payment with Google/Apple Pay options */
+											baseUrl: 'https://api.customdonations.com',
+											mode: 'live' /* change to 'test' to run in test mode. Use card 4242 4242 4242 4242 for testing. */
+										});
+									};
+									cdscript.src = "https://api.customdonations.com/v1/js/form-builder.min.js?v=" + new Date().getTime();
+									document.head.appendChild(cdscript);
+								</script>
+
+							</div>
+						</div>
+
+
+
+				</section>
+
+				<!-- - - - - - - - - - - - - - End of Blockquote Style - - - - - - - - - - - - - - - - -->
 
 			</div>
+			<!--/ .col -->
 
-			<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->
+		</div>
+		<!--/ .row -->
+
+	</div>
+	<!--/ .container -->
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->

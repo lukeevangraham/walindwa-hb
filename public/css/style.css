@@ -73,6 +73,12 @@ p {
     vertical-align: baseline !important;
 }
 
+.stretcher {
+    /* padding-bottom: 100%; */
+    /* margin-bottom: -100%; */
+    flex-direction: column;
+}
+
 /* strong {
     vertical-align: middle;
 } */
