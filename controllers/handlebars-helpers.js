@@ -4,7 +4,7 @@ let moment = require("moment");
 module.exports = {
     createExcerpt: function (body, sentences) {
         return markdown(body).split("<p>")[1].split('. ').slice(0, sentences).join('. ') + '.';
-        // console.log("First P: ", firstPSentences)
+        // console.log("body: ", body)
         // return body
     },
     createTestimonyExcerpt: function (body) {
