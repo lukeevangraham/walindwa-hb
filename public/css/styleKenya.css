@@ -92,12 +92,12 @@
 
     ::-moz-selection{
         color: #fff;
-        background-color: #A67538;
+        background-color: #2a6319;
     }
 
     ::selection{
         color: #fff;
-        background-color: #A67538;
+        background-color: #2a6319;
     }
 
     ::-webkit-input-placeholder{
@@ -571,7 +571,7 @@
     }
 
     a:hover{
-        color: #A67538;
+        color: #2a6319;
     }
 
     a:hover, button:hover{
@@ -601,7 +601,7 @@
     .gt-call-to-action-link{
         display: inline-block;
         text-transform: uppercase;
-        border-bottom: 2px dotted #A67538;
+        border-bottom: 2px dotted #2a6319;
     }
 
     h1.gt-title{
@@ -649,7 +649,7 @@
         margin-left: -20px;
         width: 40px;
         height: 5px;
-        background-color: #A67538;
+        background-color: #2a6319;
     }
 
     .gt-sub-title{
@@ -1106,7 +1106,7 @@
         }
 
         .gt-header.gt-type-6 [class*="gt-btn"].gt-reverse:hover{
-            border-color: #A67538 !important;
+            border-color: #2a6319 !important;
         }
 
         /* .gt-header.gt-light a > .fa,
@@ -1131,7 +1131,7 @@
         .gt-header.gt-light .gt-toggle-nav.gt-active,
         .gt-header .gt-compressed .gt-lineform-btn:hover,
         .gt-header.gt-light .gt-lineform .gt-lineform-btn:hover{
-            color: #A67538;
+            color: #2a6319;
         }
 
     /* ------------------------------------------------------
@@ -1232,7 +1232,7 @@
             left: 0;
             top: 100%;
             margin-top: 3px;
-            border-top: 2px solid #A67538;
+            border-top: 2px solid #2a6319;
             width: 100%;
             opacity: 0;
 
@@ -1284,7 +1284,7 @@
         .gt-touchevents .gt-navigation .gt-t-active > a,
         .gt-submenu > .gt-current > a,
         .gt-submenu > li:hover > a{
-            color: #A67538 !important;
+            color: #2a6319 !important;
         }
 
         .gt-nav-btn{
@@ -1293,7 +1293,7 @@
             height: 40px;
             margin: auto;
             font-size: 36px;
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-nav-btn::before{
@@ -1637,7 +1637,7 @@
         #menu.gt-navigation > li > a::before,
         .gt-header.gt-type-8.gt-light .gt-navigation > li > a:before{
             border-width: 0 0 2px 0;
-            border-color: #A67538;
+            border-color: #2a6319;
         }
 
         .gt-no-touchevents .gt-header.gt-type-6 .gt-navigation > li:hover > a::before,
@@ -1750,7 +1750,7 @@
     }
 
     .gt-bg-color2 .gt-bg-element{
-        background-color: #A67538;
+        background-color: #2a6319;
     }
 
     .gt-no-touchevents .gt-parallax .gt-bg-element,
@@ -1804,7 +1804,7 @@
     }
 
     .gt-breadcrumbs > li > a:hover{
-        color: #A67538;
+        color: #2a6319;
     }
 
     .gt-page-content-wrap .gt-breadcrumbs:not(:last-child){
@@ -1831,7 +1831,7 @@
     }
 
     .gt-moved-image{
-        box-shadow: 12px -12px 0 0 #A67538;
+        box-shadow: 12px -12px 0 0 #2a6319;
         position: relative;
         left: -12px;
         top: 12px;
@@ -1864,7 +1864,7 @@
     }
 
     .gt-404-section .gt-link-underline{
-        color: #A67538;
+        color: #2a6319;
     }
 
     .gt-404-section .gt-link-underline:hover{
@@ -1900,7 +1900,7 @@
     .gt-more-info .gt-dropdown-invoker::after{
         content: "\e874";
         font-family: "Linearicons-Free";
-        color: #A67538;
+        color: #2a6319;
         position: absolute;
         right: 0;
         top: 50%;
@@ -1974,7 +1974,7 @@
     }
 
     .gt-media-holder .gt-link-underline:hover{
-        color: #A67538;
+        color: #2a6319;
     }
 
     .gt-media-holder .gt-left-edge{
@@ -2128,7 +2128,7 @@
             font-weight: 700;
             text-transform: uppercase;
             font-family: 'Cairo', sans-serif;
-            border: 3px solid #A67538;
+            border: 3px solid #2a6319;
             padding: 12px 45px 10px;
             border-radius: 8px;
         }
@@ -2137,13 +2137,13 @@
         [class*="gt-btn"].gt-reverse:hover,
         [class*="gt-btn"].gt-reverse.gt-active{
             color: #fff !important;
-            background: #A67538 !important;
+            background: #2a6319 !important;
         }
 
         [class*="gt-btn"]:hover,
         [class*="gt-btn"].gt-active,
         [class*="gt-btn"].gt-reverse{
-            color: #A67538 !important;
+            color: #2a6319 !important;
             background: transparent !important;
         }
 
@@ -2464,13 +2464,13 @@
                 left: 9px;
                 top: 12px;
                 border-radius: 50%;
-                background-color: #A67538;
+                background-color: #2a6319;
                 width: 14px;
                 height: 14px;
             }
 
             input[type="checkbox"] + label::after{
-                border: 2px solid #A67538;
+                border: 2px solid #2a6319;
                 width: 25px;
                 height: 15px;
                 left: 1px;
@@ -2610,7 +2610,7 @@
                 width: 0;
                 height: 0;
                 border-left: 6px solid transparent;
-                border-top: 10px solid #A67538;
+                border-top: 10px solid #2a6319;
                 border-right: 6px solid transparent;
                 position: absolute;
                 top: 50%;
@@ -2640,7 +2640,7 @@
             }
 
             .gt-options-list > li:hover{
-                color: #A67538;
+                color: #2a6319;
 
                 -webkit-transition: color .1s ease-in;
                         transition: color .1s ease-in;
@@ -2702,7 +2702,7 @@
                 position: absolute;
                 border-radius: inherit;
                 top: 0;
-                background-color: #A67538;
+                background-color: #2a6319;
                 height: 100%;
             }
 
@@ -2786,7 +2786,7 @@
             }
 
             .gt-qty-btn-up::before{
-                border-bottom: 7px solid #A67538;
+                border-bottom: 7px solid #2a6319;
             }
 
             .gt-qty-btn-down{
@@ -2794,7 +2794,7 @@
             }
 
             .gt-qty-btn-down::before{
-                border-top: 7px solid #A67538;
+                border-top: 7px solid #2a6319;
             }
 
             .gt-qty.gt-type-2 input:not([type="submit"]){
@@ -2911,7 +2911,7 @@
                 border-width: 0px 0px 4px 0px;
                 background: transparent;
                 border-radius: 0px;
-                border-color: #A67538 !important;
+                border-color: #2a6319 !important;
                 box-shadow: none;
             }
 
@@ -2921,7 +2921,7 @@
             }
 
             .gt-lineform.gt-type-2 .gt-lineform-btn:hover{
-                color: #A67538;
+                color: #2a6319;
             }
 
             .gt-lineform.gt-type-2 ::-webkit-input-placeholder{
@@ -3157,7 +3157,7 @@
 
         .gt-table-holder.gt-type-3 table th{
             color: #fcfcfc;
-            background-color: #A67538;
+            background-color: #2a6319;
         }
 
         .gt-table-holder.gt-horizontal.gt-type-3 th .gt-cell-content{
@@ -3223,7 +3223,7 @@
         }
 
         .gt-list.gt-type-1 > li::before{
-            background-color: #A67538;
+            background-color: #2a6319;
         }
 
         .gt-list.gt-type-2 > li::before{
@@ -3244,7 +3244,7 @@
             text-align: center;
             width: 20px;
             height: 20px;
-            background-color: #A67538;
+            background-color: #2a6319;
             border-radius: 50%;
             top: 6px;
             left: 5px;
@@ -3340,7 +3340,7 @@
         }
 
         .gt-slash-hr-list .gt-active > a{
-            border-bottom: 2px solid #A67538;
+            border-bottom: 2px solid #2a6319;
         }
 
         .gt-list > li:not(:last-child),
@@ -3396,7 +3396,7 @@
             line-height: 30px;
             font-style: italic;
             border-style: solid;
-            border-color: #A67538;
+            border-color: #2a6319;
             border-width: 0 0 0 7px;
             padding: 20px 38px;
         }
@@ -3415,7 +3415,7 @@
             position: relative;
             font-style: normal;
             font-weight: 600;
-            color: #A67538;
+            color: #2a6319;
             border-width: 0px;
             padding: 10px 0 10px 40px;
         }
@@ -3457,13 +3457,13 @@
         }
 
         .gt-divider.gt-light{
-            border-color: #A67538;
+            border-color: #2a6319;
         }
 
         .gt-divider.gt-thick-light{
             width: 96px;
             border-width: 5px 0 0 0;
-            border-color: #A67538;
+            border-color: #2a6319;
         }
 
 /* ------------------------------------------------------
@@ -3530,7 +3530,7 @@
             font-family: 'FontAwesome';
             content: "\f16d";
             font-size: 24px;
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-widget-instagram-big .gt-instagram-feed .gt-instafeed-item{
@@ -3729,8 +3729,8 @@
 
             .gt-accordion.gt-type-1 .gt-accordion-title,
             .gt-toggle.gt-type-1 .gt-toggle-title{
-                color: #A67538;
-                border: 3px solid #A67538;
+                color: #2a6319;
+                border: 3px solid #2a6319;
                 border-radius: 8px;
                 padding: 10px 60px 10px 26px;
             }
@@ -3738,7 +3738,7 @@
             .gt-accordion.gt-type-1 .gt-accordion-title.gt-active,
             .gt-toggle.gt-type-1 .gt-toggle-title.gt-active{
                 color: #fff;
-                background: #A67538;
+                background: #2a6319;
             }
 
             .gt-accordion.gt-type-1 .gt-accordion-title::after,
@@ -3752,7 +3752,7 @@
                 top: 50%;
                 margin-top: -5px;
                 border-top: 6px solid transparent;
-                border-left: 10px solid #A67538;
+                border-left: 10px solid #2a6319;
                 border-bottom: 6px solid transparent;
             }
 
@@ -3768,7 +3768,7 @@
             .gt-csstransforms3d .gt-toggle.gt-type-1 .gt-toggle-title::after{
                 border-right: none;
                 border-top: 6px solid transparent;
-                border-left: 10px solid #A67538;
+                border-left: 10px solid #2a6319;
                 border-bottom: 6px solid transparent;
 
                 -webkit-transform-origin: 50% 50% 0;
@@ -3815,7 +3815,7 @@
                 width: 57px;
                 height: 58px;
                 border-radius: 8px;
-                background-color: #A67538;
+                background-color: #2a6319;
             }
 
             .gt-accordion.gt-type-2 .gt-accordion-title.gt-active::before,
@@ -4097,7 +4097,7 @@
             border: 2px solid transparent;
             background-color: #fff;
             border-radius: 29px;
-            color: #A67538;
+            color: #2a6319;
             box-shadow: 0 7px 30px 0 rgba(51, 51, 51, .3);
             transition: all .25s ease;
         }
@@ -4235,7 +4235,7 @@
         }
 
         .gt-pagination .gt-active{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-prev-page,
@@ -4293,7 +4293,7 @@
         }
 
         .gt-dropcap.gt-type-1::first-letter{
-            color: #A67538;
+            color: #2a6319;
             font-weight: 700;
         }
 
@@ -4335,7 +4335,7 @@
                 color: #2c3035;
                 width: 120px;
                 height: 120px;
-                border: 2px solid #A67538;
+                border: 2px solid #2a6319;
                 border-radius: 50%;
                 margin-bottom: 24px;
             }
@@ -4348,7 +4348,7 @@
 
             .gt-icon-box.gt-type-2 .gt-icon-wrap{
                 font-size: 72px;
-                color: #A67538;
+                color: #2a6319;
                 width: 156px;
                 height: 156px;
                 line-height: 156px;
@@ -4370,7 +4370,7 @@
                 font-size: 60px;
                 line-height: 60px;
                 margin-bottom: 20px;
-                color: #A67538;
+                color: #2a6319;
             }
 
         /* ------------------------------------------------------
@@ -4390,7 +4390,7 @@
                 width: 95px;
                 height: 95px;
                 margin-bottom: 18px;
-                background-color: #A67538;
+                background-color: #2a6319;
                 border-radius: 50%;
             }
 
@@ -4408,7 +4408,7 @@
             .gt-icon-box.gt-type-5 .gt-icon-wrap{
                 font-size: 60px;
                 line-height: 60px;
-                color: #A67538;
+                color: #2a6319;
                 width: 60px;
                 height: 60px;
                 margin-bottom: 16px;
@@ -4660,7 +4660,7 @@
             }
 
             .gt-about > a:hover{
-                color: #A67538;
+                color: #2a6319;
             }
 
         /* ------------------------------------------------------
@@ -4779,7 +4779,7 @@
         .owl-next{
             line-height: 40px;
             text-align: center;
-            color: #A67538;
+            color: #2a6319;
             width: 40px;
             height: 40px;
             background: #fff;
@@ -4934,7 +4934,7 @@
             left: 0;
             top: 0;
             bottom: 0;
-            background-color: #A67538;
+            background-color: #2a6319;
         }
 
         .gt-pbar::after,
@@ -5294,7 +5294,7 @@
             .gt-pricing-tables-holder.gt-type-1 .gt-pricing-table.gt-active .gt-pt-header,
             .gt-pricing-tables-holder.gt-type-2 .gt-pricing-table.gt-active .gt-pt-header{
                 color: #fff;
-                background-color: #A67538;
+                background-color: #2a6319;
 
                 -webkit-transition: color .1s ease-in, background-color .1s ease-in;
                         transition: color .1s ease-in, background-color .1s ease-in;
@@ -5450,7 +5450,7 @@
         }
 
         .gt-counter .lnr{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-flexbox .gt-counters-holder{
@@ -5549,7 +5549,7 @@
                 left: 50%;
                 margin: 0 0 18px -23px;
                 height: 5px;
-                background-color: #A67538;
+                background-color: #2a6319;
             }
 
             .gt-counters-holder.gt-type-1 .gt-counter::before{
@@ -5648,21 +5648,21 @@
             }
 
             .gt-tabs-holder.gt-type-1 .gt-tabs-nav{
-                border: 3px solid #A67538;
+                border: 3px solid #2a6319;
                 border-radius: inherit;
             }
 
             .gt-tabs-holder.gt-type-1 .gt-tabs-nav > li > a{
                 position: relative;
                 padding: 9px 42px 8px;
-                color: #A67538;
+                color: #2a6319;
                 text-align: center;
                 letter-spacing: 1.5px;
             }
 
             .gt-tabs-holder.gt-type-1 .gt-tabs-nav .gt-active{
                 color: #fff;
-                background-color: #A67538;
+                background-color: #2a6319;
             }
 
             .gt-flexbox .gt-tabs-holder.gt-type-1 .gt-tabs-nav{
@@ -5689,7 +5689,7 @@
                 content: "";
                 display: block;
                 border-style: solid;
-                border-color: #A67538;
+                border-color: #2a6319;
                 position: absolute;
             }
 
@@ -5742,7 +5742,7 @@
                 width: 0;
                 height: 0;
                 border-left: 5px solid transparent;
-                border-top: 7px solid #A67538;
+                border-top: 7px solid #2a6319;
                 border-right: 5px solid transparent;
                 position: absolute;
                 top: 100%;
@@ -5769,7 +5769,7 @@
 
             .gt-tabs-holder.gt-type-2 .gt-tabs-nav .gt-active{
                 color: #5f6366;
-                border-bottom-color: #A67538;
+                border-bottom-color: #2a6319;
             }
 
         /* ------------------------------------------------------
@@ -5796,7 +5796,7 @@
 
             .gt-tabs-holder.gt-type-3 .gt-tabs-nav .gt-active{
                 color: #fff;
-                background-color: #A67538;
+                background-color: #2a6319;
             }
 
             .gt-tabs-holder.gt-type-3 .gt-tabs-nav .lnr{
@@ -5842,7 +5842,7 @@
                 text-transform: none;
                 font-weight: 500;
                 font-size: 18px;
-                color: #A67538;
+                color: #2a6319;
                 position: relative;
                 padding: 14px 20px 14px;
                 border-bottom: 1px solid #908d8d;
@@ -5992,7 +5992,7 @@
             }
 
             .gt-tour-sections-holder.gt-type-1 .gt-tabs-nav .gt-active .lnr{
-                color: #A67538;
+                color: #2a6319;
             }
 
         /* ------------------------------------------------------
@@ -6031,7 +6031,7 @@
 
             .gt-tour-sections-holder.gt-type-3 .gt-tabs-nav > li > a{
                 text-align: center;
-                color: #A67538;
+                color: #2a6319;
                 width: 100%;
                 padding: 13px 10px 12px;
                 border-radius: 7px;
@@ -6039,7 +6039,7 @@
 
             .gt-tour-sections-holder.gt-type-3 .gt-tabs-nav .gt-active{
                 color: #fff;
-                background-color: #A67538;
+                background-color: #2a6319;
             }
 
     /* ------------------------------------------------------
@@ -6084,13 +6084,13 @@
         }
         
         .gt-filter .gt-active{
-            color: #A67538;
-            border-color: #A67538;
+            color: #2a6319;
+            border-color: #2a6319;
         }
 
         .gt-filter.gt-type-3 .gt-active{
             color: #fff;
-            background-color: #A67538;
+            background-color: #2a6319;
         }
 
         .gt-filter.gt-type-2 a{
@@ -6406,12 +6406,12 @@
 
         .widget-social-links-3.widget-social-links .gt-social-icons a{
             display: block;
-            border: 2px solid #A67538;
+            border: 2px solid #2a6319;
             width: 56px;
             height: 56px;
             text-align: center;
             line-height: 55px;
-            color: #A67538;
+            color: #2a6319;
             border-radius: 50%;
         }
 
@@ -6622,7 +6622,7 @@
         .gt-services-holder .gt-service .gt-service-title::before{
             content: counter(serviace-number);
             font-family: 'Cairo', sans-serif;
-            color: #A67538;
+            color: #2a6319;
             font-size: 58px;
             font-weight: 800;
             line-height: 58px;
@@ -6700,7 +6700,7 @@
             display: block;
             margin: 25px auto 22px;
             width: 55px;
-            border-bottom: 5px solid #A67538;
+            border-bottom: 5px solid #2a6319;
         }
 
         .gt-countdown-holder.gt-type-1 .countdown-period{
@@ -6828,7 +6828,7 @@
         }
 
         .gt-location a:hover{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-locations-list{
@@ -7533,7 +7533,7 @@
             .gt-entries-holder.gt-type-1 .gt-entry-meta a:hover,
             .gt-entries-holder.gt-type-2 .gt-entry-cats a:hover,
             .gt-entries-holder.gt-type-2 .gt-entry-meta a:hover{
-                color: #A67538;
+                color: #2a6319;
             }
 
         /* ------------------------------------------------------
@@ -7684,7 +7684,7 @@
 
             .gt-entries-holder.gt-type-3 .gt-entry-meta a:hover,
             .gt-entries-holder.gt-type-4 .gt-entry-meta a:hover{
-                color: #A67538;
+                color: #2a6319;
             }
 
             .gt-entries-holder.gt-type-3 .gt-entry-comments-link::before,
@@ -7755,7 +7755,7 @@
             }
 
             .gt-continue-reading-link{
-                color: #A67538;
+                color: #2a6319;
                 font-family: 'Cairo', sans-serif;
                 font-size: 16px;
                 line-height: 26px;
@@ -7764,7 +7764,7 @@
                 letter-spacing: 1px;
                 display: inline-block;
                 padding: 4px 0 2px;
-                border-bottom: 3px solid #A67538;
+                border-bottom: 3px solid #2a6319;
             }
 
             .gt-continue-reading-link:hover{
@@ -7773,13 +7773,13 @@
             }
 
             .gt-continue-reading-link.gt-type-2{
-                color: #A67538;
+                color: #2a6319;
                 font-size: 14px;
                 border-bottom-color: transparent;
             }
 
             .gt-continue-reading-link.gt-type-2:hover{
-                border-bottom-color: #A67538;
+                border-bottom-color: #2a6319;
             }
 
         /* ------------------------------------------------------
@@ -7854,7 +7854,7 @@
                 padding: 8px 0;
                 width: 65px;
                 height: 65px;
-                background-color: #A67538;
+                background-color: #2a6319;
                 right: 0;
                 bottom: 62px;
                 border-radius: 0px;
@@ -7914,7 +7914,7 @@
             }
 
             .gt-breadcrumbs-wrap .gt-entry-meta a:hover{
-                color: #A67538;
+                color: #2a6319;
             }
 
             .gt-breadcrumbs-wrap .gt-entry-meta > *{
@@ -8170,7 +8170,7 @@
                 }
 
                 .gt-entry-author .gt-social-icons a:hover{
-                    color: #A67538;
+                    color: #2a6319;
                 }
 
                 .gt-entry-author .gt-author-about{
@@ -8265,7 +8265,7 @@
                 }
 
                 .gt-comment-reply-link:hover{
-                    color: #A67538;
+                    color: #2a6319;
                 }
 
                 .gt-comment-date::before{
@@ -8511,7 +8511,7 @@
 
         .gt-portfolio-holder.gt-type-1 .gt-project-cats a:hover,
         .gt-portfolio-holder.gt-type-2 .gt-project-cats a:hover{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-portfolio-holder.gt-type-1 .gt-project-actions{
@@ -8532,8 +8532,8 @@
         }
 
         .gt-portfolio-holder.gt-type-1 .gt-project-action:hover{
-            border-color: #A67538;
-            background-color: #A67538;
+            border-color: #2a6319;
+            background-color: #2a6319;
         }
 
         .gt-portfolio-holder.gt-type-1 .gt-project-image::after{
@@ -8610,8 +8610,8 @@
 
         .gt-portfolio-holder.gt-type-2 .gt-project:hover .gt-project-description{
             color: #fff;
-            border-color: #A67538;
-            background-color: #A67538;
+            border-color: #2a6319;
+            background-color: #2a6319;
         }
 
         .gt-portfolio-holder.gt-type-2 .gt-project:hover .gt-project-description a{
@@ -8783,7 +8783,7 @@
         }
 
         .gt-project.gt-single .gt-project-cats a{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-project.gt-single .gt-project-cats{
@@ -8856,7 +8856,7 @@
     }
 
     .gt-settings-view-products .gt-view-type .gt-active{
-        color: #A67538;
+        color: #2a6319;
     }
 
     .gt-settings-view-products .gt-sort-criteria{
@@ -8920,7 +8920,7 @@
     }
 
     .gt-account-action a{
-        color: #A67538;
+        color: #2a6319;
     }
 
     .gt-account-action a:hover{
@@ -9021,7 +9021,7 @@
         }
 
         .gt-product-price{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-product-price s{
@@ -9355,7 +9355,7 @@
 
         .gt-sc-invoker:hover,
         .gt-sc-invoker.gt-opened{
-            color: #A67538 !important;
+            color: #2a6319 !important;
         }
 
         .gt-sc-invoker{
@@ -9392,7 +9392,7 @@
             top: -5px;
             right: -7px;
             border-radius: 50%;
-            background-color: #A67538;
+            background-color: #2a6319;
         }
 
         .gt-sc-widget{
@@ -9431,7 +9431,7 @@
         }
 
         .gt-shopping-cart .gt-product-name:hover{
-            color: #A67538 !important;
+            color: #2a6319 !important;
         }
 
         .gt-shopping-cart .gt-product-price{
@@ -9587,7 +9587,7 @@
         .gt-table-holder .gt-total,
         .gt-table-holder .gt-total th,
         .gt-table-holder .gt-total td{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-shopping-cart-footer{
@@ -9726,7 +9726,7 @@
         }
 
         .gt-product.gt-single .gt-product-meta a:hover{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-product.gt-single .gt-product-meta > li:not(:last-child){
@@ -9784,7 +9784,7 @@
         }
 
         .gt-product-thumbs .active:not(.owl-item) img{
-            border-color: #A67538;
+            border-color: #2a6319;
         }
 
         .gt-product-thumbs .owl-nav .owl-prev{
@@ -9904,7 +9904,7 @@
         }
 
         .gt-current-cat a{
-            color: #A67538;
+            color: #2a6319;
         }
 
         .gt-widget-categories > ul > li:not(:last-child){
@@ -9989,8 +9989,8 @@
 
         .gt-widget .tagcloud a:hover{
             color: #fff;
-            border-color: #A67538;
-            background-color: #A67538;
+            border-color: #2a6319;
+            background-color: #2a6319;
         }
 
     /* ------------------------------------------------------
@@ -10042,7 +10042,7 @@
         }
 
         .gt-widget-about-me .gt-social-icons a:hover{
-            color: #A67538;
+            color: #2a6319;
         }
 
     /* ------------------------------------------------------
@@ -10166,7 +10166,7 @@
 
     .gt-footer a,
     .gt-footer .gt-lineform .gt-lineform-btn{
-        color: #A67538;
+        color: #2a6319;
     }
 
     .gt-footer h1,
@@ -10193,7 +10193,7 @@
     .gt-footer .gt-social-icons a:hover,
     .gt-footer .gt-sub-nav a:hover,
     .gt-footer .gt-info-links a:hover{
-        color: #A67538;
+        color: #2a6319;
     }
 
     .gt-footer .gt-widget:not(:last-child){
@@ -11801,11 +11801,11 @@
     }
 
     .gt-table-holder.gt-horizontal.gt-type-3 table td[data-title]{
-        background: -webkit-linear-gradient(left, #A67538 50%, #fff 50%);
-        background:    -moz-linear-gradient(left, #A67538 50%, #fff 50%);
-        background:     -ms-linear-gradient(left, #A67538 50%, #fff 50%);
-        background:      -o-linear-gradient(left, #A67538 50%, #fff 50%);
-        background:         linear-gradient(left, #A67538 50%, #fff 50%);
+        background: -webkit-linear-gradient(left, #2a6319 50%, #fff 50%);
+        background:    -moz-linear-gradient(left, #2a6319 50%, #fff 50%);
+        background:     -ms-linear-gradient(left, #2a6319 50%, #fff 50%);
+        background:      -o-linear-gradient(left, #2a6319 50%, #fff 50%);
+        background:         linear-gradient(left, #2a6319 50%, #fff 50%);
     }
 
     .gt-table-holder.gt-horizontal td[data-title]::before{

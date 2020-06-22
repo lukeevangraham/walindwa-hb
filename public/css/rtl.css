@@ -200,7 +200,7 @@
 	.gt-moved-image{
 		left: auto;
 		right: -12px;
-		box-shadow: -12px -12px 0 0 #A67538;
+		box-shadow: -12px -12px 0 0 #2a6319;
 	}
 
 	.gt-signature{
@@ -572,13 +572,13 @@
             .gt-accordion.gt-type-1 .gt-accordion-title::after,
             .gt-toggle.gt-type-1 .gt-toggle-title::after{
                 border-left: none;
-            	border-right: 10px solid #A67538;
+            	border-right: 10px solid #2a6319;
             }
 
             .gt-csstransforms3d .gt-accordion.gt-type-1 .gt-accordion-title::after,
             .gt-csstransforms3d .gt-toggle.gt-type-1 .gt-toggle-title::after{
                 border-left: none;
-            	border-right: 10px solid #A67538;
+            	border-right: 10px solid #2a6319;
             }
 
             .gt-csstransforms3d .gt-accordion.gt-type-1 .gt-accordion-title.gt-active::after,
