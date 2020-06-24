@@ -22,16 +22,26 @@ module.exports = {
     getMonth: function (date) {
         return moment(date).format('MMM');
     },
-    markdown: markdown,
-    markdownFancyUL: function (body) {
-        return markdown(body).replace("<ul>", `<ul class="gt-list gt-type-2">`)
-
+    getPhotoGalleryDate: function (date) {
+        return moment(date).format("MMMM DD YYYY   ")
     },
     isOne: function (value) {
         // console.log("val length", value.length)
         return value.length == 1;
     },
-    getPhotoGalleryDate: function(date) {
-        return moment(date).format("MMMM DD YYYY   ")
+    markdown: markdown,
+    markdownFancyUL: function (body) {
+        return markdown(body).replace("<ul>", `<ul class="gt-list gt-type-2">`)
+    },
+    each_upto: function (array, max, options) {
+        if (!array || array.length == 0) {
+            return options.inverse(this);
+        }
+
+        let result = [];
+        for (let index = 0; index < max && index < array.length; index++) {
+            result.push(options.fn(array[index]));
+        }
+        return result.join('');
     }
 }
