@@ -4,7 +4,7 @@ let axios = require("axios");
 let moment = require("moment");
 
 router.get("/", (req, res) => {
-  Promise.all([axios.get("http://admin.moreleft.com/home")]).then(
+  Promise.all([axios.get("https://admin.moreleft.com/home")]).then(
     (resultArray) => {
       let hbsObject = {
         homeSingle: resultArray[0],
@@ -16,7 +16,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/board", (req, res) => {
-  Promise.all([axios.get("http://admin.moreleft.com/board-members")]).then(
+  Promise.all([axios.get("https://admin.moreleft.com/board-members")]).then(
     (resultArray) => {
       let hbsObject = {
         boardMembers: resultArray[0],
@@ -30,7 +30,7 @@ router.get("/board", (req, res) => {
 router.get("/board:id", function (req, res) {
   Promise.all([
     axios.get(
-      "http://admin.moreleft.com/board-members/" + req.params.id.substr(1)
+      "https://admin.moreleft.com/board-members/" + req.params.id.substr(1)
     ),
   ]).then((resultArray) => {
     let hbsObject = {
@@ -43,7 +43,7 @@ router.get("/board:id", function (req, res) {
 
 router.get("/overview", function (req, res) {
   Promise.all([
-    axios.get("http://admin.moreleft.com/about")
+    axios.get("https://admin.moreleft.com/about")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Overview",
@@ -55,8 +55,8 @@ router.get("/overview", function (req, res) {
 
 router.get("/corporate-info", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/organization-documents/"),
-    axios.get("http://admin.moreleft.com/about")
+    axios.get("https://admin.moreleft.com/organization-documents/"),
+    axios.get("https://admin.moreleft.com/about")
   ]).then((resultArray) => {
     let docs = resultArray[0].data;
     docs.forEach((doc) => {
@@ -95,10 +95,10 @@ router.get("/kenya", (req, res) => {
 router.get("/projects", (req, res) => {
   Promise.all([
     axios.get(
-      "http://admin.moreleft.com/projects?status_eq=Current&Published_eq=true&_sort=id:DESC"
+      "https://admin.moreleft.com/projects?status_eq=Current&Published_eq=true&_sort=id:DESC"
     ),
     axios.get(
-      "http://admin.moreleft.com/projects?status_eq=Completed&Published_eq=true&_sort=id:DESC"
+      "https://admin.moreleft.com/projects?status_eq=Completed&Published_eq=true&_sort=id:DESC"
     ),
   ]).then((resultArray) => {
     let hbsObject = {
@@ -112,8 +112,8 @@ router.get("/projects", (req, res) => {
 
 router.get("/project:id", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/projects?Published_eq=true&id_eq=" + req.params.id.substr(1)),
-    axios.get("http://admin.moreleft.com/projects?Published_eq=true&id_ne=" + req.params.id.substr(1) + "&_sort=id:DESC&_limit=6")
+    axios.get("https://admin.moreleft.com/projects?Published_eq=true&id_eq=" + req.params.id.substr(1)),
+    axios.get("https://admin.moreleft.com/projects?Published_eq=true&id_ne=" + req.params.id.substr(1) + "&_sort=id:DESC&_limit=6")
   ]).then((resultArray) => {
     let hbsObject = {
       title: resultArray[0].data[0].name,
@@ -126,7 +126,7 @@ router.get("/project:id", (req, res) => {
 
 router.get("/students", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/sponsorship")
+    axios.get("https://admin.moreleft.com/sponsorship")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Student Sponsorship",
@@ -138,7 +138,7 @@ router.get("/students", (req, res) => {
 
 router.get("/post-high-school", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/sponsorship")
+    axios.get("https://admin.moreleft.com/sponsorship")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Post-High School Sponsorship",
@@ -150,7 +150,7 @@ router.get("/post-high-school", (req, res) => {
 
 router.get("/blog", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=6")
+    axios.get("https://admin.moreleft.com/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=6")
   ]).then((resultArray) => {
     let hbsObject = {
       blogEntries: resultArray[0].data,
@@ -162,13 +162,13 @@ router.get("/blog", (req, res) => {
 
 router.get("/blog:id", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + req.params.id.substr(1)),
-    axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) - 1)),
-    axios.get("http://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) + 1)),
+    axios.get("https://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + req.params.id.substr(1)),
+    axios.get("https://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) - 1)),
+    axios.get("https://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) + 1)),
   ]).then((resultArray) => {
     let unparsedFirstName = resultArray[0].data[0].Author.split(` `)
     Promise.all([
-      axios.get("http://admin.moreleft.com/board-members?firstName_contains=" + unparsedFirstName[0] + "&firstName_contains=" + unparsedFirstName[1] + "&lastName_contains=" + unparsedFirstName[0] + "&lastName_contains=" + unparsedFirstName[1])
+      axios.get("https://admin.moreleft.com/board-members?firstName_contains=" + unparsedFirstName[0] + "&firstName_contains=" + unparsedFirstName[1] + "&lastName_contains=" + unparsedFirstName[0] + "&lastName_contains=" + unparsedFirstName[1])
     ]).then((secondArray) => {
       let hbsObject = {
         title: resultArray[0].data[0].name,
@@ -184,7 +184,7 @@ router.get("/blog:id", (req, res) => {
 
 router.get("/newsletters", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/newsletters")
+    axios.get("https://admin.moreleft.com/newsletters")
   ]).then((resultArray) => {
 
     function compareMonths(a, b) {
@@ -220,7 +220,7 @@ router.get("/newsletters", (req, res) => {
 
 router.get("/testimonials", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/testimonials")
+    axios.get("https://admin.moreleft.com/testimonials")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Testimonials",
@@ -232,7 +232,7 @@ router.get("/testimonials", (req, res) => {
 
 router.get("/testimonials:id", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/testimonials/" + req.params.id.substr(1))
+    axios.get("https://admin.moreleft.com/testimonials/" + req.params.id.substr(1))
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Testimonial: " + resultArray[0].data.author,
@@ -244,7 +244,7 @@ router.get("/testimonials:id", (req, res) => {
 
 router.get("/ebcck", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/in-kenya")
+    axios.get("https://admin.moreleft.com/in-kenya")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "EBCCK",
@@ -256,7 +256,7 @@ router.get("/ebcck", (req, res) => {
 
 router.get("/ekhs", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/in-kenya")
+    axios.get("https://admin.moreleft.com/in-kenya")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "EKHS",
@@ -268,7 +268,7 @@ router.get("/ekhs", (req, res) => {
 
 router.get("/photos", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/photos-and-videos")
+    axios.get("https://admin.moreleft.com/photos-and-videos")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Photos and Videos",
@@ -280,7 +280,7 @@ router.get("/photos", (req, res) => {
 
 router.get("/giving", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/giving")
+    axios.get("https://admin.moreleft.com/giving")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Giving",
@@ -292,7 +292,7 @@ router.get("/giving", (req, res) => {
 
 router.get("/designate", (req, res) => {
   Promise.all([
-    axios.get("http://admin.moreleft.com/giving")
+    axios.get("https://admin.moreleft.com/giving")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Designate",
