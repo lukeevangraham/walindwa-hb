@@ -6653,7 +6653,8 @@ p {
             font-weight: 800;
             line-height: 58px;
             display: block;
-            margin: -15px 0 15px 0;
+            /* margin: -15px 0 15px 0; */
+            margin: 0px 0 15px 0;
         }
 
         .gt-services-holder .gt-service:nth-child(1) .gt-service-title::before,
@@ -6674,6 +6675,11 @@ p {
 
         .gt-services-holder .gt-service-image{
             /* max-width: 50%; */
+            min-width: 0px;
+        }
+
+        .gt-services-holder .gt-service-image2{
+            max-width: 50%;
             min-width: 0px;
         }
 

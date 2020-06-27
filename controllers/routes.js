@@ -244,11 +244,13 @@ router.get("/testimonials:id", (req, res) => {
 
 router.get("/ebcck", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/in-kenya")
+    axios.get("https://admin.moreleft.com/in-kenya"),
+    axios.get("https://admin.moreleft.com/ebccks")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "EBCCK",
-      kenyaSingleType: resultArray[0].data
+      kenyaSingleType: resultArray[0].data,
+      ebcck: resultArray[1].data
     }
     res.render("./sections/kenya/ebcck", hbsObject)
   })

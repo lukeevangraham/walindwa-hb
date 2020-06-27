@@ -1,47 +1,49 @@
 {{> main/breadcrumb currentTitle=this.title}}
 
-
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
 <div class="gt-page-content-wrap gt-no-sidebar">
 
     <div class="container">
 
-        <div id="newsletterTop" class="row">
+        <div class="row">
 
             <div class="col-xs-12">
 
-                <!-- - - - - - - - - - - - - - Align by center - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - Services Holder - - - - - - - - - - - - - - - - -->
 
-                <div class="gt-content-element">
+                <div class="gt-services-holder">
 
-                    <div class="aligncenter">
-                        <img src="https://admin.moreleft.com{{kenyaSingleType.ebcckTopPhoto.url}}" alt="">
-                    </div>
+                    <!-- - - - - - - - - - - - - - Service - - - - - - - - - - - - - - - - -->
 
-                {{{markdown kenyaSingleType.ebcckBody}}}
+
+                    {{#each ebcck}}
+
+                    {{log this.Image.formats.small}}
+
+                    <section class="gt-service">
+
+                        <img class="gt-service-image gt-service-image2" src="https://admin.moreleft.com{{Image.formats.small.url}}" alt="">
+
+                        <h2 class="gt-service-title">{{Heading}}</h2>
+
+                        {{{markdown Body}}}
+
+                    </section>
+
+                    {{/each}}
+
+                    <!-- - - - - - - - - - - - - - End of Service - - - - - - - - - - - - - - - - -->
 
                 </div>
-                <!--/ .gt-content-element -->
 
-                <!-- - - - - - - - - - - - - - End of Align by center - - - - - - - - - - - - - - - - -->
+                <!-- - - - - - - - - - - - - - End of Services Holder - - - - - - - - - - - - - - - - -->
 
             </div>
             <!--/ .col -->
 
         </div>
         <!--/ .row -->
-
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="row">
-                    {{!-- {{ log this.kenyaSingleType }} --}}
-                    {{#each kenyaSingleType.ebcckThreeBottomPhotos }}
-                    {{> inKenya/threePhotos}}
-                    {{/each}}
-                </div>
-            </div>
-        </div>
 
     </div>
     <!--/ .container -->
