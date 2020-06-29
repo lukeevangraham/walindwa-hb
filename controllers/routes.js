@@ -304,4 +304,15 @@ router.get("/designate", (req, res) => {
   })
 })
 
+router.get("/opportunities", (req, res) => {
+  Promise.all([
+    axios.get("https://admin.moreleft.com/sponsorship-opportunities")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Sponsorship Opportunities"
+    }
+    res.render("./sections/sponsorship/opportunities", hbsObject)
+  })
+})
+
 module.exports = router;
