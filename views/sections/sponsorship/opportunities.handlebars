@@ -18,10 +18,8 @@
 								<ul>
 
 									<li><a href="#" class="gt-active navA" data-filter="*">All</a></li>
-									<li><a href="#" class="navA" data-filter=".motion-design">Motion Design</a></li>
-									<li><a href="#" class="navA" data-filter=".photography">Photography</a></li>
-									<li><a href="#" class="navA" data-filter=".modeling">Modeling</a></li>
-									<li><a href="#" class="navA" data-filter=".graphic-design">Graphic Design</a></li>
+									<li><a href="#" class="navA" data-filter=".Child">Child</a></li>
+									<li><a href="#" class="navA" data-filter=".Post-High-School">Post-High School</a></li>
 
 								</ul>
 
@@ -37,9 +35,14 @@
 
 								<div class="gt-isotope-container gt-cols-3" data-max-items="20" data-ajax-handler="json/portfolio_items_without_actions.json" data-masonry="false" data-load-more-btn="#portfolio-load-more" data-filter-el="#portfolio-filter" data-holder-type="portfolio">
 
+                                    {{#each opportunities}}
+
+                                    {{log this}}
+
+
 									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
 
-									<div class="gt-col photography">
+									<div class="gt-col {{spon_cat.name}}">
 
 										<div class="gt-project">
 
@@ -47,7 +50,7 @@
 
 											<div class="gt-project-image">
 
-												<img src="images/portfolio_img_7.jpg" alt="">
+												<img src="https://admin.moreleft.com{{photo.url}}" alt="">
 
 												<a href="portfolio_single.html" class="gt-project-link"></a>
 
@@ -61,54 +64,11 @@
 
 												<div class="gt-description-inner">
 
-													<h6 class="gt-project-title"><a href="portfolio_single.html">USA Bulls</a></h6>
+													<h6 class="gt-project-title"><a class="navA" href="portfolio_single.html">{{firstName}}</a></h6>
 
-													<ul class="gt-project-cats">
-														<li><a href="#">Photography</a></li>
-													</ul>
-
-												</div><!--/ .gt-description-inner -->
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Description - - - - - - - - - - - - - - - - -->
-
-										</div>
-
-									</div>
-
-									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
-
-									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
-
-									<div class="gt-col modeling motion-design">
-
-										<div class="gt-project">
-
-											<!-- - - - - - - - - - - - - - Project Image - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-image">
-
-												<img src="images/portfolio_img_8.jpg" alt="">
-
-												<a href="portfolio_single.html" class="gt-project-link"></a>
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Image - - - - - - - - - - - - - - - - -->
-
-											<!-- - - - - - - - - - - - - - Project Description - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-description">
-
-												<div class="gt-description-inner">
-
-													<h6 class="gt-project-title"><a href="portfolio_single.html">Well-Preserved</a></h6>
-
-													<ul class="gt-project-cats">
-														<li><a href="#">Motion Design</a></li>
-														<li><a href="#">Modeling</a></li>
-													</ul>
+													{{!-- <ul class="gt-project-cats">
+														<li><a class="navA" href="#">Photography</a></li>
+													</ul> --}}
 
 												</div><!--/ .gt-description-inner -->
 
@@ -122,301 +82,9 @@
 
 									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
 
-									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
 
-									<div class="gt-col photography modeling">
+                                    {{/each}}
 
-										<div class="gt-project">
-
-											<!-- - - - - - - - - - - - - - Project Image - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-image">
-
-												<img src="images/portfolio_img_9.jpg" alt="">
-
-												<a href="portfolio_single.html" class="gt-project-link"></a>
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Image - - - - - - - - - - - - - - - - -->
-
-											<!-- - - - - - - - - - - - - - Project Description - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-description">
-
-												<div class="gt-description-inner">
-
-													<h6 class="gt-project-title"><a href="portfolio_single.html">Unicorn</a></h6>
-
-													<ul class="gt-project-cats">
-														<li><a href="#">Modeling</a></li>
-														<li><a href="#">Photography</a></li>
-													</ul>
-
-												</div><!--/ .gt-description-inner -->
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Description - - - - - - - - - - - - - - - - -->
-
-										</div>
-
-									</div>
-
-									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
-
-									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
-
-									<div class="gt-col photography">
-
-										<div class="gt-project">
-
-											<!-- - - - - - - - - - - - - - Project Image - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-image">
-
-												<img src="images/portfolio_img_10.jpg" alt="">
-
-												<a href="portfolio_single.html" class="gt-project-link"></a>
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Image - - - - - - - - - - - - - - - - -->
-
-											<!-- - - - - - - - - - - - - - Project Description - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-description">
-
-												<div class="gt-description-inner">
-
-													<h6 class="gt-project-title"><a href="portfolio_single.html">Yonder Clothing</a></h6>
-
-													<ul class="gt-project-cats">
-														<li><a href="#">Photography</a></li>
-													</ul>
-
-												</div><!--/ .gt-description-inner -->
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Description - - - - - - - - - - - - - - - - -->
-
-										</div>
-
-									</div>
-
-									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
-
-									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
-
-									<div class="gt-col motion-design">
-
-										<div class="gt-project">
-
-											<!-- - - - - - - - - - - - - - Project Image - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-image">
-
-												<img src="images/portfolio_img_11.jpg" alt="">
-
-												<a href="portfolio_single.html" class="gt-project-link"></a>
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Image - - - - - - - - - - - - - - - - -->
-
-											<!-- - - - - - - - - - - - - - Project Description - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-description">
-
-												<div class="gt-description-inner">
-
-													<h6 class="gt-project-title"><a href="portfolio_single.html">Moon</a></h6>
-
-													<ul class="gt-project-cats">
-														<li><a href="#">Motion Design</a></li>
-													</ul>
-
-												</div><!--/ .gt-description-inner -->
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Description - - - - - - - - - - - - - - - - -->
-
-										</div>
-
-									</div>
-
-									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
-
-									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
-
-									<div class="gt-col motion-design modeling">
-
-										<div class="gt-project">
-
-											<!-- - - - - - - - - - - - - - Project Image - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-image">
-
-												<img src="images/portfolio_img_11.jpg" alt="">
-
-												<a href="portfolio_single.html" class="gt-project-link"></a>
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Image - - - - - - - - - - - - - - - - -->
-
-											<!-- - - - - - - - - - - - - - Project Description - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-description">
-
-												<div class="gt-description-inner">
-
-													<h6 class="gt-project-title"><a href="portfolio_single.html">Oyster Fest</a></h6>
-
-													<ul class="gt-project-cats">
-														<li><a href="#">Motion Design</a></li>
-														<li><a href="#">Modeling</a></li>
-													</ul>
-
-												</div><!--/ .gt-description-inner -->
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Description - - - - - - - - - - - - - - - - -->
-
-										</div>
-
-									</div>
-
-									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
-
-									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
-
-									<div class="gt-col motion-design">
-
-										<div class="gt-project">
-
-											<!-- - - - - - - - - - - - - - Project Image - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-image">
-
-												<img src="images/portfolio_img_12.jpg" alt="">
-
-												<a href="portfolio_single.html" class="gt-project-link"></a>
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Image - - - - - - - - - - - - - - - - -->
-
-											<!-- - - - - - - - - - - - - - Project Description - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-description">
-
-												<div class="gt-description-inner">
-
-													<h6 class="gt-project-title"><a href="portfolio_single.html">Kodiak Clothing</a></h6>
-
-													<ul class="gt-project-cats">
-														<li><a href="#">Motion Design</a></li>
-													</ul>
-
-												</div><!--/ .gt-description-inner -->
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Description - - - - - - - - - - - - - - - - -->
-
-										</div>
-
-									</div>
-
-									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
-
-									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
-
-									<div class="gt-col graphic-design">
-
-										<div class="gt-project">
-
-											<!-- - - - - - - - - - - - - - Project Image - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-image">
-
-												<img src="images/portfolio_img_13.jpg" alt="">
-
-												<a href="portfolio_single.html" class="gt-project-link"></a>
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Image - - - - - - - - - - - - - - - - -->
-
-											<!-- - - - - - - - - - - - - - Project Description - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-description">
-
-												<div class="gt-description-inner">
-
-													<h6 class="gt-project-title"><a href="portfolio_single.html">Opposite Hands</a></h6>
-
-													<ul class="gt-project-cats">
-														<li><a href="#">Graphic Design</a></li>
-													</ul>
-
-												</div><!--/ .gt-description-inner -->
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Description - - - - - - - - - - - - - - - - -->
-
-										</div>
-
-									</div>
-
-									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
-
-									<!-- - - - - - - - - - - - - - Project - - - - - - - - - - - - - - - - -->
-
-									<div class="gt-col photography">
-
-										<div class="gt-project">
-
-											<!-- - - - - - - - - - - - - - Project Image - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-image">
-
-												<img src="images/portfolio_img_14.jpg" alt="">
-
-												<a href="portfolio_single.html" class="gt-project-link"></a>
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Image - - - - - - - - - - - - - - - - -->
-
-											<!-- - - - - - - - - - - - - - Project Description - - - - - - - - - - - - - - - - -->
-
-											<div class="gt-project-description">
-
-												<div class="gt-description-inner">
-
-													<h6 class="gt-project-title"><a href="portfolio_single.html">Rooster</a></h6>
-
-													<ul class="gt-project-cats">
-														<li><a href="#">Photography</a></li>
-													</ul>
-
-												</div><!--/ .gt-description-inner -->
-
-											</div>
-
-											<!-- - - - - - - - - - - - - - End of Project Description - - - - - - - - - - - - - - - - -->
-
-										</div>
-
-									</div>
-
-									<!-- - - - - - - - - - - - - - End of Project - - - - - - - - - - - - - - - - -->
 
 								</div>
 
@@ -428,7 +96,7 @@
 
 							<div class="aligncenter">
 
-								<a href="#" class="gt-btn-3 gt-large gt-shadow gt-load-more" id="portfolio-load-more">Show Me More</a>
+								<a href="#" class="gt-btn-3 gt-large gt-shadow gt-load-more navA" id="portfolio-load-more">Show Me More</a>
 
 							</div>
 

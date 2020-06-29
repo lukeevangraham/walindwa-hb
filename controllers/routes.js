@@ -309,10 +309,16 @@ router.get("/opportunities", (req, res) => {
     axios.get("https://admin.moreleft.com/sponsorship-opportunities")
   ]).then((resultArray) => {
     let hbsObject = {
-      title: "Sponsorship Opportunities"
+      title: "Sponsorship Opportunities",
+      opportunities: resultArray[0].data
     }
     res.render("./sections/sponsorship/opportunities", hbsObject)
   })
+})
+
+router.get("/student:id", (req, res) => {
+  console.log("LOOK HERE: ", req.params.id)
+  axios.get("https://admin.moreleft.com/sponsorship-opportunities" + )
 })
 
 module.exports = router;
