@@ -1,0 +1,122 @@
+{{> main/breadcrumb currentTitle=title}}
+
+{{log this.student}}
+
+
+<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
+
+<div class="gt-page-content-wrap gt-no-sidebar gt-no-top-offset gt-no-bottom-offset">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <!-- - - - - - - - - - - - - - Page Section - - - - - - - - - - - - - - - - -->
+
+                <main class="gt-section gt-size-3">
+
+                    <!-- - - - - - - - - - - - - - Team Member - - - - - - - - - - - - - - - - -->
+
+                    <div class="gt-team-member gt-single">
+
+                        <!-- - - - - - - - - - - - - - Member Photo - - - - - - - - - - - - - - - - -->
+
+                        <div class="gt-member-photo">
+
+                            <img src="https://admin.moreleft.com{{student.photo.url}}" alt="">
+
+                        </div>
+
+                        <!-- - - - - - - - - - - - - - End of Member Photo - - - - - - - - - - - - - - - - -->
+
+                        <!-- - - - - - - - - - - - - - Member Info - - - - - - - - - - - - - - - - -->
+
+                        <h4 class="gt-member-name">{{student.firstName}} {{student.lastName}}</h4>
+
+                        <div class="gt-member-position">{{student.gender}}</div>
+
+                        {{#if student.birthday}}
+                        <div class="gt-member-position">{{calculateAge student.birthday}} years old</div>
+                        {{/if}}
+
+                        {{#if student.grade}}
+                        <div class="gt-member-position">Grade: {{student.grade}}</div>
+                        {{/if}}
+
+                        {{#if student.nameOfSchool}}
+                        <div class="gt-member-position">School: {{student.nameOfSchool}}</div>
+                        {{/if}}
+
+                        {{#if student.fieldOfStudy}}
+                        <div class="gt-member-position">Field of Study: {{student.fieldOfStudy}}</div>
+                        {{/if}}
+
+                        {{!-- <ul class="gt-social-icons">
+
+										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+										<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+
+									</ul> --}}
+
+                        <!-- - - - - - - - - - - - - - End of Member Info - - - - - - - - - - - - - - - - -->
+
+                        <!-- - - - - - - - - - - - - - About Member - - - - - - - - - - - - - - - - -->
+
+                        <p class="gt-member-about">{{{markdown student.biography}}}</p>
+
+                        <!-- - - - - - - - - - - - - - End of About Member - - - - - - - - - - - - - - - - -->
+
+                    </div>
+
+                    <!-- - - - - - - - - - - - - - End of Team Member - - - - - - - - - - - - - - - - -->
+
+                </main>
+
+                <!-- - - - - - - - - - - - - - End of Page Section - - - - - - - - - - - - - - - - -->
+
+                <!-- - - - - - - - - - - - - - Call Out Style 1 - - - - - - - - - - - - - - - - -->
+
+                <section class="gt-call-out gt-content-element gt-fullwidth-section-bg"
+                    data-fullwidth-bg="images/call_out_bg_6.jpg">
+
+                    <div class="gt-t-row">
+
+                        <div class="col-md-8 col-sm-7">
+
+                            <h3>Looking for an exceptional quality?<br>You’ve got it.</h3>
+
+                        </div>
+
+                        <div class="col-md-4 col-sm-5">
+
+                            <div class="align-right">
+
+                                <a href="#" class="gt-btn-3 gt-large">Buy Now</a>
+
+                            </div>
+                            <!--/ .align-right -->
+
+                        </div>
+
+                    </div>
+                    <!--/ .gt-t-row -->
+
+                </section>
+
+                <!-- - - - - - - - - - - - - - End of Call Out Style 1 - - - - - - - - - - - - - - - - -->
+
+            </div>
+            <!--/ .col -->
+
+        </div>
+        <!--/ .row -->
+
+    </div>
+    <!--/ .container -->
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->

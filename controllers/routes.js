@@ -317,8 +317,16 @@ router.get("/opportunities", (req, res) => {
 })
 
 router.get("/student:id", (req, res) => {
-  console.log("LOOK HERE: ", req.params.id)
-  axios.get("https://admin.moreleft.com/sponsorship-opportunities" + )
+  // console.log("LOOK HERE: ", req.params.id.substr(1))
+  Promise.all([
+    axios.get("https://admin.moreleft.com/sponsorship-opportunities?id=" + req.params.id.substr(1))
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Sponsorship Opportunitiy",
+      student: resultArray[0].data[0]
+    }
+    res.render("./sections/sponsorship/student", hbsObject)
+  })
 })
 
-module.exports = router;
+  module.exports = router;

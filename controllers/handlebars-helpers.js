@@ -2,6 +2,9 @@ let markdown = require("helper-markdown");
 let moment = require("moment");
 
 module.exports = {
+    calculateAge: function (birthdate) {
+        return moment().diff(moment(birthdate), 'years')
+    },
     createExcerpt: function (body, sentences) {
         return markdown(body).split("<p>")[1].split('. ').slice(0, sentences).join('. ') + '.';
         // console.log("body: ", body)
