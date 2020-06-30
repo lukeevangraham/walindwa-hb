@@ -329,4 +329,11 @@ router.get("/student:id", (req, res) => {
   })
 })
 
+router.get("/contact", (req, res) => {
+  let hbsObject = {
+    title: "Contact"
+  }
+  res.render("./contact", hbsObject)
+})
+
   module.exports = router;
