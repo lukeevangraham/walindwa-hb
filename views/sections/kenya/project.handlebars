@@ -19,17 +19,65 @@
                         <article class="gt-entry gt-single">
 
 
-                                <!-- - - - - - - - - - - - - - Carousel Style 3 - - - - - - - - - - - - - - - - -->
+                            <div class="owl-carousel owl-large-nav gt-entries-holder gt-type-1 gt-cols-3">
 
-                                <div class="owl-carousel gt-simple-carousel" id="projectTop">
+                                {{#each project.photos}}
 
-                                    {{#each project.photos}}
-                                    <img src="https://admin.moreleft.com{{url}}" alt="">
-                                    {{/each}}
+                                {{log this}}
+
+                                <div class="gt-col">
+
+                                    <!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
+
+                                    <article class="gt-entry gt-image-entry-format">
+
+                                        <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
+
+                                        <div class="gt-entry-attachment">
+
+                                            <a class="gt-thumbnail-attachment"
+                                                href="blog_single_without_sidebar.html"><img
+                                                    src="https://admin.moreleft.com{{url}}" alt=""
+                                                    class="img-fluid"></a>
+
+                                        </div>
+
+                                        <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
+
+                                        <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
+
+                                        {{#if caption}}
+
+                                        <div class="gt-entry-body">
+
+                                            <ul class="gt-entry-cats">
+                                                <li>{{caption}}</li>
+                                            </ul>
+
+                                            {{!-- <h6 class="gt-entry-title"><a href="blog_single_without_sidebar.html">Why a
+                                                    Visual<br>Really is Worth 1,000 Words</a></h6> --}}
+
+                                        </div>
+                                        {{/if }}
+
+                                        <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                                    </article>
+
+                                    <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
 
                                 </div>
+                                <!--/ .gt-col -->
 
-                                <!-- - - - - - - - - - - - - - End of Carousel Style 3 - - - - - - - - - - - - - - - - -->
+                                {{/each}}
+
+                            </div>
+
+
+
+
+
+
 
 
                             <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
@@ -90,39 +138,38 @@
                                 </div>
                                 <!--/ .gt-entry-meta-item --> --}}
 
-                            </div>
+                    </div>
 
-                            <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+                    <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
 
-                        </article>
+                    </article>
 
-                        <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
+                    <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Entries Navigation - - - - - - - - - - - - - - - - -->
-{{log this.otherProjects}}
-                       
-							<div class="gt-content-element">
+                    <!-- - - - - - - - - - - - - - Entries Navigation - - - - - - - - - - - - - - - - -->
 
-								<h3 class="gt-title-underline">You may also like</h3>
+                    <div class="gt-content-element">
 
-								<!-- - - - - - - - - - - - - - Portfolio Holder - - - - - - - - - - - - - - - - -->
+                        <h3 class="gt-title-underline">You may also like</h3>
 
-								<div class="owl-carousel owl-large-nav gt-portfolio-holder gt-type-2 gt-cols-3">
-{{#each otherProjects}}
-{{> inKenya/portfolio-project-slide}}
-{{/each}}
-								</div>
+                        <!-- - - - - - - - - - - - - - Portfolio Holder - - - - - - - - - - - - - - - - -->
 
-								<!-- - - - - - - - - - - - - - End of Portfolio Holder - - - - - - - - - - - - - - - - -->
+                        <div class="owl-carousel owl-large-nav gt-portfolio-holder gt-type-2 gt-cols-3">
+                            {{#each otherProjects}}
+                            {{> inKenya/portfolio-project-slide}}
+                            {{/each}}
+                        </div>
 
-							</div>
-
-                        <!-- - - - - - - - - - - - - - End of Entries Navigation - - - - - - - - - - - - - - - - -->
+                        <!-- - - - - - - - - - - - - - End of Portfolio Holder - - - - - - - - - - - - - - - - -->
 
                     </div>
-                    <!--/ .gt-content-element -->
 
-                    {{!-- <div class="gt-content-element">
+                    <!-- - - - - - - - - - - - - - End of Entries Navigation - - - - - - - - - - - - - - - - -->
+
+                </div>
+                <!--/ .gt-content-element -->
+
+                {{!-- <div class="gt-content-element">
 
                         <h3>Comments</h3>
 
@@ -291,16 +338,16 @@
                     </div>
                     <!--/ .gt-content-element --> --}}
 
-                </div>
-                <!--/ .gt-single-entry-holder -->
-
             </div>
+            <!--/ .gt-single-entry-holder -->
 
         </div>
-        <!--/ .row -->
 
     </div>
-    <!--/ .container -->
+    <!--/ .row -->
+
+</div>
+<!--/ .container -->
 
 </div>
 
