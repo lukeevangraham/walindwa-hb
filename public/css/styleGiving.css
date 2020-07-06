@@ -69,9 +69,35 @@
 	
 ------------------------------------------------------ */
 
+p {
+    vertical-align: baseline !important;
+}
+
+.stretcher {
+    /* padding-bottom: 100%; */
+    /* margin-bottom: -100%; */
+    flex-direction: column;
+}
+
+/* strong {
+    vertical-align: middle;
+} */
+
+.nativeVideo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #studentImage{
     display: flex !important;
     align-items: center !important;
+}
+
+#newsletterTop{
+    margin-bottom: 3rem !important;
 }
 
 #blogOwl{
@@ -557,7 +583,7 @@
 
     a{
         color: #2c3035;
-        text-decoration: none !important;
+        text-decoration: underline !important;
     }
     
     .navA{
@@ -853,7 +879,7 @@
     }
 
     .gt-header .gt-sub-nav{
-        font-size: 14px;
+        font-size: 15px;
         margin-left: -13px;
         margin-right: -13px;
     }
@@ -892,7 +918,7 @@
     }
 
     .gt-top-bar .gt-contact-info{
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .gt-contact-info{
@@ -923,7 +949,7 @@
     .gt-header .gt-hr-list{
         font-family: 'Cairo', sans-serif;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .gt-header .gt-hr-list a > .fa,
@@ -1193,7 +1219,7 @@
 
         .gt-navigation{
             font-family: 'Cairo', sans-serif;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 28px;
             display: inline-block;
             position: relative;
@@ -1215,7 +1241,7 @@
             display: block;
             position: relative;
             color: #fff;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
         }
 
@@ -1420,7 +1446,7 @@
                 font-family: 'Cairo', sans-serif;
                 font-size: 15px;
                 line-height: 20px;
-                font-weight: 500;
+                font-weight: 600;
                 white-space: nowrap;
             }
 
@@ -1698,7 +1724,7 @@
 
         .gt-header.gt-type-7{
             font-family: 'Cairo', sans-serif;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .gt-header.gt-type-7 .gt-slash-hr-list,
@@ -2123,7 +2149,7 @@
             display: inline-block;
             letter-spacing: 1.5px;
             text-align: center;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 22px;
             font-weight: 700;
             text-transform: uppercase;
@@ -2388,11 +2414,13 @@
             
         ------------------------------------------------------ */
 
-            input[type="radio"]{
+            input[type="radio"],
+            input[type="checkbox"]{
                 display: none;
             }
 
-            input[type="radio"] + label{
+            input[type="radio"] + label,
+            label + input[type="checkbox"] {
                 font-size: inherit;
                 font-weight: inherit;
                 font-family: inherit;
@@ -2414,20 +2442,26 @@
                         user-select: none;
             }
 
-            
+            label + input[type="checkbox"] {
+                padding-left: 42px;
+            }
 
-            input[type="radio"] + label:not(:last-child){
+            input[type="radio"] + label:not(:last-child),
+            label + input[type="checkbox"] :not(:last-child){
                 margin-right: 25px;
             }
 
             input[type="radio"] + label::before,
-            input[type="radio"] + label::after{
+            label + input[type="checkbox"]::before,
+            input[type="radio"] + label::after,
+            label + input[type="checkbox"]::after{
                 content: "";
                 display: block;
                 position: absolute;
             }
 
-            input[type="radio"] + label::before{
+            input[type="radio"] + label::before,
+            label + input[type="checkbox"]::before{
                 background: #f9f9f9;
                 left: 0;
                 top: 3px;
@@ -2439,8 +2473,15 @@
                 height: 32px;
             }
 
+            label + input[type="checkbox"]::before{
+                top: 5px;
+                border-radius: 3px;
+                width: 28px;
+                height: 28px;
+            }
 
-            input[type="radio"] + label::after{
+            input[type="radio"] + label::after,
+            label + input[type="checkbox"]::after{
                 opacity: 0;
                 visibility: hidden;
             }
@@ -2454,13 +2495,30 @@
                 height: 14px;
             }
 
-            input[type="radio"]:checked + label::after{
+            label + input[type="checkbox"]::after{
+                border: 2px solid #2a6319;
+                width: 25px;
+                height: 15px;
+                left: 1px;
+                top: 5px;
+
+                clip: rect(6px, 18px, 15px, 0px);
+
+                -webkit-transform: skew(10deg) rotate(-45deg);
+                    -ms-transform: skew(10deg) rotate(-45deg);
+                        transform: skew(10deg) rotate(-45deg);
+            }
+
+            input[type="radio"]:checked + label::after,
+            label + input[type="checkbox"]::after{
                 opacity: 1;
                 visibility: visible;
             }
 
             .gt-widget input[type="radio"] + label,
-            input[type="radio"].gt-type-2 + label{
+            .gt-widget label + input[type="checkbox"],
+            input[type="radio"].gt-type-2 + label,
+            input[type="checkbox"].gt-type-2 + label{
                 color: #2c3035;
                 font-size: 20px;
                 line-height: 24px;
@@ -2468,12 +2526,15 @@
                 letter-spacing: 0px;
             }
 
-            .gt-widget input[type="radio"] + label{
+            .gt-widget input[type="radio"] + label,
+            .gt-widget input[type="checkbox"] + label{
                 margin-right: 0px;
             }
 
             .gt-widget input[type="radio"] + label::before,
-            input[type="radio"].gt-type-2 + label::before{
+            .gt-widget input[type="checkbox"] + label::before,
+            input[type="radio"].gt-type-2 + label::before,
+            input[type="checkbox"].gt-type-2 + label::before{
                 background: #fff;
                 width: 15px;
                 height: 15px;
@@ -2483,12 +2544,15 @@
             }
 
             .gt-widget input[type="radio"] + label::after,
-            input[type="radio"].gt-type-2 + label::after{
+            .gt-widget input[type="checkbox"] + label::after,
+            input[type="radio"].gt-type-2 + label::after,
+            input[type="checkbox"].gt-type-2 + label::after{
                 left: -4px;
                 top: 0px;
             }
 
-            input[type="radio"].gt-type-3 + label{
+            input[type="radio"].gt-type-3 + label,
+            input[type="checkbox"].gt-type-3 + label{
                 color: #515355;
                 font-family: 'Cairo', sans-serif;
                 font-size: 24px;
@@ -4170,7 +4234,7 @@
 
         .gt-pagination{
             font-family: 'Cairo', sans-serif;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 22px;
             text-align: center;
             margin: -5px 0 0;
@@ -4454,7 +4518,7 @@
             display: block;
             font-family: 'Cairo', sans-serif;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: rgba(44, 48, 53, .7);
@@ -5750,7 +5814,7 @@
 
             .gt-tabs-holder.gt-type-3 .gt-tabs-nav > li > a{
                 padding: 12px 48px 9px;
-                font-weight: 500;
+                font-weight: 600;
                 color: #5f6366;
                 background-color: #e5e5e5;
                 text-align: center;
@@ -5802,7 +5866,7 @@
             .gt-tabs-holder.gt-type-4 .gt-tabs-nav > li > a{
                 text-align: center;
                 text-transform: none;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 18px;
                 color: #2a6319;
                 position: relative;
@@ -6307,7 +6371,7 @@
             color: #2c3035;
             font-family: 'Cairo', sans-serif;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 22px;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -6589,7 +6653,8 @@
             font-weight: 800;
             line-height: 58px;
             display: block;
-            margin: -15px 0 15px 0;
+            /* margin: -15px 0 15px 0; */
+            margin: 0px 0 15px 0;
         }
 
         .gt-services-holder .gt-service:nth-child(1) .gt-service-title::before,
@@ -6610,6 +6675,11 @@
 
         .gt-services-holder .gt-service-image{
             /* max-width: 50%; */
+            min-width: 0px;
+        }
+
+        .gt-services-holder .gt-service-image2{
+            max-width: 50%;
             min-width: 0px;
         }
 
@@ -7204,7 +7274,7 @@
         color: #fff;
         font-family: 'Cairo', sans-serif;
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 600;
         line-height: 28px;
         font-style: normal;
         border-width: 0px;
@@ -7636,7 +7706,7 @@
             .gt-entries-holder.gt-type-3 .gt-entry-likes,
             .gt-entries-holder.gt-type-4 .gt-entry-likes,
             .gt-entries-holder.gt-type-4 .gt-entry-date{
-                font-weight: 500;
+                font-weight: 600;
             }
 
             .gt-entries-holder.gt-type-4 .gt-entry-meta,
@@ -7807,7 +7877,7 @@
             .gt-entries-holder.gt-small-thumbs .gt-entry-attachment .gt-entry-date{
                 font-family: 'Cairo', sans-serif;
                 font-size: 24px;
-                font-weight: 500;
+                font-weight: 600;
                 line-height: 1em;
                 color: #fff;
                 text-align: center;
@@ -7864,11 +7934,11 @@
                 font-family: 'Cairo', sans-serif;
                 font-size: 16px;
                 line-height: 26px;
-                font-weight: 500;
+                font-weight: 600;
             }
 
             .gt-breadcrumbs-wrap .gt-entry-meta .gt-entry-date{
-                font-size: 18px;
+                font-size: 16px;
             }
  
             .gt-breadcrumbs-wrap .gt-entry-meta a{
@@ -7889,7 +7959,7 @@
             .gt-breadcrumbs-wrap .gt-entry-likes::before,
             .gt-breadcrumbs-wrap .gt-entry-date::before{
                 content: "\e83f";
-                font-size: 18px;
+                font-size: 16px;
                 font-family: 'Linearicons-Free';
                 display: inline-block;
                 margin-right: 6px;
@@ -7919,7 +7989,7 @@
             .gt-breadcrumbs-wrap .gt-entry-cats > li > a{
                 font-family: 'Cairo', sans-serif;
                 color: #fff;
-                font-size: 14px;
+                font-size: 15px;
                 line-height: 24px;
                 font-weight: 600;
                 text-transform: uppercase;
@@ -8046,7 +8116,7 @@
                 .gt-next-entry{
                     font-family: 'Cairo', sans-serif;
                     font-size: 14px;
-                    font-weight: 500;
+                    font-weight: 600;
                     line-height: 24px;
                     text-transform: uppercase;
                     position: relative;
@@ -8731,7 +8801,7 @@
             display: inline-block;
             font-family: 'Cairo', sans-serif;
             font-size: 18px;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .gt-project-date:not(:last-child){
@@ -8786,7 +8856,8 @@
     .gt-shop-page input:not([type="submit"]),
     .gt-shop-page textarea,
     .gt-shop-page .gt-selected-option,
-    .gt-shop-page input[type="radio"] + label::before{
+    .gt-shop-page input[type="radio"] + label::before,
+    .gt-shop-page label + input[type="checkbox"]::before{
         background: #fff;
     }
 
@@ -8843,7 +8914,7 @@
         background: #fff;
         font-family: 'Cairo', sans-serif;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 600;
         height: 35px;
         padding-right: 43px;
         max-width: 120px;
@@ -9387,7 +9458,7 @@
             line-height: inherit;
             display: block;
             font-family: 'Cairo', sans-serif;
-            font-weight: 500;
+            font-weight: 600;
             color: #5f6366 !important;
         }
 
@@ -9651,7 +9722,7 @@
             min-width: 200px;
             font-family: 'Cairo', sans-serif;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .gt-product-characteristics .gt-selected-option::after{
@@ -9661,7 +9732,7 @@
         .gt-product.gt-single .gt-product-characteristics .gt-name{
             font-family: 'Cairo', sans-serif;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
             line-height: 22px;
             color: #2c3035;
             text-transform: uppercase;
@@ -9912,7 +9983,7 @@
             font-size: 12px;
             line-height: 14px;
             font-family: 'Cairo', sans-serif;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -10118,7 +10189,7 @@
         font-size: 14px;
         color: rgba(255, 255, 255, .8);
         font-family: 'Cairo';
-        font-weight: 500;
+        font-weight: 600;
     }
 
     .gt-footer.gt-has-bg-color .gt-copyright{
@@ -11456,7 +11527,7 @@
 
     .gt-breadcrumbs > li,
     .gt-breadcrumbs > li > a{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .gt-copyright,
