@@ -73,6 +73,10 @@ input[type="checkbox"] {
     -webkit-appearance: checkbox !important;
 }
 
+.cd-powered-by {
+    display: none !important;
+}
+
 
 p {
     vertical-align: baseline !important;
