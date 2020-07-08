@@ -58,7 +58,7 @@
 
 ---------------------------------------------------------- */
 
-@import "resetGiving.css";
+@import "reset.css";
 @import "bootstrap.min.css";
 @import "font-awesome.min.css";
 @import "linea-icons-basic.css";
@@ -68,6 +68,11 @@
 	1. Global
 	
 ------------------------------------------------------ */
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox !important;
+}
+
 
 p {
     vertical-align: baseline !important;
