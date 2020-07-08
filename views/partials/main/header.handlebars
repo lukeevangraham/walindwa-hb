@@ -8,156 +8,171 @@
     <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
 
     {{#if homeSingle}}
-    <header id="header" class="gt-header gt-type-8 gt-transparent"> 
-        
+    <header id="header" class="gt-header gt-type-8 gt-transparent">
+
         <div class="gt-hs-medium">
-    {{/if}}
+            {{/if}}
 
-    {{#unless homeSingle}}
-         <header id="header" class="gt-header gt-type-1 gt-dark">
-    
-            <div class="gt-hs-medium gt-sticky">
-    {{/unless}}
+            {{#unless homeSingle}}
+            <header id="header" class="gt-header gt-type-1 gt-dark">
 
-
-        <!-- - - - - - - - - - - - - - Header Section - - - - - - - - - - - - - - - - -->
+                <div class="gt-hs-medium gt-sticky">
+                    {{/unless}}
 
 
+                    <!-- - - - - - - - - - - - - - Header Section - - - - - - - - - - - - - - - - -->
 
-            <div class="gt-t-row">
 
-                <div class="col-sm-2">
 
-                    <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+                    <div class="gt-t-row">
 
-                    <a href="/" class="gt-logo navA">
+                        <div class="col-sm-2">
+
+                            <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+
+                            {{!-- <a href="/" class="gt-logo navA">
 
                         <img src="images/logo.png" alt="">
                         <h6 class="gt" style="color: white;">Walindwa</h6>
 
-                    </a>
+                    </a> --}}
 
-                    <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+                            <!-- Image and text -->
 
-                </div>
+                            <h6 class="gt" style="color: white">
+                                <a class="navbar-brand navA" href="#">
+                                    <img src="images/logo.png" height="30"
+                                        class="d-inline-block align-top" alt="" loading="lazy" id="walindwaLogo">
+                                    <span style="color: white">Walindwa</span>
+                                </a>
+                            </h6>
 
-                <div class="col-sm-10">
 
-                    <div class="align-right">
+                            <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
 
-                        <!-- - - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - - - -->
+                        </div>
 
-                        <nav class="gt-nav-wrap">
+                        <div class="col-sm-10">
 
-                            <ul class="gt-navigation">
+                            <div class="align-right">
 
-                                <li class="gt-has-submenu">
+                                <!-- - - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - - - -->
 
-                                    <a class="navA">About Us</a>
+                                <nav class="gt-nav-wrap">
 
-                                    <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
+                                    <ul class="gt-navigation">
 
-                                    <div class="gt-dropdown">
+                                        <li class="gt-has-submenu">
 
-                                        <ul class="gt-submenu">
+                                            <a class="navA">About Us</a>
 
-                                            <li><a class="navA" href="/overview">Overview</a></li>
-                                            <li><a class="navA" href="/board">Board Members</a></li>
-                                            <li><a class="navA" href="/corporate-info">Corporate Information</a></li>
+                                            <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
 
-                                        </ul>
+                                            <div class="gt-dropdown">
 
-                                    </div>
+                                                <ul class="gt-submenu">
 
-                                    <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
+                                                    <li><a class="navA" href="/overview">Overview</a></li>
+                                                    <li><a class="navA" href="/board">Board Members</a></li>
+                                                    <li><a class="navA" href="/corporate-info">Corporate Information</a>
+                                                    </li>
 
-                                </li>
+                                                </ul>
 
-                                <li class="gt-has-submenu">
+                                            </div>
 
-                                    <a class="navA">In Kenya</a>
+                                            <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
 
-                                    <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
+                                        </li>
 
-                                    <div class="gt-dropdown">
+                                        <li class="gt-has-submenu">
 
-                                        <ul class="gt-submenu">
+                                            <a class="navA">In Kenya</a>
 
-                                            <li><a class="navA" href="/kenya">Kenya, Eldama Ravine and Kamonong Community</a></li>
-                                            <li><a class="navA" href="/ebcck">EBCCK</a></li>
-                                            <li><a class="navA" href="/ekhs">EKHS</a></li>
-                                            <li><a class="navA" href="/projects">Projects</a></li>
+                                            <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
 
-                                        </ul>
+                                            <div class="gt-dropdown">
 
-                                    </div>
+                                                <ul class="gt-submenu">
 
-                                    <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
+                                                    <li><a class="navA" href="/kenya">Kenya, Eldama Ravine and Kamonong
+                                                            Community</a></li>
+                                                    <li><a class="navA" href="/ebcck">EBCCK</a></li>
+                                                    <li><a class="navA" href="/ekhs">EKHS</a></li>
+                                                    <li><a class="navA" href="/projects">Projects</a></li>
 
-                                </li>
+                                                </ul>
 
-                                <li class="gt-has-submenu">
+                                            </div>
 
-                                    <a class="navA">Sponsorship</a>
+                                            <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
 
-                                    <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
+                                        </li>
 
-                                    <div class="gt-dropdown">
+                                        <li class="gt-has-submenu">
 
-                                        <ul class="gt-submenu">
+                                            <a class="navA">Sponsorship</a>
 
-                                            <li><a class="navA" href="/students">Student Sponsorship</a></li>
-                                            <li><a class="navA" href="/post-high-school">Post-High School</a></li>
-                                            <li><a class="navA" href="/opportunities">Sponsorship Opportunities</a></li>
+                                            <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
 
-                                        </ul>
+                                            <div class="gt-dropdown">
 
-                                    </div>
+                                                <ul class="gt-submenu">
 
-                                    <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
+                                                    <li><a class="navA" href="/students">Student Sponsorship</a></li>
+                                                    <li><a class="navA" href="/post-high-school">Post-High School</a>
+                                                    </li>
+                                                    <li><a class="navA" href="/opportunities">Sponsorship
+                                                            Opportunities</a></li>
 
-                                </li>
+                                                </ul>
 
-                                <li class="gt-has-submenu">
+                                            </div>
 
-                                    <a class="navA">Ministry Updates</a>
+                                            <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
 
-                                    <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
+                                        </li>
 
-                                    <div class="gt-dropdown">
+                                        <li class="gt-has-submenu">
 
-                                        <ul class="gt-submenu">
+                                            <a class="navA">Ministry Updates</a>
 
-                                            <li><a class="navA" href="/blog">Trip Blog</a></li>
-                                            <li><a class="navA" href="/photos">Photos & Videos</a></li>
-                                            <li><a class="navA" href="/testimonials">Testimonials</a></li>
-                                            <li><a class="navA" href="/newsletters">Newsletters</a></li>
+                                            <!-- - - - - - - - - - - - - - Submenu (level 2) - - - - - - - - - - - - - - - - -->
 
-                                        </ul>
+                                            <div class="gt-dropdown">
 
-                                    </div>
+                                                <ul class="gt-submenu">
 
-                                    <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
+                                                    <li><a class="navA" href="/blog">Trip Blog</a></li>
+                                                    <li><a class="navA" href="/photos">Photos & Videos</a></li>
+                                                    <li><a class="navA" href="/testimonials">Testimonials</a></li>
+                                                    <li><a class="navA" href="/newsletters">Newsletters</a></li>
 
-                                </li>
+                                                </ul>
 
-                                <li class="gt">
+                                            </div>
 
-                                    <a class="navA" href="/giving">Giving</a>
+                                            <!-- - - - - - - - - - - - - - End of Submenu (level 2) - - - - - - - - - - - - - - - - -->
 
-                                </li>
+                                        </li>
 
-                            </ul>
+                                        <li class="gt">
 
-                        </nav>
+                                            <a class="navA" href="/giving">Giving</a>
 
-                        <!-- - - - - - - - - - - - - - End of Navigation - - - - - - - - - - - - - - - - -->
+                                        </li>
 
-                        <div class="gt-h-elements">
+                                    </ul>
 
-                            <!-- - - - - - - - - - - - - - Searchform - - - - - - - - - - - - - - - - -->
+                                </nav>
 
-                            {{!-- <div class="gt-compressed-wrap">
+                                <!-- - - - - - - - - - - - - - End of Navigation - - - - - - - - - - - - - - - - -->
+
+                                <div class="gt-h-elements">
+
+                                    <!-- - - - - - - - - - - - - - Searchform - - - - - - - - - - - - - - - - -->
+
+                                    {{!-- <div class="gt-compressed-wrap">
 
                                 <form novalidate class="gt-lineform gt-compressed">
 
@@ -170,28 +185,28 @@
 
                             </div> --}}
 
-                            <!-- - - - - - - - - - - - - - End of Searchform - - - - - - - - - - - - - - - - -->
+                                    <!-- - - - - - - - - - - - - - End of Searchform - - - - - - - - - - - - - - - - -->
 
-                            
+
+                                </div>
+                                <!--/ .gt-h-elements -->
+
+                            </div>
+                            <!--/ .align-right -->
+
                         </div>
-                        <!--/ .gt-h-elements -->
 
                     </div>
-                    <!--/ .align-right -->
+                    <!--/ .gt-t-row -->
 
                 </div>
 
-            </div>
-            <!--/ .gt-t-row -->
+                <!-- - - - - - - - - - - - - - End of Header Section - - - - - - - - - - - - - - - - -->
+
+            </header>
+
+            <!-- - - - - - - - - - - - - - End of Header - - - - - - - - - - - - - - - - -->
 
         </div>
 
-        <!-- - - - - - - - - - - - - - End of Header Section - - - - - - - - - - - - - - - - -->
-
-    </header>
-
-    <!-- - - - - - - - - - - - - - End of Header - - - - - - - - - - - - - - - - -->
-
-</div>
-
-<!-- - - - - - - - - - - - - - End of Header Wrapper - - - - - - - - - - - - - - - - -->
+        <!-- - - - - - - - - - - - - - End of Header Wrapper - - - - - - - - - - - - - - - - -->
