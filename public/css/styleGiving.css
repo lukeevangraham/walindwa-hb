@@ -69,6 +69,10 @@
 	
 ------------------------------------------------------ */
 
+#walindwaLogo {
+    border-radius: 10%;
+}
+
 input[type="checkbox"] {
     -webkit-appearance: checkbox !important;
 }
