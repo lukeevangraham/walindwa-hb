@@ -331,10 +331,15 @@ router.get("/student:id", (req, res) => {
 })
 
 router.get("/contact", (req, res) => {
-  let hbsObject = {
-    title: "Contact"
-  }
-  res.render("./contact", hbsObject)
+  Promise.all([
+    axios.get("https://admin.moreleft.com/contact")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Contact",
+      contact: resultArray[0].data
+    }
+    res.render("./contact", hbsObject)
+  })
 })
 
   module.exports = router;
