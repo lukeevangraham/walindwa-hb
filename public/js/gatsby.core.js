@@ -1828,11 +1828,15 @@
 
 							var $this = $(this);
 
+							console.log("THIS: ", $this.serialize())
+
 							$.ajax({
-								type: 'POST',
-								dataType: 'json',
+								// type: 'POST',
+								method: 'POST',
+								url: 'https://formspree.io/mrgyywab',
+								// dataType: 'json',
 								data: $this.serialize(),
-								url: 'php/contactform_handler.php',
+								// url: 'php/contactform_handler.php',
 								cache: false
 							}).done(function(response){
 
