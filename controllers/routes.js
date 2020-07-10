@@ -287,7 +287,8 @@ router.get("/giving", (req, res) => {
     let hbsObject = {
       title: "Giving",
       givingSingleType: resultArray[0].data,
-      headLink: '<link rel="stylesheet" href="css/styleGiving.css">'
+      headLink: '<link rel="stylesheet" href="css/styleGiving.css">',
+      bodyJs: '<script src="js/giving.js"></script>'
     }
     res.render("./giving", hbsObject)
   })
