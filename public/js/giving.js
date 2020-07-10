@@ -1,7 +1,13 @@
-$(window).on( "load", function() {
+$(document).ready(function() {
+
+    setTimeout(checkAmt, 3000)
 
     
     console.log("hello there!")
     
-    console.log($("#cdsetdonationamt1").html())
+
+    function checkAmt() {
+        console.log($("#cdsetdonationamt1").html())
+        
+    }
 })
