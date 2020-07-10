@@ -1,3 +1,7 @@
-console.log("hello there!")
+$(document).ready() {
 
-console.log($("#cdsetdonationamt1").val())
+    
+    console.log("hello there!")
+    
+    console.log($("#cdsetdonationamt1").val())
+}
