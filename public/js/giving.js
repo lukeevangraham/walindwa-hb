@@ -7,7 +7,7 @@ $(document).ready(function() {
     
 
     function checkAmt() {
-        console.log($("#cdsetdonationamt1").html())
+        console.log($("#cdsetdonationamt1").text("$43 (month sponsorship)"))
         
     }
 })
