@@ -63,7 +63,7 @@
 			if($('.gt-toggle-nav').length) this.modules.showHideNav();
 
 			// contactform init
-			if($('.gt-contact-form').length) this.modules.contactForm.init();
+			// if($('.gt-contact-form').length) this.modules.contactForm.init();
 
 			//subscribe form init
 			if($('.gt-subscribe').length) this.modules.subscribeForm.init();
