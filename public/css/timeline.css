@@ -1,3 +1,26 @@
+/* .timeline-panel {
+    width: 41%;
+    text-align: right;
+    padding: 0 20px 20px 100px;
+}
+
+.timeline-image {
+    width: 200px !important;
+    margin: auto !important;
+
+} */
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.timeline-date {
+    margin-bottom: 0 !important;
+}
+
+
+
+
 .timeline {
     position: relative;
     padding: 0;

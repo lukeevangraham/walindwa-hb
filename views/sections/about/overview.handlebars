@@ -180,9 +180,16 @@ In the Swahili language, “Walindwa” means “the ones who are guarded or pro
 			<h2>Timeline</h2>
 			<h3>Lorem ipsum dolar sit amet consectetur.</h3>
 		</div>
-		<ul class="timeline">
+		<ul class="timeline d-flex flex-column justify-content-center">
 			{{#each timeline}}
+
+			{{#if (isEven @index)}}
 			{{> about/timeline}}
+			{{else}}
+			{{> about/timeline inverted="true"}}
+			{{/if}}
+			
+			
 			{{/each}}
 		</ul>
 	</div>

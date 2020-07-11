@@ -28,6 +28,12 @@ module.exports = {
     getPhotoGalleryDate: function (date) {
         return moment(date).format("MMMM DD YYYY   ")
     },
+    isEven: function(value) {
+        // console.log("VALUE", (value % 2 === 0))
+        let even = (value % 2 === 0)
+        // console.log("EVEN: ", even)
+        return even
+    },
     isOne: function (value) {
         // console.log("val length", value.length)
         return value.length == 1;
