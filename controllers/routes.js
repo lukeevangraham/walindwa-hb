@@ -43,11 +43,14 @@ router.get("/board:id", function (req, res) {
 
 router.get("/overview", function (req, res) {
   Promise.all([
-    axios.get("https://admin.moreleft.com/about")
+    axios.get("https://admin.moreleft.com/about"),
+    axios.get("https://admin.moreleft.com/timelines")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Overview",
-      aboutSingleType: resultArray[0].data
+      aboutSingleType: resultArray[0].data,
+      timeline: resultArray[1].data,
+      headLink: '<link rel="stylesheet" href="css/timeline.css">'
     };
     res.render("./sections/about/overview", hbsObject);
   })
