@@ -16,6 +16,11 @@
 
 .timeline-date {
     margin-bottom: 0 !important;
+    color: black !important;
+}
+
+.subheading {
+    color: black !important;
 }
 
 
@@ -78,7 +83,7 @@
     color: white;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: #fed136;
+    background-color: #2a6319;
   }
   .timeline > li .timeline-image h4 {
     font-size: 10px;

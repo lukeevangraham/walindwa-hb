@@ -89,13 +89,13 @@
 						<!-- - - - - - - - - - - - - - End of Tabs Style 1 - - - - - - - - - - - - - - - - -->
 
 
-					
+
 
 
 					</div>
 					<!--/ .gt-content-element -->
 
-						{{!-- <div class="row mt-4">
+					{{!-- <div class="row mt-4">
 							<div class="col-md-2"></div>
 							<div class="col-md-6">
 								<h3>Our Vision</h3>
@@ -173,28 +173,33 @@ In the Swahili language, “Walindwa” means “the ones who are guarded or pro
 
 				<!-- - - - - - - - - - - - - - End of Page Section - - - - - - - - - - - - - - - - -->
 
-<section class="gt-section gt-size-3">
+				<section class="gt-section gt-size-3">
 
-	<div class="gt-content-element">
-		<div class="text-center">
-			<h2>Timeline</h2>
-			<h3>Lorem ipsum dolar sit amet consectetur.</h3>
-		</div>
-		<ul class="timeline d-flex flex-column justify-content-center">
-			{{#each timeline}}
+					<div class="gt-content-element">
+						<div>
+							<h2 class="align-center" style="margin-bottom: 0;">Timeline</h2>
+							<p class="align-center" style="margin-bottom: 4rem; font-style:italic">Lorem ipsum dolar sit
+								amet consectetur.</p>
+						</div>
+						<ul class="timeline d-flex flex-column justify-content-center">
+							{{#each timeline}}
 
-			{{#if (isEven @index)}}
-			{{> about/timeline}}
-			{{else}}
-			{{> about/timeline inverted="true"}}
-			{{/if}}
-			
-			
-			{{/each}}
-		</ul>
-	</div>
+							{{#if (isEven @index)}}
+							{{> about/timeline}}
+							{{else}}
+							{{> about/timeline inverted="true"}}
+							{{/if}}
 
-</section>
+							{{/each}}
+							<li class="timeline-inverted">
+								<div class="timeline-image">
+									<h4 style="color: white;">Be Part<br>Of Our<br>Story!</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</section>
 
 
 			</div>

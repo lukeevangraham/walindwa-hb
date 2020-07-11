@@ -1,8 +1,10 @@
-{{log this}}
+{{#if inverted}}
+    <li class="timeline-inverted">
+{{else}}
+    <li>
+{{/if}}
 
-{{#if inverted}}<li class="timeline-inverted">{{else}}<li>{{/if}}
 
-{{!-- <li> --}}
     <div class="timeline-image text-center">
         <img src="https://admin.moreleft.com{{image.url}}" alt="{{image.alternativeText}}"
             class="rounded-circle img-fluid">
