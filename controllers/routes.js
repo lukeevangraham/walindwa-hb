@@ -50,7 +50,7 @@ router.get("/overview", function (req, res) {
       title: "Overview",
       aboutSingleType: resultArray[0].data,
       timeline: resultArray[1].data,
-      headLink: '<link rel="stylesheet" href="css/timeline.css">'
+      headLink: '<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/timeline.css">'
     };
     res.render("./sections/about/overview", hbsObject);
   })
