@@ -44,8 +44,9 @@ router.get("/board:id", function (req, res) {
 router.get("/overview", function (req, res) {
   Promise.all([
     axios.get("https://admin.moreleft.com/about"),
-    axios.get("https://admin.moreleft.com/timelines")
+    axios.get("https://admin.moreleft.com/timelines?_sort=order:ASC")
   ]).then((resultArray) => {
+    console.log("TIMES: ", resultArray[1].data)
     let hbsObject = {
       title: "Overview",
       aboutSingleType: resultArray[0].data,
