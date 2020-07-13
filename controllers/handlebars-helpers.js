@@ -13,8 +13,8 @@ module.exports = {
     createTestimonyExcerpt: function (body) {
         return body.split(".")[0] + '. '
     },
-    fiveWords: function (p) {
-        return p.split(" ").splice(0, 5).join(" ");
+    givenNumberofWords: function (p, length) {
+        return p.split(" ").splice(0, length).join(" ");
     },
     getBlogSingleDate: function (date) {
         return moment(date).format('MMMM D, YYYY')
