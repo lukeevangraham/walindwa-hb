@@ -1,0 +1,52 @@
+{{> main/breadcrumb currentTitle=this.title}}
+
+<!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
+
+<div class="gt-page-content-wrap gt-no-sidebar gt-no-top-offset gt-no-bottom-offset">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12">
+
+                <section class="gt-section gt-size-3">
+
+                    <div class="gt-content-element">
+                        {{!-- <div> --}}
+                            {{!-- <h2 class="align-center" style="margin-bottom: 0;">Timeline</h2> --}}
+                            {{!-- <p class="align-center" style="margin-bottom: 4rem; font-style:italic">How God has blessed Walindwa through the years.</p> --}}
+                        {{!-- </div> --}}
+                        <ul class="timeline d-flex flex-column justify-content-center">
+                            {{#each timeline}}
+
+                            {{#if (isEven @index)}}
+                            {{> about/timeline}}
+                            {{else}}
+                            {{> about/timeline inverted="true"}}
+                            {{/if}}
+
+                            {{/each}}
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4 style="color: white;">Be Part<br>Of Our<br>Story!</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+
+            </div>
+            <!--/ .col -->
+
+        </div>
+        <!--/ .row -->
+
+    </div>
+    <!--/ .container -->
+
+</div>
+
+<!-- - - - - - - - - - - - - - End of Page Content - - - - - - - - - - - - - - - - -->

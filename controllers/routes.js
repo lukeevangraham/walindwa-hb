@@ -16,10 +16,14 @@ router.get("/", (req, res) => {
 });
 
 router.get("/board", (req, res) => {
-  Promise.all([axios.get("https://admin.moreleft.com/board-members")]).then(
+  Promise.all([
+    axios.get("https://admin.moreleft.com/board-members"),
+    axios.get("https://admin.moreleft.com/about")
+  ]).then(
     (resultArray) => {
       let hbsObject = {
         boardMembers: resultArray[0],
+        aboutSingleType: resultArray[1],
         title: `Board`,
       };
       res.render("./sections/about/board", hbsObject);
@@ -44,14 +48,10 @@ router.get("/board:id", function (req, res) {
 router.get("/overview", function (req, res) {
   Promise.all([
     axios.get("https://admin.moreleft.com/about"),
-    axios.get("https://admin.moreleft.com/timelines?_sort=order:ASC")
   ]).then((resultArray) => {
-    console.log("TIMES: ", resultArray[1].data)
     let hbsObject = {
       title: "Overview",
       aboutSingleType: resultArray[0].data,
-      timeline: resultArray[1].data,
-      headLink: '<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/timeline.css">'
     };
     res.render("./sections/about/overview", hbsObject);
   })
@@ -347,4 +347,17 @@ router.get("/contact", (req, res) => {
   })
 })
 
-  module.exports = router;
+router.get("/timeline", (req, res) => {
+  Promise.all([
+    axios.get("https://admin.moreleft.com/timelines?_sort=order:ASC")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Timeline",
+      timeline: resultArray[0].data,
+      headLink: '<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/timeline.css">'
+    }
+    res.render("./sections/about/timeline", hbsObject)
+  })
+})
+
+module.exports = router;
