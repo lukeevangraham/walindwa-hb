@@ -287,6 +287,18 @@ router.get("/photos", (req, res) => {
   })
 })
 
+router.get("/photo:id", (req, res) => {
+  Promise.all([
+    axios.get("https://admin.moreleft.com/photos-and-videos/?id=" + req.params.id.substr(1))
+  ]).then((resultArray) => {
+    let hbsObject = {
+      photo: resultArray[0].data,
+      title: resultArray[0].data[0].title
+    }
+    res.render("./sections/updates/photo", hbsObject)
+  })
+})
+
 router.get("/giving", (req, res) => {
   Promise.all([
     axios.get("https://admin.moreleft.com/giving")
