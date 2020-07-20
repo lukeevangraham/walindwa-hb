@@ -74,6 +74,18 @@
     margin: 0;
 }
 
+.donate-badge {
+    background-color: black !important;
+    margin: -2rem 3rem;
+    padding: 0 3rem;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 68px;
+    vertical-align: middle;
+    color: white;
+}
+
 p {
     vertical-align: baseline !important;
 }

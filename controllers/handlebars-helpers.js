@@ -5,6 +5,9 @@ module.exports = {
     calculateAge: function (birthdate) {
         return moment().diff(moment(birthdate), 'years')
     },
+    concat: function (string, addition) {
+        return string + addition
+    },
     createExcerpt: function (body, sentences) {
         return markdown(body).split("<p>")[1].split('. ').slice(0, sentences).join('. ') + '.';
         // console.log("body: ", body)
@@ -33,6 +36,9 @@ module.exports = {
         let even = (value % 2 === 0)
         // console.log("EVEN: ", even)
         return even
+    },
+    ifEquals: function(arg1, arg2 , options) {
+return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
     },
     isOne: function (value) {
         // console.log("val length", value.length)

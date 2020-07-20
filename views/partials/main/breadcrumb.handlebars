@@ -5,7 +5,7 @@
 	<h1 class="gt-page-title">{{boardMember.data.firstName}} {{boardMember.data.lastName}}</h1>
 	{{/if}}
 	{{#unless boardMember.data.firstName}}
-	<h1 class="gt-page-title">{{currentTitle}}</h1>
+	<h1 class="gt-page-title">{{currentTitle}} {{#if current}} <a class="navA" href="/giving"><span class="donate-badge">Donate</span></a>{{/if}}</h1>
 	{{/unless}}
 
 	{{#if testimonial}}
@@ -33,6 +33,11 @@
 	<ul class="gt-breadcrumbs">
 
 		<li><a class="navA" href="/">Home</a></li>
+
+{{#if grandparentTitle}}
+<li><a href="{{grandparentLink}}" class="navA">{{grandparentTitle}}</a></li>
+{{/if}}
+
 		{{#if parentTitle}}
 		<li><a class="navA" href="{{parentLink}}">{{parentTitle}}</a></li>
 		{{/if}}

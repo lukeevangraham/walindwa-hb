@@ -1,5 +1,11 @@
-{{> main/breadcrumb currentTitle=this.project.name parentLink="/projects" parentTitle="Projects"}}
+{{#if project.current}}
+{{> main/breadcrumb currentTitle=this.project.name grandparentTitle="Projects" grandparentLink="/projects" parentLink="/projects" parentTitle=(concat project.status " Projects") current=true}}
+{{/if}}
+{{#unless project.current}}
+{{> main/breadcrumb currentTitle=this.project.name grandparentTitle="Projects" grandparentLink="/projects" parentLink="/projects" parentTitle=(concat project.status " Projects")}}
+{{/unless}}
 
+{{log project}}
 
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
 
@@ -17,6 +23,9 @@
 
                         <!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
                         <article class="gt-entry gt-single">
+
+
+
 
 
                             <div class="owl-carousel owl-large-nav gt-entries-holder gt-type-1 gt-cols-3">

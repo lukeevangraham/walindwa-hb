@@ -119,6 +119,9 @@ router.get("/project:id", (req, res) => {
     axios.get("https://admin.moreleft.com/projects?Published_eq=true&id_eq=" + req.params.id.substr(1)),
     axios.get("https://admin.moreleft.com/projects?Published_eq=true&id_ne=" + req.params.id.substr(1) + "&_sort=id:DESC&_limit=6")
   ]).then((resultArray) => {
+    if (resultArray[0].data[0].status == "Current") {
+      resultArray[0].data[0].current = true;
+    }
     let hbsObject = {
       title: resultArray[0].data[0].name,
       project: resultArray[0].data[0],
