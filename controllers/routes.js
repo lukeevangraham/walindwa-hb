@@ -227,7 +227,7 @@ router.get("/newsletters", (req, res) => {
 
 router.get("/testimonials", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/testimonials")
+    axios.get("https://admin.moreleft.com/testimonials?_sort=year:DESC")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Testimonials",
@@ -328,11 +328,13 @@ router.get("/opportunities", (req, res) => {
 router.get("/student:id", (req, res) => {
   // console.log("LOOK HERE: ", req.params.id.substr(1))
   Promise.all([
-    axios.get("https://admin.moreleft.com/sponsorship-opportunities?id=" + req.params.id.substr(1))
+    axios.get("https://admin.moreleft.com/sponsorship-opportunities?id=" + req.params.id.substr(1)),
+    axios.get("https://admin.moreleft.com/sponsorship")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Sponsorship Opportunity",
-      student: resultArray[0].data[0]
+      student: resultArray[0].data[0],
+      sponsorshipSingleType: resultArray[1].data
     }
     res.render("./sections/sponsorship/student", hbsObject)
   })

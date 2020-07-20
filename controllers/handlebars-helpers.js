@@ -28,6 +28,9 @@ module.exports = {
     getMonth: function (date) {
         return moment(date).format('MMM');
     },
+    getYear: function (date) {
+        return moment(date).format('YYYY');
+    },
     getPhotoGalleryDate: function (date) {
         return moment(date).format("MMMM DD YYYY   ")
     },
