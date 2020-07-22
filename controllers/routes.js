@@ -304,12 +304,24 @@ router.get("/giving", (req, res) => {
     axios.get("https://admin.moreleft.com/giving")
   ]).then((resultArray) => {
     let hbsObject = {
-      title: "Giving",
+      title: "Ways to Give",
       givingSingleType: resultArray[0].data,
       headLink: '<link rel="stylesheet" href="css/styleGiving.css">',
       bodyJs: '<script src="js/giving.js"></script>'
     }
     res.render("./giving", hbsObject)
+  })
+})
+
+router.get("/donate", (req, res) => {
+  Promise.all([
+    axios.get("https://admin.moreleft.com/giving")
+  ]).then((resultArray) => {
+    let hbsObject = {
+      title: "Donate Now",
+      givingSingleType: resultArray[0].data
+    }
+    res.render("./donate", hbsObject)
   })
 })
 
