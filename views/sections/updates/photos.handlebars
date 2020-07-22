@@ -65,9 +65,7 @@
                                         <li><a href="#">Photography</a></li>
                                     </ul> --}}
 
-
-            {{log this}}
-                                    <h6 class="gt-entry-title"><a class="navA" href="blog_single_without_sidebar.html">{{title}}</a></h6>
+                                    <h6 class="gt-entry-title"><a class="navA" href="/photo:{{id}}">{{title}}</a></h6>
 
                                     <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
 
@@ -92,6 +90,8 @@
 
                         {{else}}
 
+                        {{log this}}
+
 
                         <div class="gt-col photography">
 
@@ -105,7 +105,9 @@
 
                                         {{#each photos}}
 
-                                        <img src="https://admin.moreleft.com{{url}}" alt="">
+                                        {{log ../this}}
+
+                                        <a class="gt-thumbnail-attachment" href="/photo:{{../id}}"><img src="https://admin.moreleft.com{{url}}" alt="{{alternativeText}}"></a>
 
                                         {{/each}}
 
@@ -123,7 +125,7 @@
                                         <li><a href="#">Photography</a></li>
                                     </ul> --}}
 
-                                    <h6 class="gt-entry-title"><a class="navA" href="blog_single_without_sidebar.html">{{title}}</a></h6>
+                                    <h6 class="gt-entry-title"><a class="navA" href="/photo:{{id}}">{{title}}</a></h6>
 
                                     <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
 

@@ -1,74 +1,88 @@
+{{> main/breadcrumb parentTitle="Photos & Videos" parentLink="/photos" currentTitle=this.title}}
+
 <div class="gt-page-content-wrap gt-no-sidebar">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                <div class="gt-content-element">
+
+                {{#each photo}}
+                {{#if photos}}
+                {{#if (isOne photos)}}
 
 
-                    <!-- - - - - - - - - - - - - - Carousel Style 4 - - - - - - - - - - - - - - - - -->
+                <div class="gt-col motion-design photography" style="padding-top: 0px;">
 
-                    <div class="owl-carousel owl-large-nav gt-entries-holder gt-type-1 gt-cols-3">
+                    <article class="gt-entry gt-image-entry-format">
 
-                        <div class="gt-col">
+                        <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
 
-                            {{#each photo}}
+                        <div class="gt-entry-attachment">
 
-                            {{#each photos}}
-
-                            {{log this}}
-
-                            <!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
-
-                            <article class="gt-entry gt-image-entry-format">
-
-                                <!-- - - - - - - - - - - - - - Attachment - - - - - - - - - - - - - - - - -->
-
-                                <div class="gt-entry-attachment">
-
-                                    <a class="gt-thumbnail-attachment" href="blog_single_without_sidebar.html"><img
-                                            src="https://admin.moreleft.com{{url}}" alt=""></a>
-
-                                </div>
-
-                                <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
-
-                                <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
-
-                                <div class="gt-entry-body">
-
-                                    <ul class="gt-entry-cats">
-                                        <li><a href="#">Business</a></li>
-                                    </ul>
-
-                                    <h6 class="gt-entry-title"><a href="blog_single_without_sidebar.html">Why a
-                                            Visual<br>Really is Worth 1,000 Words</a></h6>
-
-                                </div>
-
-                                <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
-
-                            </article>
-
-                            <!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
-
-                            {{/each}}
-                            {{/each}}
-
+                            <img src="https://admin.moreleft.com{{photos.[0].url}}"
+                                class="aligncenter lukesCenteredImage" alt="{{photos.[0].alternativeText}}">
 
                         </div>
-                        <!--/ .gt-col -->
 
+                        <!-- - - - - - - - - - - - - - End of Attachment - - - - - - - - - - - - - - - - -->
 
+                        <!-- - - - - - - - - - - - - - Entry body - - - - - - - - - - - - - - - - -->
 
-                    </div>
+                        <div class="gt-entry-body">
 
-                    <!-- - - - - - - - - - - - - - End of Carousel Style 4 - - - - - - - - - - - - - - - - -->
+                            {{!-- <ul class="gt-entry-cats">
+                                        <li><a href="#">Motion Design</a></li>
+                                        <li><a href="#">Photography</a></li>
+                                    </ul> --}}
 
+                            <h6 class="gt-entry-title" style="text-align:center">{{photos.[0].caption}}</h6>
 
+                            <!-- - - - - - - - - - - - - - Entry Meta - - - - - - - - - - - - - - - - -->
 
+                            {{!-- <div class="gt-entry-meta">
 
+                                        <time class="gt-entry-date" datetime="2016-01-27">{{getPhotoGalleryDate updated_at }}</time>
+
+                                    </div> --}}
+
+                            <!-- - - - - - - - - - - - - - End of Meta - - - - - - - - - - - - - - - - -->
+
+                        </div>
+
+                        <!-- - - - - - - - - - - - - - End of Entry body - - - - - - - - - - - - - - - - -->
+
+                    </article>
 
                 </div>
+
+
+
+
+
+                {{else}}
+
+                {{#each photos}}
+
+                {{log this}}
+
+                <div class="parentImage" style="margin-bottom: 4rem;">
+                    <img src="https://admin.moreleft.com{{url}}" alt="{{alternativeText}}"
+                        class="img-fluid align lukesCenteredImage">
+                    <h6 class="gt-entry-title" style="text-align: center;">{{caption}}</h6>
+                </div>
+
+                {{/each}}
+
+
+                {{/if}}
+                {{/if}}
+                {{/each}}
+
+
+
+
+
+
+
             </div>
         </div>
     </div>

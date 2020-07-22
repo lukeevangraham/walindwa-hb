@@ -73,6 +73,11 @@
     border-radius: 10%;
     margin: 0;
 }
+.lukesCenteredImage {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important
+}
 
 .donate-badge {
     background-color: black !important;

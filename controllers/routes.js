@@ -280,7 +280,7 @@ router.get("/photos", (req, res) => {
     axios.get("https://admin.moreleft.com/photos-and-videos")
   ]).then((resultArray) => {
     let hbsObject = {
-      title: "Photos and Videos",
+      title: "Photos & Videos",
       photos: resultArray[0].data
     }
     res.render("./sections/updates/photos", hbsObject)
