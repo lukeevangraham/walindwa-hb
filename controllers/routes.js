@@ -319,7 +319,9 @@ router.get("/donate", (req, res) => {
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Donate Now",
-      givingSingleType: resultArray[0].data
+      givingSingleType: resultArray[0].data,
+      headLink: '<link rel="stylesheet" href="css/styleGiving.css">',
+      bodyJs: '<script src="js/giving.js"></script>'
     }
     res.render("./donate", hbsObject)
   })
