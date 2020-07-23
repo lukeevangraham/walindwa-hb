@@ -51,6 +51,10 @@ return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
     markdownFancyUL: function (body) {
         return markdown(body).replace("<ul>", `<ul class="gt-list gt-type-2">`)
     },
+    markdownInvertedLi: function (string) {
+        let markedString = markdown(string);
+        return markedString.replace(/<li>/gi, '<li class="inverted">')
+    },
     each_upto: function (array, max, options) {
         if (!array || array.length == 0) {
             return options.inverse(this);

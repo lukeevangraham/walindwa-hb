@@ -1,8 +1,8 @@
 {{#if inverted}}
-    <li class="timeline-inverted">
-{{else}}
-    <li>
-{{/if}}
+<li class="timeline-inverted">
+    {{else}}
+<li>
+    {{/if}}
 
 
     <div class="timeline-image text-center">
@@ -15,7 +15,12 @@
             <h4 class="subheading">{{heading}}</h4>
         </div>
         <div class="timeline-body">
+            {{#if inverted}}
             <p class="text-muted">{{{markdown body}}}</p>
+            {{/if}}
+            {{#unless inverted}}
+            <p class="text-muted">{{{markdownInvertedLi body}}}</p>
+            {{/unless}}
         </div>
     </div>
 </li>
