@@ -133,7 +133,7 @@
   
   @media (min-width: 768px) {
     .timeline:before {
-      left: 50%;
+      left: 25%;
     }
     .timeline > li {
       min-height: 100px;
@@ -146,7 +146,7 @@
       text-align: right;
     }
     .timeline > li .timeline-image {
-      left: 50%;
+      left: 25%;
       width: 100px;
       height: 100px;
       margin-left: -50px;

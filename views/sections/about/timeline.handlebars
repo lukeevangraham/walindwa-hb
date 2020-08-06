@@ -20,11 +20,7 @@
                         <ul class="timeline d-flex flex-column justify-content-center">
                             {{#each timeline}}
 
-                            {{#if (isEven @index)}}
-                            {{> about/timeline}}
-                            {{else}}
                             {{> about/timeline inverted="true"}}
-                            {{/if}}
 
                             {{/each}}
                             <li class="timeline-inverted">
