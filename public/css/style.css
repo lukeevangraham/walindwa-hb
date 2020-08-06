@@ -5062,6 +5062,7 @@ p {
                 color: #fff;
                 font-size: 14px;
                 line-height: 30px;
+                font-weight: 600;
             }
 
             .gt-progress-bars-holder.type-4 .gt-pbar-title{
@@ -5092,7 +5093,23 @@ p {
                 margin-bottom: 15px;
             }
 
-            .gt-progress-bars-holder.type-4 .gt-pbar-wrap:nth-child(3n+1) .gt-pbar{
+            .gt-progress-bars-holder.type-4 .pbRed {
+                background-color: #fa433d !important;
+            }
+
+            .gt-progress-bars-holder.type-4 .pbGreen {
+                background-color: #058d40 !important;
+            }
+
+            .gt-progress-bars-holder.type-4 .pbBlue {
+                background-color: #3d95fa !important;
+            }
+
+            .gt-bar-bold {
+                font-weight: 700;
+            }
+
+            /* .gt-progress-bars-holder.type-4 .gt-pbar-wrap:nth-child(3n+1) .gt-pbar{
                 background-color: #80feb5;
             }
             .gt-progress-bars-holder.type-4 .gt-pbar-wrap:nth-child(3n+1) .gt-pbar-inner{
@@ -5111,7 +5128,7 @@ p {
             }
             .gt-progress-bars-holder.type-4 .gt-pbar-wrap:nth-child(3n) .gt-pbar-inner{
                 background-color: #279be8;
-            }
+            } */
 
     /* ------------------------------------------------------
     
