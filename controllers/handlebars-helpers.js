@@ -9,9 +9,11 @@ module.exports = {
         return string + addition
     },
     createExcerpt: function (body, sentences) {
-        return markdown(body).split("<p>")[1].split('. ').slice(0, sentences).join('. ') + '.';
-        // console.log("body: ", body)
-        // return body
+        closingPTags =  markdown(body).split('<p>')[1].split('. ').slice(0, sentences)
+        closingPTags.forEach((string, i) => {
+            closingPTags[i] = string.replace(/.<\/p>\n/gi, "")
+        });
+        return closingPTags.join('. ') + '.';
     },
     createTestimonyExcerpt: function (body) {
         return body.split(".")[0] + '. '
