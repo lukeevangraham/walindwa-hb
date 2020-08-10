@@ -4872,7 +4872,7 @@ p {
             height: 60px;
             line-height: 60px;
             margin-top: -30px;
-            background: transparent;
+            background: white;
         }
 
         .owl-carousel.owl-large-nav .owl-prev::before,
