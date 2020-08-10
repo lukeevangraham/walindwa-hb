@@ -91,6 +91,10 @@
     color: white;
 }
 
+.projectsCarousel {
+    margin-right: 100px;
+}
+
 p {
     vertical-align: baseline !important;
 }
@@ -4864,6 +4868,7 @@ p {
 
         .owl-next::before{
             content: '\e876';
+            /* vertical-align: text-top; */
         }
 
         .owl-carousel.owl-large-nav .owl-prev,
