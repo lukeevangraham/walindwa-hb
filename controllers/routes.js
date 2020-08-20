@@ -161,7 +161,7 @@ router.get("/blog", (req, res) => {
   ]).then((resultArray) => {
     let hbsObject = {
       blogEntries: resultArray[0].data,
-      title: "Trip Blog"
+      title: "Blog"
     }
     res.render("./sections/updates/blog", hbsObject)
   })

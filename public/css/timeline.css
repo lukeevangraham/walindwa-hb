@@ -45,7 +45,7 @@
     top: 0;
     bottom: 0;
     left: 40px;
-    width: 2px;
+    width: 6px;
     margin-left: -1.5px;
     content: "";
     background-color: #e9ecef;
@@ -56,7 +56,7 @@
     margin-bottom: 50px;
   }
   .timeline > li:after, .timeline > li:before {
-    display: table;
+    display: flex;
     content: " ";
   }
   .timeline > li:after {
@@ -133,7 +133,7 @@
   
   @media (min-width: 768px) {
     .timeline:before {
-      left: 25%;
+      left: 30%;
     }
     .timeline > li {
       min-height: 100px;
@@ -146,7 +146,7 @@
       text-align: right;
     }
     .timeline > li .timeline-image {
-      left: 25%;
+      left: 30%;
       width: 100px;
       height: 100px;
       margin-left: -50px;
@@ -160,6 +160,7 @@
       float: right;
       padding: 0 30px 20px 20px;
       text-align: left;
+      left: -50px;
     }
   }
   @media (min-width: 992px) {
