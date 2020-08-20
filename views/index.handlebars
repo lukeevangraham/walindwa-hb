@@ -50,24 +50,31 @@
 								<div class="gt-content-element">
 
 									<div class="row">
+
+										{{#each blogs}}
+
+										{{log this}}
 										
 										<div class="col-sm-4">
 											
 											<div class="gt-about-us-section">
 
-												<div class="gt-about-img"><img src="images/370x240_img1.jpg" alt=""></div>
+												<div class="gt-about-img"><img src="https://admin.moreleft.com{{Images.[0].url}}" alt=""></div>
 												<div class="gt-about-us-content">
 
-													<h6>Who We Are</h6>
-													<p>Cookie biscuit cupcake marshmallow ice cream cupcake liquorice. Marshmallow bear claw biscuit.</p>
-													<a class="gt-continue-reading-link gt-type-2" href="#">Read More</a>
+													<h6>{{Title}}</h6>
+													{{!-- <p>Cookie biscuit cupcake marshmallow ice cream cupcake liquorice. Marshmallow bear claw biscuit.</p> --}}
+													<p>{{createExcerpt Body 2}}</p>
+													<a class="gt-continue-reading-link gt-type-2 navA" href="/blog-{{id}}">Read More</a>
 
 												</div>
 
 											</div>
 
 										</div>
-										<div class="col-sm-4">
+
+										{{/each}}
+										{{!-- <div class="col-sm-4">
 											
 											<div class="gt-about-us-section">
 
@@ -98,7 +105,7 @@
 
 											</div>
 
-										</div>
+										</div> --}}
 
 									</div>
 
