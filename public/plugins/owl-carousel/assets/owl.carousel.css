@@ -18,14 +18,6 @@
   animation-name: fadeOut;
 }
 
-@media (min-width: 1201px) {
-  .owl-carousel .owl-controls .owl-nav .owl-prev,
-.owl-carousel .owl-controls .owl-nav .owl-next,
-.owl-carousel .owl-controls .owl-dot {
-  margin: 0 130px;
-}
-}
-
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
