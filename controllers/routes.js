@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
       let hbsObject = {
         homeSingle: resultArray[0],
         title: `Home`,
-        bodyJs: `<script src="js/jquery.backstretch.min.js"></script><script src="./js/index.js"></script>`
+        bodyJs: `<script src="js/jquery.backstretch.min.js"></script><script src="./js/index.js" images="` + resultArray[0].data.topImages.map(el => "https://admin.moreleft.com" + el.url) +`" one="1"></script>`
         // headLink: `<link rel="stylesheet" href="css/vanillaSlideshow.css">`
       };
       res.render("index", hbsObject);
