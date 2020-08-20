@@ -73,6 +73,11 @@
     border-radius: 10%;
     margin: 0;
 }
+.imgHolder {
+    display: inline-block;
+    background: #000;
+    width: 100%
+}
 .lukesCenteredImage {
     display: block !important;
     margin-left: auto !important;

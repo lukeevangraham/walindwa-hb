@@ -9,6 +9,8 @@ router.get("/", (req, res) => {
       let hbsObject = {
         homeSingle: resultArray[0],
         title: `Home`,
+        bodyJs: `<script src="js/jquery.backstretch.min.js"></script><script src="./js/index.js"></script>`
+        // headLink: `<link rel="stylesheet" href="css/vanillaSlideshow.css">`
       };
       res.render("index", hbsObject);
     }
