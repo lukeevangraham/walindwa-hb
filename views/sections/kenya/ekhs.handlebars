@@ -19,7 +19,7 @@
                         <img src="https://admin.moreleft.com{{kenyaSingleType.ekhsTopPhoto.url}}" alt="">
                     </div>
 
-                {{{markdown kenyaSingleType.ekhsBody}}}
+                    {{{markdown kenyaSingleType.ekhsBody}}}
 
                 </div>
                 <!--/ .gt-content-element -->
@@ -34,12 +34,18 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <div class="row">
-                    {{!-- {{ log this.kenyaSingleType }} --}}
-                    {{#each kenyaSingleType.ekhsThreeBottomPhotos }}
+                {{!-- <div class="row"> --}}
+                {{!-- {{ log this.kenyaSingleType }} --}}
+                {{#each kenyaSingleType.ekhsThreeBottomPhotos }}
+                {{#if (isNth 3 @index)}}
+                <div class="row" style="margin-bottom: 3rem;">
                     {{> inKenya/threePhotos}}
-                    {{/each}}
                 </div>
+                {{else}}
+                {{> inKenya/threePhotos}}
+                {{/if}}
+                {{/each}}
+                {{!-- </div> --}}
             </div>
         </div>
 

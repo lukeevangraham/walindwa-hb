@@ -34,11 +34,10 @@ module.exports = {
     getPhotoGalleryDate: function (date) {
         return moment(date).format("MMMM DD YYYY   ")
     },
-    isEven: function(value) {
+    isNth: function(n, value) {
         // console.log("VALUE", (value % 2 === 0))
-        let even = (value % 2 === 0)
-        // console.log("EVEN: ", even)
-        return even
+        let nth = (value % n === 0)
+        return nth
     },
     ifEquals: function(arg1, arg2 , options) {
 return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
