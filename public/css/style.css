@@ -69,6 +69,14 @@
 	
 ------------------------------------------------------ */
 
+.blurWhiteBg {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.7)
+    );
+    padding: 3rem;
+}
+
 .ceilFade {
     background-image: linear-gradient(
         to top,
