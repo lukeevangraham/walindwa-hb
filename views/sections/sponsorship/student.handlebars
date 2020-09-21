@@ -1,4 +1,4 @@
-{{> main/breadcrumb currentTitle=title}}
+{{> main/breadcrumb parentTitle="SPONSORSHIP OPPORTUNITIES" parentLink="/opportunities"  currentTitle=student.firstName}}
 
 
 <!-- - - - - - - - - - - - - - Page Content - - - - - - - - - - - - - - - - -->
@@ -49,6 +49,10 @@
 
                         {{#if student.fieldOfStudy}}
                         <div class="gt-member-position">Field of Study: {{student.fieldOfStudy}}</div>
+                        {{/if}}
+
+                        {{#if student.sponsorshipNeeded}}
+                        <div class="gt-member-position">Sponsorship Needed: {{student.sponsorshipNeeded}}</div>
                         {{/if}}
 
                         {{!-- <ul class="gt-social-icons">
