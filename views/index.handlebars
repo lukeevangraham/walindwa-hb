@@ -3,7 +3,8 @@
 {{!-- <div class="gt-media-holder gt-dim-section gt-fullscreen" data-bg="images/fullscreen_bg_13.jpg"> --}}
 {{!-- <span class="imgHolder"> --}}
 <div class="gt-media-holder gt-dim-section gt-fullscreen"
-	data-bg="https://admin.moreleft.com{{ homeSingle.data.cover.url }}" id="walindwa-hero" style="height: 75vh; padding-left: 0; padding-right:0;">
+	data-bg="https://admin.moreleft.com{{ homeSingle.data.cover.url }}" id="walindwa-hero"
+	style="height: 75vh; padding-left: 0; padding-right:0;">
 	<div class="ceilFade">
 
 		<div class="container">
@@ -483,6 +484,10 @@
 					<div class="owl-carousel owl-large-nav gt-entries-holder gt-type-1 gt-cols-3"
 						data-animation="fadeInUp">
 
+						{{#each blogs}}
+
+
+
 						<div class="gt-col">
 
 							<!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
@@ -493,8 +498,8 @@
 
 								<div class="gt-entry-attachment">
 
-									<a class="gt-thumbnail-attachment" href="blog_single_without_sidebar.html"><img
-											src="images/entry_image_01.jpg" alt=""></a>
+									<a class="gt-thumbnail-attachment" href="/blog-{{id}}"><img
+											src="https://admin.moreleft.com{{Images.[0].url}}" alt=""></a>
 
 								</div>
 
@@ -504,12 +509,11 @@
 
 								<div class="gt-entry-body">
 
-									<ul class="gt-entry-cats">
+									{{!-- <ul class="gt-entry-cats">
 										<li><a href="#">Business</a></li>
-									</ul>
+									</ul> --}}
 
-									<h6 class="gt-entry-title"><a href="blog_single_without_sidebar.html">Why a
-											Visual<br>Really is Worth 1,000 Words</a></h6>
+									<h6 class="gt-entry-title"><a class="navA" href="/blog-{{id}}">{{Title}}</a></h6>
 
 								</div>
 
@@ -522,7 +526,9 @@
 						</div>
 						<!--/ .gt-col -->
 
-						<div class="gt-col">
+						{{/each}}
+
+						{{!-- <div class="gt-col">
 
 							<!-- - - - - - - - - - - - - - Entry - - - - - - - - - - - - - - - - -->
 
@@ -637,7 +643,7 @@
 							<!-- - - - - - - - - - - - - - End of Entry - - - - - - - - - - - - - - - - -->
 
 						</div>
-						<!--/ .gt-col -->
+						<!--/ .gt-col --> --}}
 
 					</div>
 
