@@ -11450,6 +11450,10 @@ p {
 
 @media only screen and (max-width: 767px){
 
+    .ceilFade {
+        display: none;
+    }
+
     .gt-fs-top .gt-social-icons > li{
         margin: 10px 10px 0;
     }
