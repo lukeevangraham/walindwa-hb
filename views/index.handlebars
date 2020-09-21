@@ -55,8 +55,6 @@
 
 							{{#each blogs}}
 
-							{{log this}}
-
 							<div class="col-sm-4">
 
 								<div class="gt-about-us-section">
@@ -407,18 +405,28 @@
 
 					<div class="owl-carousel owl-large-nav gt-brand-holder gt-cols-5">
 
+						{{#each homeSingle.data.photoSlider}}
+
+						{{log this}}
+
+						
+
 						<div class="gt-col">
 
 							<!-- - - - - - - - - - - - - - brand - - - - - - - - - - - - - - - - -->
 
-							<a href="#" class="gt-brand"><img src="images/brand1.jpg" alt=""></a>
+							<a href="#" class="gt-brand"><img src="http://admin.moreleft.com{{formats.thumbnail.url}}" alt="{{alternativeText}}"></a>
+
+							<p style="margin-top: 7px; text-align: center; font-size: 18px; line-height: 22px">{{caption}}</p>
 
 							<!-- - - - - - - - - - - - - - End of brand - - - - - - - - - - - - - - - - -->
 
 						</div>
 						<!--/ .gt-col -->
 
-						<div class="gt-col">
+						{{/each}}
+
+						{{!-- <div class="gt-col">
 
 							<!-- - - - - - - - - - - - - - brand - - - - - - - - - - - - - - - - -->
 
@@ -460,7 +468,7 @@
 							<!-- - - - - - - - - - - - - - End of brand - - - - - - - - - - - - - - - - -->
 
 						</div>
-						<!--/ .gt-col -->
+						<!--/ .gt-col --> --}}
 
 					</div>
 
