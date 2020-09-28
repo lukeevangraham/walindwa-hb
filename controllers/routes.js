@@ -6,7 +6,7 @@ let moment = require("moment");
 router.get("/", (req, res) => {
   Promise.all([
     axios.get("https://admin.moreleft.com/home"),
-    axios.get("https://admin.moreleft.com/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=3")
+    axios.get("https://admin.moreleft.com/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=6")
   ]).then(
     (resultArray) => {
       let hbsObject = {
