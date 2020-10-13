@@ -21,4 +21,4 @@ let $hero = $("#walindwa-hero");
 //   });
 // }, 6000);
 
-$hero.backstretch(images, {duration: 6000, fade: 750});
+$hero.backstretch(images, {duration: 3000, fade: 750});
