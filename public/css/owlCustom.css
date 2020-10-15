@@ -10,9 +10,9 @@
 
 
   @media (max-width: 900px) {
-    .owl-carousel .owl-controls .owl-nav .owl-prev,
-  .owl-carousel .owl-controls .owl-nav .owl-next,
-  .owl-carousel .owl-controls .owl-dot {
+    .bottom-photos .owl-carousel .owl-controls .owl-nav .owl-prev,
+    .bottom-photos .owl-carousel .owl-controls .owl-nav .owl-next,
+    .bottom-photos .owl-carousel .owl-controls .owl-dot {
     margin: 0 70px;
     }
   }
