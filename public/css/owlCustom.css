@@ -5,3 +5,14 @@
       margin: 0 130px;
     }
   }
+
+  
+
+
+  @media (max-width: 900px) {
+    .owl-carousel .owl-controls .owl-nav .owl-prev,
+  .owl-carousel .owl-controls .owl-nav .owl-next,
+  .owl-carousel .owl-controls .owl-dot {
+    margin: 0 70px;
+    }
+  }
