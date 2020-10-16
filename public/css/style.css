@@ -69,6 +69,18 @@
 	
 ------------------------------------------------------ */
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
+  .home-blog {
+
+  }
+
+
 .blurWhiteBg {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.7),
@@ -11123,6 +11135,10 @@ p {
 
 @media only screen and (max-width: 991px){
 
+    .home-blog {
+        height: 925px;
+    }
+
     .gt-flexbox .gt-products-holder.gt-view-grid.gt-cols-6 .gt-col{
         max-width: 33.3333%;
 
@@ -11457,6 +11473,10 @@ p {
 }
 
 @media only screen and (max-width: 767px){
+
+    .home-blog {
+        height: 865px;
+    }
 
     /* .ceilFade {
         display: none;
@@ -12212,6 +12232,10 @@ p {
 }
 
 @media only screen and (max-width: 480px){
+
+    .home-blog {
+        height: 900px;
+    }
 
     .gt-header .gt-compressed:not(.gt-f-hide){
         width: 150px;

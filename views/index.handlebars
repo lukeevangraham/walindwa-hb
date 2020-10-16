@@ -113,7 +113,7 @@
 
 				<!-- - - - - - - - - - - - - - Page Section - - - - - - - - - - - - - - - - -->
 
-				<section class="gt-section">
+				<section class="gt-section home-blog">
 
 					<h2 class="gt-title-underline">From Our Blog</h2>
 
@@ -154,12 +154,15 @@
 									</ul> --}}
 
 									<h6 class="gt-entry-title"><a class="navA" href="/blog-{{id}}">{{Title}}</a></h6>
-									<p style="text-align: left;">{{createExcerpt Body 2}}
-										<br>
-										<a style="margin-top: 1.5rem;" class="gt-continue-reading-link gt-type-2 navA"
+									<p class="line-clamp" style="text-align: left;">{{createExcerpt Body 2}}
+									</p>
+										{{!-- <br> --}}
+										<div style="display: flex;">
+
+										<a style="text-align: left !important;" class="gt-continue-reading-link gt-type-2 navA"
 											href="/blog-{{id}}">Read
 											More</a>
-									</p>
+										</div>
 
 
 								</div>
