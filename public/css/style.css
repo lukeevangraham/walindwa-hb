@@ -12233,6 +12233,18 @@ p {
 
 @media only screen and (max-width: 480px){
 
+    .gt-pbar {
+        height: 50px;
+    }
+
+    .gt-progress-bars-holder.type-4 .gt-pbar-title,
+            .gt-progress-bars-holder.type-4 .gt-pbar-inner::after{
+                line-height: 24px;
+            }
+
+
+
+
     .home-blog {
         height: 900px;
     }
