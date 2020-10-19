@@ -69,6 +69,12 @@
 	
 ------------------------------------------------------ */
 
+.ekhsCaption {
+    text-align: center;
+    line-height: 140%;
+    margin: 10px 3px;
+}
+
 .blurWhiteBg {
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.7),
