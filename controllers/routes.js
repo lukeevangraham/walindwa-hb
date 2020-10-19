@@ -14,8 +14,8 @@ router.get("/", (req, res) => {
         homeSingle: resultArray[0],
         blogs: resultArray[1].data,
         title: `Home`,
-        bodyJs: `<script src="js/jquery.backstretch.min.js"></script><script src="./js/index.js" images="` + resultArray[0].data.topImages.map(el => "https://admin.moreleft.com" + el.url) +`" one="1"></script>`
-        // headLink: `<link rel="stylesheet" href="css/vanillaSlideshow.css">`
+        bodyJs: `<script src="js/jquery.backstretch.min.js"></script><script src="./js/index.js" images="` + resultArray[0].data.topImages.map(el => "https://admin.moreleft.com" + el.url) +`" one="1"></script>`,
+        headLink: `<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/owlCustom.css">`
       };
       res.render("index", hbsObject);
     }

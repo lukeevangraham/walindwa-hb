@@ -1,6 +1,5 @@
-console.log(typeof document.currentScript.getAttribute('images'))
+
 images = document.currentScript.getAttribute('images').split(',');
-console.log(images)
 
 // // let changeBgImg = () => {document.getElementById('walindwa-hero').setAttribute('data-bg', "https://images.unsplash.com/photo-1557064349-ee394aa8b7ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80")}
 

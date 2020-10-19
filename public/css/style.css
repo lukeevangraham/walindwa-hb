@@ -74,6 +74,13 @@
     line-height: 140%;
     margin: 10px 3px;
 }
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
 
 .blurWhiteBg {
     background-image: linear-gradient(
@@ -11129,6 +11136,10 @@ p {
 
 @media only screen and (max-width: 991px){
 
+    .home-blog {
+        height: 925px;
+    }
+
     .gt-flexbox .gt-products-holder.gt-view-grid.gt-cols-6 .gt-col{
         max-width: 33.3333%;
 
@@ -11463,6 +11474,10 @@ p {
 }
 
 @media only screen and (max-width: 767px){
+
+    .home-blog {
+        height: 865px;
+    }
 
     /* .ceilFade {
         display: none;
@@ -12218,6 +12233,22 @@ p {
 }
 
 @media only screen and (max-width: 480px){
+
+    .gt-pbar {
+        height: 50px;
+    }
+
+    .gt-progress-bars-holder.type-4 .gt-pbar-title,
+            .gt-progress-bars-holder.type-4 .gt-pbar-inner::after{
+                line-height: 24px;
+            }
+
+
+
+
+    .home-blog {
+        height: 900px;
+    }
 
     .gt-header .gt-compressed:not(.gt-f-hide){
         width: 150px;
