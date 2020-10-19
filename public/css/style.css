@@ -10478,6 +10478,20 @@ p {
        
 ------------------------------------------------------ */
 
+@media (max-height: 675px) {
+    .gt-centered-content h1 {
+        font-size: 100% !important;
+        margin-top: 70px;
+    }
+
+    .gt-centered-content a {
+        width: 50px;
+        height: 50px;
+        background-size: 50px;
+        margin-top: -2rem;
+    }
+}
+
 @media only screen and (max-width: 1600px){
 
     .gt-portfolio-holder.gt-photo-area{
