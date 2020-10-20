@@ -284,7 +284,7 @@ router.get("/ekhs", (req, res) => {
 
 router.get("/photos", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/photos-and-videos")
+    axios.get("https://admin.moreleft.com/photos-and-videos?_sort=id:desc")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Photos & Videos",
