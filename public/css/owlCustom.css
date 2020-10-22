@@ -6,8 +6,6 @@
     }
   }
 
-  
-
 
   @media (max-width: 900px) {
     .bottom-photos .owl-carousel .owl-controls .owl-nav .owl-prev,
@@ -15,4 +13,13 @@
     .bottom-photos .owl-carousel .owl-controls .owl-dot {
     margin: 0 70px;
     }
+  }
+
+
+  @media (min-width: 1201px) {
+   .carouselCustom .owl-carousel .owl-controls .owl-nav .owl-prev,
+  .carouselCustom .owl-carousel .owl-controls .owl-nav .owl-next,
+  .carouselCustom .owl-carousel .owl-controls .owl-dot {
+    margin: 0 0px;
+  }
   }

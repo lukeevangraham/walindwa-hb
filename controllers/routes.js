@@ -288,7 +288,8 @@ router.get("/photos", (req, res) => {
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Photos & Videos",
-      photos: resultArray[0].data
+      photos: resultArray[0].data,
+      headLink: `<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/owlCustom.css">`
     }
     res.render("./sections/updates/photos", hbsObject)
   })
