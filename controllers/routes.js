@@ -5,8 +5,8 @@ let moment = require("moment");
 
 router.get("/", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/home"),
-    axios.get("https://admin.moreleft.com/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=6")
+    axios.get("https://admin.walindwa.org/home"),
+    axios.get("https://admin.walindwa.org/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=6")
   ]).then(
     (resultArray) => {
       let hbsObject = {
@@ -14,7 +14,7 @@ router.get("/", (req, res) => {
         homeSingle: resultArray[0],
         blogs: resultArray[1].data,
         title: `Home`,
-        bodyJs: `<script src="js/jquery.backstretch.min.js"></script><script src="./js/index.js" images="` + resultArray[0].data.topImages.map(el => "https://admin.moreleft.com" + el.url) +`" one="1"></script>`,
+        bodyJs: `<script src="js/jquery.backstretch.min.js"></script><script src="./js/index.js" images="` + resultArray[0].data.topImages.map(el => "https://admin.walindwa.org" + el.url) +`" one="1"></script>`,
         headLink: `<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/owlCustom.css">`
       };
       res.render("index", hbsObject);
@@ -24,8 +24,8 @@ router.get("/", (req, res) => {
 
 router.get("/board", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/board-members"),
-    axios.get("https://admin.moreleft.com/about")
+    axios.get("https://admin.walindwa.org/board-members"),
+    axios.get("https://admin.walindwa.org/about")
   ]).then(
     (resultArray) => {
       let hbsObject = {
@@ -41,7 +41,7 @@ router.get("/board", (req, res) => {
 router.get("/board:id", function (req, res) {
   Promise.all([
     axios.get(
-      "https://admin.moreleft.com/board-members/" + req.params.id.substr(1)
+      "https://admin.walindwa.org/board-members/" + req.params.id.substr(1)
     ),
   ]).then((resultArray) => {
     let hbsObject = {
@@ -54,7 +54,7 @@ router.get("/board:id", function (req, res) {
 
 router.get("/overview", function (req, res) {
   Promise.all([
-    axios.get("https://admin.moreleft.com/about"),
+    axios.get("https://admin.walindwa.org/about"),
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Overview",
@@ -66,8 +66,8 @@ router.get("/overview", function (req, res) {
 
 router.get("/corporate-info", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/organization-documents/"),
-    axios.get("https://admin.moreleft.com/about")
+    axios.get("https://admin.walindwa.org/organization-documents/"),
+    axios.get("https://admin.walindwa.org/about")
   ]).then((resultArray) => {
     let docs = resultArray[0].data;
     docs.forEach((doc) => {
@@ -86,7 +86,7 @@ router.get("/corporate-info", (req, res) => {
 
 router.get("/kenya", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/in-kenya")
+    axios.get("https://admin.walindwa.org/in-kenya")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Kenya",
@@ -106,10 +106,10 @@ router.get("/kenya", (req, res) => {
 router.get("/projects", (req, res) => {
   Promise.all([
     axios.get(
-      "https://admin.moreleft.com/projects?status_eq=Current&Published_eq=true&_sort=id:DESC"
+      "https://admin.walindwa.org/projects?status_eq=Current&Published_eq=true&_sort=id:DESC"
     ),
     axios.get(
-      "https://admin.moreleft.com/projects?status_eq=Completed&Published_eq=true&_sort=id:DESC"
+      "https://admin.walindwa.org/projects?status_eq=Completed&Published_eq=true&_sort=id:DESC"
     ),
   ]).then((resultArray) => {
     let hbsObject = {
@@ -123,8 +123,8 @@ router.get("/projects", (req, res) => {
 
 router.get("/project:id", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/projects?Published_eq=true&id_eq=" + req.params.id.substr(1)),
-    axios.get("https://admin.moreleft.com/projects?Published_eq=true&id_ne=" + req.params.id.substr(1) + "&_sort=id:DESC&_limit=6")
+    axios.get("https://admin.walindwa.org/projects?Published_eq=true&id_eq=" + req.params.id.substr(1)),
+    axios.get("https://admin.walindwa.org/projects?Published_eq=true&id_ne=" + req.params.id.substr(1) + "&_sort=id:DESC&_limit=6")
   ]).then((resultArray) => {
     if (resultArray[0].data[0].status == "Current") {
       resultArray[0].data[0].current = true;
@@ -140,7 +140,7 @@ router.get("/project:id", (req, res) => {
 
 router.get("/students", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/sponsorship")
+    axios.get("https://admin.walindwa.org/sponsorship")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Student Sponsorship",
@@ -152,7 +152,7 @@ router.get("/students", (req, res) => {
 
 router.get("/post-high-school", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/sponsorship")
+    axios.get("https://admin.walindwa.org/sponsorship")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Post-High School Sponsorship",
@@ -164,7 +164,7 @@ router.get("/post-high-school", (req, res) => {
 
 router.get("/blog", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=6")
+    axios.get("https://admin.walindwa.org/blogs?publish=true&_sort=datePosted:DESC&_start=0&_limit=6")
   ]).then((resultArray) => {
     let hbsObject = {
       blogEntries: resultArray[0].data,
@@ -176,13 +176,13 @@ router.get("/blog", (req, res) => {
 
 router.get("/blog:id", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + req.params.id.substr(1)),
-    axios.get("https://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) - 1)),
-    axios.get("https://admin.moreleft.com/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) + 1)),
+    axios.get("https://admin.walindwa.org/blogs?publish_eq=true&id_eq=" + req.params.id.substr(1)),
+    axios.get("https://admin.walindwa.org/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) - 1)),
+    axios.get("https://admin.walindwa.org/blogs?publish_eq=true&id_eq=" + (parseInt(req.params.id.substr(1)) + 1)),
   ]).then((resultArray) => {
     let unparsedFirstName = resultArray[0].data[0].Author.split(` `)
     Promise.all([
-      axios.get("https://admin.moreleft.com/board-members?firstName_contains=" + unparsedFirstName[0] + "&firstName_contains=" + unparsedFirstName[1] + "&lastName_contains=" + unparsedFirstName[0] + "&lastName_contains=" + unparsedFirstName[1])
+      axios.get("https://admin.walindwa.org/board-members?firstName_contains=" + unparsedFirstName[0] + "&firstName_contains=" + unparsedFirstName[1] + "&lastName_contains=" + unparsedFirstName[0] + "&lastName_contains=" + unparsedFirstName[1])
     ]).then((secondArray) => {
       let hbsObject = {
         title: resultArray[0].data[0].name,
@@ -198,7 +198,7 @@ router.get("/blog:id", (req, res) => {
 
 router.get("/newsletters", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/newsletters")
+    axios.get("https://admin.walindwa.org/newsletters")
   ]).then((resultArray) => {
 
     function compareMonths(a, b) {
@@ -234,7 +234,7 @@ router.get("/newsletters", (req, res) => {
 
 router.get("/testimonials", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/testimonials?_sort=year:DESC")
+    axios.get("https://admin.walindwa.org/testimonials?_sort=year:DESC")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Testimonials",
@@ -246,7 +246,7 @@ router.get("/testimonials", (req, res) => {
 
 router.get("/testimonials:id", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/testimonials/" + req.params.id.substr(1))
+    axios.get("https://admin.walindwa.org/testimonials/" + req.params.id.substr(1))
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Testimonial: " + resultArray[0].data.author,
@@ -258,8 +258,8 @@ router.get("/testimonials:id", (req, res) => {
 
 router.get("/ebcck", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/in-kenya"),
-    axios.get("https://admin.moreleft.com/ebccks")
+    axios.get("https://admin.walindwa.org/in-kenya"),
+    axios.get("https://admin.walindwa.org/ebccks")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "EBCCK",
@@ -272,7 +272,7 @@ router.get("/ebcck", (req, res) => {
 
 router.get("/ekhs", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/in-kenya")
+    axios.get("https://admin.walindwa.org/in-kenya")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "EKHS",
@@ -284,7 +284,7 @@ router.get("/ekhs", (req, res) => {
 
 router.get("/photos", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/photos-and-videos?_sort=id:desc")
+    axios.get("https://admin.walindwa.org/photos-and-videos?_sort=id:desc")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Photos & Videos",
@@ -297,7 +297,7 @@ router.get("/photos", (req, res) => {
 
 router.get("/photo:id", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/photos-and-videos/?id=" + req.params.id.substr(1))
+    axios.get("https://admin.walindwa.org/photos-and-videos/?id=" + req.params.id.substr(1))
   ]).then((resultArray) => {
     let hbsObject = {
       photo: resultArray[0].data,
@@ -309,7 +309,7 @@ router.get("/photo:id", (req, res) => {
 
 router.get("/giving", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/giving")
+    axios.get("https://admin.walindwa.org/giving")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Ways to Give",
@@ -323,7 +323,7 @@ router.get("/giving", (req, res) => {
 
 router.get("/donate", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/giving")
+    axios.get("https://admin.walindwa.org/giving")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Donate Now",
@@ -337,7 +337,7 @@ router.get("/donate", (req, res) => {
 
 router.get("/designate", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/giving")
+    axios.get("https://admin.walindwa.org/giving")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Designate",
@@ -349,7 +349,7 @@ router.get("/designate", (req, res) => {
 
 router.get("/opportunities", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/sponsorship-opportunities")
+    axios.get("https://admin.walindwa.org/sponsorship-opportunities")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Sponsorship Opportunities",
@@ -362,8 +362,8 @@ router.get("/opportunities", (req, res) => {
 router.get("/student:id", (req, res) => {
   // console.log("LOOK HERE: ", req.params.id.substr(1))
   Promise.all([
-    axios.get("https://admin.moreleft.com/sponsorship-opportunities?id=" + req.params.id.substr(1)),
-    axios.get("https://admin.moreleft.com/sponsorship")
+    axios.get("https://admin.walindwa.org/sponsorship-opportunities?id=" + req.params.id.substr(1)),
+    axios.get("https://admin.walindwa.org/sponsorship")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Sponsorship Opportunity",
@@ -376,7 +376,7 @@ router.get("/student:id", (req, res) => {
 
 router.get("/contact", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/contact")
+    axios.get("https://admin.walindwa.org/contact")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Contact",
@@ -388,7 +388,7 @@ router.get("/contact", (req, res) => {
 
 router.get("/timeline", (req, res) => {
   Promise.all([
-    axios.get("https://admin.moreleft.com/timelines?_sort=order:ASC")
+    axios.get("https://admin.walindwa.org/timelines?_sort=order:ASC")
   ]).then((resultArray) => {
     let hbsObject = {
       title: "Timeline",
