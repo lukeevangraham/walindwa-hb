@@ -69,6 +69,13 @@
 	
 ------------------------------------------------------ */
 
+.overviewVideo {
+    display: block;
+    margin: auto;
+    width: 560px;
+    height: 315px;
+}
+
 .ekhsCaption {
     text-align: center;
     line-height: 140%;
@@ -11489,6 +11496,11 @@ p {
 
 @media only screen and (max-width: 767px){
 
+    .overviewVideo {
+        width: 400px;
+        height: 225px;
+    }
+
     .home-blog {
         height: 865px;
     }
@@ -12247,6 +12259,11 @@ p {
 }
 
 @media only screen and (max-width: 480px){
+
+    .overviewVideo {
+        width: 275px;
+        height: 155px;
+    }
 
     .gt-pbar {
         height: 50px;
