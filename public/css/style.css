@@ -69,6 +69,10 @@
 	
 ------------------------------------------------------ */
 
+.ekhsPhoto {
+    height: 400px;
+}
+
 .overviewVideo {
     display: block;
     margin: auto;
@@ -11496,6 +11500,10 @@ p {
 
 @media only screen and (max-width: 767px){
 
+    .ekhsPhoto {
+        height: 350px;
+    }
+
     .overviewVideo {
         width: 400px;
         height: 225px;
@@ -12259,6 +12267,10 @@ p {
 }
 
 @media only screen and (max-width: 480px){
+
+    .ekhsPhoto {
+        height: 275px;
+    }
 
     .overviewVideo {
         width: 275px;
