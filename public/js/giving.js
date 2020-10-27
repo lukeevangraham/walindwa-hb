@@ -1,9 +1,6 @@
 $(document).ready(function() {
 
     setTimeout(checkAmt, 3000)
-
-    
-    console.log("hello there!")
     
 
     function checkAmt() {
