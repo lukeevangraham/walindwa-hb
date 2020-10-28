@@ -2784,7 +2784,7 @@
 			smartSpeed: 500,
 			autoHeight: true,
 			autoplay: true,
-			autoplayTimeout: 4000,
+			autoplayTimeout: 8000,
 			autoplayHoverPause: true,
 			navText: ['', '']
 		}
