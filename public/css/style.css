@@ -10491,7 +10491,7 @@ p {
 
 @media (max-height: 675px) {
     .gt-centered-content h1 {
-        font-size: 100% !important;
+        font-size: 180% !important;
         margin-top: 70px;
     }
 
@@ -10500,6 +10500,12 @@ p {
         height: 50px;
         background-size: 50px;
         margin-top: -2rem;
+    }
+}
+
+@media (max-height: 430px) {
+    .gt-centered-content h1 {
+        font-size: 100% !important
     }
 }
 
