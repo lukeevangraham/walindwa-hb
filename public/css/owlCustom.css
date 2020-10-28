@@ -13,6 +13,10 @@
     .bottom-photos .owl-carousel .owl-controls .owl-dot {
     margin: 0 70px;
     }
+
+    .fancybox-close {
+      right: -20px !important
+    }
   }
 
 
@@ -23,3 +27,4 @@
     margin: 0 0px;
   }
   }
+
