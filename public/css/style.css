@@ -11506,6 +11506,12 @@ p {
 
 @media only screen and (max-width: 767px){
 
+    .gt-brand img{
+        opacity: 1;
+        transition: opacity .35s ease;
+    }
+
+
     .ekhsPhoto {
         height: 350px;
     }
