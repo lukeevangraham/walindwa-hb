@@ -37,13 +37,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/blog-7</loc>
+    <loc>https://www.walindwa.org/blog-8</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/blog-8</loc>
+    <loc>https://www.walindwa.org/blog-7</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -61,13 +61,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/board</loc>
+    <loc>https://www.walindwa.org/kenya</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/kenya</loc>
+    <loc>https://www.walindwa.org/board</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -121,25 +121,25 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/donate</loc>
-    <lastmod>2020-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.walindwa.org/ebcck</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/project-8</loc>
+    <loc>https://www.walindwa.org/donate</loc>
+    <lastmod>2020-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.walindwa.org/project-9</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/project-9</loc>
+    <loc>https://www.walindwa.org/project-8</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -193,13 +193,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/student:9</loc>
+    <loc>https://www.walindwa.org/student:4</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/student:4</loc>
+    <loc>https://www.walindwa.org/student:9</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -247,12 +247,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/board:3</loc>
-    <lastmod>2020-11-04</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.walindwa.org/board:1</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
@@ -260,6 +254,12 @@
   </url>
   <url>
     <loc>https://www.walindwa.org/board:2</loc>
+    <lastmod>2020-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.walindwa.org/board:3</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -277,13 +277,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/board:6</loc>
+    <loc>https://www.walindwa.org/board:7</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.walindwa.org/board:7</loc>
+    <loc>https://www.walindwa.org/board:6</loc>
     <lastmod>2020-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
