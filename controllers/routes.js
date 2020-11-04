@@ -366,7 +366,7 @@ router.get("/student:id", (req, res) => {
     axios.get("https://admin.walindwa.org/sponsorship")
   ]).then((resultArray) => {
     let hbsObject = {
-      title: "Sponsorship Opportunity",
+      title: `Sponsorship Opportunity | ${resultArray[0].data[0].firstName}`,
       student: resultArray[0].data[0],
       sponsorshipSingleType: resultArray[1].data
     }
