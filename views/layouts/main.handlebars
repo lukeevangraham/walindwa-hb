@@ -38,7 +38,7 @@
     <!-- Vendor CSS
 		============================================ -->
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="fonts/demo-files/demo.css">
+    <link rel="stylesheet preload" href="fonts/demo-files/demo.css">
     <link rel="stylesheet" href="plugins/fancybox/helpers/jquery.fancybox-buttons.css">
     <link rel="stylesheet" href="plugins/fancybox/helpers/jquery.fancybox-thumbs.css">
     <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.css">
@@ -46,9 +46,9 @@
 
     <!-- CSS theme files
 		============================================ -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet preload" href="css/animate.css">
     {{#unless headLink}}
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet preload" href="css/style.css">
     {{/unless}}
 
     {{#if headLink}}
@@ -81,18 +81,17 @@
     <!-- JS Libs & Plugins
 		============================================ -->
     <script src="js/libs/modernizr.js"></script>
-    <script src="js/libs/jquery-2.2.1.js"></script>
+    <script rel="preload" src="js/libs/jquery-2.2.1.js"></script>
     <script src="js/libs/retina.min.js"></script>
-    <script src="js/libs/handlebars-v4.0.5.js"></script>
+    <script rel="preload" src="js/libs/handlebars-v4.0.5.js"></script>
 
     <script src="plugins/jquery.parallax-1.1.3.js"></script>
     <script src="plugins/wt.validator.js"></script>
     <script src="plugins/jquery.appear.min.js"></script>
     <script src="plugins/jquery.easing.1.3.js"></script>
-    <script src="plugins/isotope.pkgd.min.js"></script>
-    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-    <script src="plugins/twitter/jquery.tweet.min.js"></script>
-    <script src="plugins/instafeed.min.js"></script>
+    <script rel="preload" src="plugins/isotope.pkgd.min.js"></script>
+    <script rel="preload" src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    {{!-- <script src="plugins/twitter/jquery.tweet.min.js"></script> --}}
     <script src="plugins/jquery.mousewheel.min.js"></script>
     <script src="plugins/mad.tabs.js"></script>
     <script src="plugins/mad.customselect.js"></script>
@@ -104,8 +103,8 @@
 
     <!-- JS theme files
 		============================================ -->
-    <script src="js/gatsby.core.js"></script>
-    <script src="js/gatsby.plugins.js"></script>
+    <script rel="preload" src="js/gatsby.core.js"></script>
+    <script rel="preload" src="js/gatsby.plugins.js"></script>
 
     {{#if bodyJs}}
     {{{bodyJs}}}
