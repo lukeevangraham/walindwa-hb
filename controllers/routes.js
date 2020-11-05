@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
         blogs: resultArray[1].data,
         title: `Home`,
         bodyJs: `<script src="js/jquery.backstretch.min.js"></script><script src="./js/index.js" images="` + resultArray[0].data.topImages.map(el => "https://admin.walindwa.org" + el.url) +`" one="1"></script>`,
-        headLink: `<link rel="stylesheet preload" href="css/style.css"><link rel="stylesheet preload" href="css/owlCustom.css">`
+        headLink: `<link rel="stylesheet preload" href="css/style.css" as="style"><link rel="stylesheet preload" href="css/owlCustom.css" as="style">`
       };
       res.render("index", hbsObject);
     }
