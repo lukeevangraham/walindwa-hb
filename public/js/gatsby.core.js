@@ -312,7 +312,7 @@
 
 						this.menuBtn = $('<button></button>', {
 							class: 'gt-nav-btn'
-						});
+						}).attr('aria-label', 'Toggle navigation');
 
 						this.menuBtn.on('click', function(){
 
