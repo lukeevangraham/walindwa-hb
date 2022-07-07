@@ -23,6 +23,6 @@
     "express-handlebars": "^4.0.4",
     "handlebars-helper-md": "^0.2.0",
     "helper-markdown": "^1.0.0",
-    "moment": "^2.26.0"
+    "moment": "^2.29.4"
   }
 }
